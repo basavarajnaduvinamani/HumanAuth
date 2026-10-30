@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HumanAuth Verify</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand"><span class="logo" aria-hidden="true">H</span> HumanAuth <span class="tag">prototype</span></div>
+    <div id="module-status" class="chips" aria-label="Module status"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="intro">
+    <h1>Verify your identity</h1>
+    <p>Three quick checks: a live selfie, a photo of your ID document, and a short voice sample.
+      Each is scored by its own model, then combined into one decision.</p>
+  </section>
+
+  <form id="verify-form" novalidate>
+    <ol class="steps">
+      <li class="step" data-step="selfie">
+        <div class="step-head"><span class="num">1</span><div><h2>Selfie</h2><p>Face the camera in good light. One face only.</p></div></div>
+        <div class="media" id="selfie-media"><span class="placeholder">No selfie yet</span></div>
+        <div class="actions">
+          <label class="btn">Upload photo<input type="file" name="selfie" id="selfie-file" accept="image/jpeg,image/png,image/webp" hidden></label>
+          <button type="button" class="btn ghost" id="selfie-cam">Use camera</button>
+          <button type="button" class="btn ghost" id="selfie-snap" hidden>Capture</button>
+        </div>
+      </li>
+
+      <li class="step" data-step="document">
+        <div class="step-head"><span class="num">2</span><div><h2>ID document</h2><p>Whole document in frame, flat, no glare.</p></div></div>
+        <div class="media" id="document-media"><span class="placeholder">No document yet</span></div>
+        <div class="actions">
+          <label class="btn">Upload or take photo<input type="file" name="document" id="document-file" accept="image/jpeg,image/png,image/webp" capture="environment" hidden></label>
+        </div>
+      </li>
+
+      <li class="step" data-step="voice">
+        <div class="step-head"><span class="num">3</span><div><h2>Voice</h2><p>Say your name and today's date (about 4 seconds).</p></div></div>
+        <div class="field">
+          <label for="claimed">I am</label>
+          <select id="claimed" name="claimed_identity"><option value="">Loading enrolled people...</option></select>
+        </div>
+        <div class="media audio" id="voice-media"><span class="placeholder">No recording yet</span></div>
+        <div class="actions">
+          <button type="button" class="btn" id="voice-rec">Record 4 s</button>
+          <label class="btn ghost">Upload WAV<input type="file" name="voice" id="voice-file" accept="audio/wav,.wav" hidden></label>
+        </div>
+      </li>
+    </ol>
+
+    <div class="submit-row">
+      <button type="submit" class="btn primary big" id="submit">Verify me</button>
+      <p class="hint" id="form-msg" role="alert"></p>
+    </div>
+  </form>
+
+  <section id="result" class="result" hidden aria-live="polite">
+    <div id="decision" class="decision"></div>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <aside class="privacy">
+    <h3>Privacy</h3>
+    <p>Your selfie, document and voice are sent only to this server, scored in memory and discarded.
+      Nothing is saved to disk or logged, and responses are marked not to be cached.
+      This is a research prototype from a student project, not a certified identity service: do not use real ID documents you are not entitled to share.</p>
+  </aside>
+</main>
+
+<footer class="wrap foot">HumanAuth &middot; B.Tech major project, Dayananda Sagar University (2024-25) &middot; supported by ART-Park, IISc and KSCST</footer>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
