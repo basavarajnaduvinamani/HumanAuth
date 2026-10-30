@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    name: pytest (${{ matrix.profile }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # full: real ONNX + torch inference on the bundled weights (CPU)
+        # lite: no torch, checks that the document module reports "unavailable" cleanly
+        profile: [full, lite]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install (full)
+        if: matrix.profile == 'full'
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install flask numpy pillow onnxruntime opencv-python-headless scikit-learn python_speech_features -r requirements-dev.txt
+      - name: Install (lite)
+        if: matrix.profile == 'lite'
+        run: pip install flask numpy pillow onnxruntime opencv-python-headless python_speech_features -r requirements-dev.txt
+      - name: Test
+        run: python -m pytest -q -rs
