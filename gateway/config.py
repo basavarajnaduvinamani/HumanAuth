@@ -30,6 +30,9 @@ class Config:
     # data.yaml (names: ['fake', 'true']). So index 0 = fake here.
     document_class_order: tuple = ("fake", "real")
 
+    # Optional local checkpoint; never downloaded or committed.
+    voice_deepfake_model_path: Path | None = None
+
     # thresholds
     liveness_threshold: float = 0.5   # video_predict.py default (-t 0.5)
     document_threshold: float = 0.5   # P(genuine) needed to pass
@@ -47,7 +50,7 @@ class Config:
     @classmethod
     def from_env(cls):
         c = cls()
-        for name in ("face_detector_path", "antispoof_path", "document_model_path", "voice_models_dir"):
+        for name in ("face_detector_path", "antispoof_path", "document_model_path", "voice_models_dir", "voice_deepfake_model_path"):
             v = os.environ.get("HUMANAUTH_" + name.upper())
             if v:
                 setattr(c, name, Path(v))

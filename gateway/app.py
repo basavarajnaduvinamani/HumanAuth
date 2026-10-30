@@ -17,11 +17,15 @@ from .config import Config
 from .fusion import fuse
 from .validation import InputError, load_image, load_wav
 
-FIELDS = {"face": "selfie", "document": "document", "voice": "voice"}
+FIELDS = {"face": "selfie", "document": "document", "voice": "voice", "voice_deepfake": "voice"}
 
 
 def default_checks(cfg):
-    return {"face": FaceLivenessCheck(cfg), "document": DocumentCheck(cfg), "voice": VoiceCheck(cfg)}
+    checks = {"face": FaceLivenessCheck(cfg), "document": DocumentCheck(cfg), "voice": VoiceCheck(cfg)}
+    if cfg.voice_deepfake_model_path is not None:
+        from .checks.voice_deepfake import VoiceDeepfakeCheck
+        checks["voice_deepfake"] = VoiceDeepfakeCheck(cfg)
+    return checks
 
 
 def create_app(cfg=None, checks=None):
@@ -83,6 +87,8 @@ def create_app(cfg=None, checks=None):
                     if claimed not in enrolled:
                         raise InputError("claimed_identity", "Unknown identity.")
                 inputs["voice"] = (rate, audio, claimed)
+                if "voice_deepfake" in checks:
+                    inputs["voice_deepfake"] = (rate, audio)
         except InputError as e:
             return jsonify(error="invalid_input", field=e.field, message=e.message), 400
         if not inputs:
@@ -90,7 +96,7 @@ def create_app(cfg=None, checks=None):
                            message="Upload at least one of: selfie, document, voice."), 400
 
         results = []
-        for name in ("face", "document", "voice"):
+        for name in checks:
             if name in inputs:
                 results.append(checks[name].run(inputs[name]))
             else:

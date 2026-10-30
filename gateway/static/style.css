@@ -98,3 +98,6 @@ h1, h2, h3 { margin: 0; line-height: 1.25; }
 }
 [hidden] { display: none !important; }
 #document-media img { object-fit: contain; }
+
+/* Keep the on-screen biometric preview private; uploaded bytes are unchanged. */
+#selfie-media img, #selfie-media video { filter: blur(12px); }

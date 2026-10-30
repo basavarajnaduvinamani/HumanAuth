@@ -3,7 +3,7 @@
   "use strict";
   const $ = (id) => document.getElementById(id);
   const blobs = { selfie: null, document: null, voice: null };
-  const LABELS = { face: "Liveness (selfie)", document: "Document", voice: "Voice" };
+  const LABELS = { face: "Liveness (selfie)", document: "Document", voice: "Voice", voice_deepfake: "Voice deepfake" };
 
   function el(tag, cls, text) {
     const e = document.createElement(tag);
@@ -34,7 +34,7 @@
   fetch("/api/health").then((r) => r.json()).then((h) => {
     const chips = $("module-status");
     for (const [name, m] of Object.entries(h.modules)) {
-      const c = el("span", "chip " + (m.available ? "on" : "off"), (m.available ? "" : "! ") + LABELS[name].split(" ")[0]);
+      const c = el("span", "chip " + (m.available ? "on" : "off"), (m.available ? "" : "! ") + (LABELS[name] || name));
       c.title = m.available ? "Model loaded" : m.reason;
       chips.appendChild(c);
     }
@@ -143,7 +143,7 @@
   function card(name, m) {
     const c = el("article", "card");
     const top = el("div", "card-top");
-    top.append(el("h3", "", LABELS[name]), badge(m));
+    top.append(el("h3", "", (LABELS[name] || name)), badge(m));
     c.appendChild(top);
     if (m.status === "ok") {
       c.appendChild(el("div", "score", m.score.toFixed(2)));
@@ -172,7 +172,7 @@
     for (const reason of r.reasons) ul.appendChild(el("li", "", reason));
     d.appendChild(ul);
     const cards = $("cards");
-    cards.replaceChildren(...["face", "document", "voice"].map((n) => card(n, r.modalities[n])));
+    cards.replaceChildren(...Object.entries(r.modalities).map(([n, m]) => card(n, m)));
     $("result").hidden = false;
     $("result").scrollIntoView({ behavior: "smooth", block: "start" });
   }

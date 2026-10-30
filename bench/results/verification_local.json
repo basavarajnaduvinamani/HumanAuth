@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-10-30T16:08:01.857164+00:00",
+  "condition": "live loopback HTTP verification with existing bundled selfie/audio and synthetic specimen; optional local Deep4SNet enabled",
+  "http_status": 200,
+  "modules_available": {
+    "document": true,
+    "face": true,
+    "voice": true,
+    "voice_deepfake": true
+  },
+  "decision": "reject",
+  "liveness_veto": false,
+  "fused_score": 0.5719,
+  "fusion_threshold": 0.66,
+  "latency_ms": 6883.9,
+  "stored": false,
+  "cache_control": "no-store",
+  "checks": {
+    "document": {
+      "status": "ok",
+      "score": 0.031185757368803024,
+      "passed": false,
+      "threshold": 0.5,
+      "label": "forged",
+      "latency_ms": 845.0951000049827
+    },
+    "face": {
+      "status": "ok",
+      "score": 0.6068159937858582,
+      "passed": true,
+      "threshold": 0.5,
+      "label": "live",
+      "latency_ms": 209.06879999529338
+    },
+    "voice": {
+      "status": "ok",
+      "score": 0.9999360439396737,
+      "passed": true,
+      "threshold": 0.5,
+      "label": "match",
+      "latency_ms": 134.72989999718266
+    },
+    "voice_deepfake": {
+      "status": "ok",
+      "score": 0.6495726108551025,
+      "passed": true,
+      "threshold": 0.5,
+      "label": "real_voice",
+      "latency_ms": 5647.709099997883
+    }
+  }
+}
