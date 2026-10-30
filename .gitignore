@@ -37,3 +37,11 @@ Thumbs.db
 
 # Playwright / local screenshots
 test-results/
+
+# Local finishing evidence, environments and optional private model assets
+/.finish/
+/.venv-finish/
+/.private/
+/FINISH_REPORT_*.md
+.env
+.env.*
