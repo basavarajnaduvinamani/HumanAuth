@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-30T16:04:36.166488+00:00",
+  "check": {
+    "name": "voice_deepfake",
+    "status": "ok",
+    "score": 0.6495726108551025,
+    "passed": true,
+    "threshold": 0.5,
+    "label": "real_voice",
+    "detail": "Optional local Deep4SNet histogram classifier; uncalibrated demo signal.",
+    "extra": {
+      "model": "Deep4SNet",
+      "class_order": [
+        "real",
+        "fake"
+      ],
+      "scope": "not the report's CNN-LSTM; no new accuracy claim"
+    },
+    "latency_ms": 44205.91740000236
+  },
+  "weights_sha256": "4d2552d79916b3e6efdf22730047cfa4e8907f17461979634adf861971a14cc5",
+  "condition": "existing bundled audio; inference smoke only, not accuracy evaluation",
+  "hardware_source": ".finish/hardware.json"
+}
