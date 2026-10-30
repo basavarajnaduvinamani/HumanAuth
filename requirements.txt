@@ -22,3 +22,6 @@ matplotlib>=3.7.0
 Flask>=2.3.0
 requests>=2.31.0
 python-dotenv>=1.0.0
+
+# Voice speaker check (gateway)
+python_speech_features>=0.6
