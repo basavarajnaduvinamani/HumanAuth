@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-10-30T16:04:34.377342+00:00",
+  "source": "HUMANAUTH_Complete_Signed_Project_Report.pdf",
+  "source_sha256": "f7df8f7fbf009d701848154e71f0e882f740a5d8185be5746fb1404035b7a24b",
+  "scope": "Reported figures, not rerun or held-out benchmarks.",
+  "metrics": [
+    {
+      "task": "Integrated authentication",
+      "value_percent": "96.5",
+      "source_pdf_page": 31,
+      "split": "not identified"
+    },
+    {
+      "task": "Facial anti-spoofing",
+      "value_percent": "96.0",
+      "source_pdf_page": 30,
+      "split": "not identified"
+    },
+    {
+      "task": "Document classifier",
+      "value_percent": "98.5",
+      "source_pdf_page": 31,
+      "split": "training"
+    }
+  ]
+}
