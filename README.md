@@ -1,4 +1,4 @@
-﻿# HumanAuth: Multi-Factor AI Identity Verification
+# HumanAuth: Multi-Factor AI Identity Verification
 
 [![CI](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml/badge.svg)](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml)
 [![Grant Funding](https://img.shields.io/badge/Grant%20Funding-ART--Park%2C%20IISc%20%26%20KSCST-gold.svg)](https://artpark.in/)
@@ -45,32 +45,58 @@ pip install -r requirements-dev.txt && python -m pytest -q
 
 ### Reported in the signed project report
 
-These figures come from the team's signed Phase-II project report (2024-25). They were not re-run here. The report does not identify the evaluation split, so treat them as reported figures, not held-out benchmarks.
+These are reported figures, not rerun or held-out benchmarks. Their signed-report
+locations and source digest are recorded in
+[`bench/results/reported_results_reference.json`](bench/results/reported_results_reference.json).
 
-| Task | Reported value | Note |
-| --- | --- | --- |
-| Integrated (fused) authentication accuracy | **96.5%** | Signed report, results table (p. 31) |
-| Face anti-spoofing accuracy | **96.0%** | Signed report, Table 5.5.4 (p. 30). Section 5.6.1 of the same report gives 96.2%. |
-| Document forgery classifier, **training** accuracy | 98.5% | Training accuracy only. The report gives 100% validation. This is **not** a deepfake or fraud-detection accuracy. |
+| Task | Reported value | Scope |
+| --- | ---: | --- |
+| Integrated authentication | 96.5% | not identified |
+| Facial anti-spoofing | 96.0% | not identified |
+| Document classifier | 98.5% | training |
 
-Not used here: the face metrics table in `modules/face_anti_spoofing/README.md` (accuracy 0.9292 / 0.9328). Those numbers belong to the upstream Lanit-Tercom summer-school 2022 MiniFASNet project that the face module builds on, not to this team. Earlier versions of this README claimed "98.5% overall fraud detection", "< 1.2 s", "FAR < 0.1%" and "FRR < 1.2%". None of those has a run behind it in this repo, so they were removed.
+The upstream face module retains its own results table for attribution; those are
+not the team's runs. Earlier unsupported overall-fraud, latency and acceptance-rate
+claims are not used as project evidence here.
 
 ### Measured in this repo
 
-**Gateway latency on CPU** (`python bench/latency.py`, raw data in [`bench/results/latency_cpu.json`](bench/results/latency_cpu.json)). Hardware: Intel Xeon @ 2.80 GHz, 4 logical cores, 15.7 GB RAM, no GPU. Software: Python 3.13, torch 2.15, onnxruntime 1.31. Inputs are the bundled samples. Each stage is timed from bytes in server memory to that stage's output. Camera and microphone capture, network upload and browser rendering are not included.
+The previous CPU measurement is preserved and the local hardware measurement is
+added below. These are core-gateway latency measurements; the optional recovered
+voice detector is disabled. Every cell comes from the linked raw result file.
 
-| Stage (warm, n = 50) | p50 ms | p95 ms |
-| --- | ---: | ---: |
-| Face detection (YOLOv5s-face, ONNX) | 71.6 | 109.9 |
-| Face anti-spoofing (MiniFASNet, ONNX) | 9.8 | 11.6 |
-| Document classifier (ResNet18, torch) | 40.2 | 49.0 |
-| Voice features (MFCC + deltas, 4 s clip) | 63.2 | 90.0 |
-| Voice GMM scoring (2 speakers) | 6.1 | 7.1 |
-| Whole `POST /api/verify` (in-process Flask test client) | 524.6 | 1506.0 |
+| Hardware | Warm requests | p50 ms | p95 ms | Source |
+| --- | ---: | ---: | ---: | --- |
+| Intel(R) Xeon(R) Processor @ 2.80GHz | 50 | 524.62 | 1506.02 | `bench/results/latency_cpu.json` |
+| 12th Gen Intel(R) Core(TM) i5-12450H | 50 | 1052.28 | 1215.62 | `bench/results/latency_cpu_12th_gen_intel_r_core_tm_i5_12450h_20261030T161355969061Z.json` |
 
-Cold start (fresh process, n = 3): the p50 from process start to first response is 7.2 s. Of that, about 4.9 s is loading torch and the document model. One of the three cold runs took 161 s, almost certainly because the disk cache was cold, and it is kept in the JSON. The whole-request number also includes multipart encoding and parsing of the roughly 0.75 MB upload, which is why it is larger than the sum of the stages.
+Local hardware and software details, all stage timings and cold runs are in
+[`bench/results/latency_cpu_12th_gen_intel_r_core_tm_i5_12450h_20261030T161355969061Z.json`](bench/results/latency_cpu_12th_gen_intel_r_core_tm_i5_12450h_20261030T161355969061Z.json) and its
+[generated table](bench/results/latency_cpu_12th_gen_intel_r_core_tm_i5_12450h_20261030T161355969061Z.md).
+The timing boundary includes in-process multipart encoding/parsing, but excludes
+capture, network transfer and browser rendering. Run `python bench/latency.py` to
+write a separately named hardware/run result without replacing earlier default runs.
 
-**Document label-map check** (`python bench/doc_class_map.py`, data in [`bench/results/doc_class_map.json`](bench/results/doc_class_map.json)). The repo's original inference scripts read output index 0 as "Real". On the bundled annotated regions, index 0 agrees with the dataset's **fake** label 99.8% / 100% / 99.2% of the time (train / valid / test). So those scripts had the label backwards, and the gateway now uses `fake, real`. The same check found that all 31 valid and all 40 test images share a source page with a training image (Roboflow augmentations). The bundled splits are therefore not source-disjoint, and they say nothing about generalisation.
+The corrected document class order and the overlapping source pages are documented
+in [`bench/results/doc_class_map.json`](bench/results/doc_class_map.json).
+The fresh local eligibility scan in
+[`bench/results/document_split_eligibility.json`](bench/results/document_split_eligibility.json)
+found no eligible labeled documents from new training-source pages. Held-out
+evaluation was skipped, and no new accuracy was added.
+
+### Recovered optional local detector
+
+An existing local Deep4SNet checkpoint loads and now has an opt-in gateway adapter.
+It is a CNN over audio-amplitude histograms, not the report's CNN-LSTM.
+Weights stay outside Git. When enabled, its result appears in health and the UI;
+failure rejects, and unavailability prevents approval. The core gateway remains
+the default. See [local recovery and setup](docs/local_recovery.md),
+[source/load evidence](bench/results/local_asset_audit.json),
+[inference smoke result](bench/results/voice_deepfake_smoke.json), and
+[live loopback verification](bench/results/verification_local.json).
+These smoke results are not accuracy benchmarks. The existing FaceNet checkpoint
+failed its load probe and remains unwired. The local steganography helper is
+preserved for research reference and is not part of verification.
 
 ## Architecture
 
@@ -86,7 +112,7 @@ flowchart LR
   FU --> R["approve / reject / review<br/>+ per-check scores and reasons"]
 ```
 
-* `gateway/` is the single API. It has the Flask app, the validation code, the fusion rules and one adapter per module. Each adapter loads its model the first time it is used. If the weights or a package are missing, the adapter returns `status: "unavailable"` with the reason and never returns a made-up score. The gateway never approves without all three checks; it sends the case to manual review instead.
+* `gateway/` is the single API. It has the Flask app, the validation code, the fusion rules and one adapter per module. Each adapter loads its model the first time it is used. If the weights or a package are missing, the adapter returns `status: "unavailable"` with the reason and never returns a made-up score. The gateway never approves without every enabled check; it sends incomplete evidence to manual review.
 * Privacy: uploads are decoded in memory and dropped as soon as they are scored. Nothing is written to disk or logged, and responses carry `Cache-Control: no-store`.
 * `modules/` holds the original research code. The gateway wraps it without changing it.
 
@@ -94,8 +120,8 @@ flowchart LR
 | --- | --- | --- |
 | `face_anti_spoofing` | `AntiSpoofing_bin_1.5_128.onnx` and `yolov5s-face.onnx` through the module's own classes. Class 0 is live; the threshold of 0.5 is the `video_predict.py` default. | Single still image, no challenge-response. The model lineage is upstream MiniFASNet. |
 | `document_forgery_detection` | `forgery_classifier.pth` (ResNet18) on the whole image, with the preprocessing from `predict_single_image.py`. | It was trained on annotated region crops, so a whole-document score is outside its training setup. The splits are not source-disjoint (see above). |
-| `voice_authentication` | The enrolled `gmm_models/*.gmm`, loaded with a restricted unpickler and scored in numpy (this matches sklearn's `GaussianMixture.score`). Features replicate `main_functions.extract_features`. | Closed set with no impostor model, so an unknown voice is still matched to the nearest enrolled speaker. This is speaker matching, **not** synthetic-speech detection. The CNN-LSTM deepfake detector described in the report is not in this repo. |
-| face recognition (FaceNet) | Not wired. `keras_facenet` downloads its weights at runtime, and the bundled `facenet_model/model.h5` targets a TF1/Keras 2.2 stack. | |
+| `voice_authentication` | The enrolled `gmm_models/*.gmm`, loaded with a restricted unpickler and scored in numpy (this matches sklearn's `GaussianMixture.score`). Features replicate `main_functions.extract_features`. | Closed set with no impostor model, so an unknown voice is still matched to the nearest enrolled speaker. This is speaker matching, **not** synthetic-speech detection. No matching CNN-LSTM was found in the checked local sources; the optional recovered CNN is described above. |
+| face recognition (FaceNet) | Not wired. The existing checkpoint failed the load probe; see `bench/results/local_asset_audit.json`. No replacement weights are downloaded. | |
 | `score_fusion/app.py` | Legacy manual score-entry page, kept for reference and replaced by `gateway/`. | |
 
 ## Repository layout
@@ -113,7 +139,7 @@ docs/img/           screenshots
 
 ## What still needs owner runs
 
-* `python bench/latency.py` on your own laptop, to add a second hardware row.
+* Inspect the local hardware row and recovery evidence above before choosing resume claims.
 * A held-out, source-disjoint evaluation of each module and of the fusion rule (attack acceptance and genuine rejection rates), before any accuracy is quoted beyond the reported figures above.
 
 ## Team and credit
