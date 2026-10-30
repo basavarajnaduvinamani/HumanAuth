@@ -28,6 +28,6 @@ jobs:
           pip install flask numpy pillow onnxruntime opencv-python-headless scikit-learn python_speech_features -r requirements-dev.txt
       - name: Install (lite)
         if: matrix.profile == 'lite'
-        run: pip install flask numpy pillow onnxruntime opencv-python-headless python_speech_features -r requirements-dev.txt
+        run: pip install flask numpy pillow onnxruntime opencv-python-headless python_speech_features scipy -r requirements-dev.txt
       - name: Test
         run: python -m pytest -q -rs
