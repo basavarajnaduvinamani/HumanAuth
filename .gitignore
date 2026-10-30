@@ -34,3 +34,6 @@ Thumbs.db
 *.zip
 *.tar.gz
 *.rar
+
+# Playwright / local screenshots
+test-results/
