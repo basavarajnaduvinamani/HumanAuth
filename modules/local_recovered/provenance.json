@@ -1,0 +1,31 @@
+{
+  "recovered_at": "2026-10-30T15:57:28.972885+00:00",
+  "voice_upstream": "https://github.com/ananyakaligal/Voice-Authentication",
+  "files": [
+    {
+      "source": "Voice-Authentication-main\\DeepfakeDetection\\train.py",
+      "destination": "modules/local_recovered/deep4snet.py",
+      "source_sha256": "0248279c13a762885aa3deb09a118626f3ac135064589f513497c56b8194cbc0",
+      "source_modified": "2025-04-26T06:53:10.365205+00:00",
+      "notes": "Only the existing architecture class is extracted; training imports/telemetry omitted."
+    },
+    {
+      "source": "LICENSE",
+      "destination": "modules/local_recovered/LICENSE.voice",
+      "source_sha256": "9f69f2fc344c56272b1c41df64e6c722dd5369652db9afb7a01d162d10b50296",
+      "source_modified": "2025-04-26T06:53:09.733541+00:00",
+      "notes": "Copied unchanged."
+    },
+    {
+      "source": "steganography.py",
+      "destination": "modules/local_recovered/steganography.py",
+      "source_sha256": "7c1525b1b19ef573937d64a53522b83f085d5dd4bfa5689cede82e7500b55f39",
+      "source_modified": "2025-03-18T00:10:07.313337+00:00",
+      "notes": "Copied unchanged."
+    }
+  ],
+  "preprocessing_sources": [
+    "DeepfakeDetection/DataProcessing.py: load_audio, filter_audio, compute_histogram",
+    "DeepfakeDetection/run_record.py: image transform and real/fake class order"
+  ]
+}
