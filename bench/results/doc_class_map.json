@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-10-30T13:09:54+00:00",
+  "model": "modules/document_forgery_detection/forgery_classifier.pth",
+  "condition": "oracle region crops from YOLO label boxes; label 0=fake, 1=true (data.yaml)",
+  "python": "3.13.17",
+  "torch": "2.15.0+cu132",
+  "splits": {
+    "train": {
+      "regions": 549,
+      "predicted_index_counts": [
+        241,
+        308
+      ],
+      "agreement_if_index0_is_real": 0.0018,
+      "agreement_if_index0_is_fake": 0.9982,
+      "images": 183,
+      "images_sharing_source_page_with_train": null
+    },
+    "valid": {
+      "regions": 93,
+      "predicted_index_counts": [
+        54,
+        39
+      ],
+      "agreement_if_index0_is_real": 0.0,
+      "agreement_if_index0_is_fake": 1.0,
+      "images": 31,
+      "images_sharing_source_page_with_train": 31
+    },
+    "test": {
+      "regions": 120,
+      "predicted_index_counts": [
+        49,
+        71
+      ],
+      "agreement_if_index0_is_real": 0.0083,
+      "agreement_if_index0_is_fake": 0.9917,
+      "images": 40,
+      "images_sharing_source_page_with_train": 40
+    }
+  }
+}

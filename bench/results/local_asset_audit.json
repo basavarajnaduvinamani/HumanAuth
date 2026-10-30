@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-30T16:04:34.377342+00:00",
+  "scan_scope": "Primary HumanAuth, named local variants and referenced downloaded module roots; raw data folders excluded.",
+  "local_repository_start": "clean main, no stashes or unpublished branch commits; no snapshot required",
+  "recovered_sources": "modules/local_recovered/provenance.json",
+  "voice_deepfake": {
+    "architecture": "Deep4SNet (CNN; not CNN-LSTM)",
+    "loaded": true,
+    "finite_synthetic_output": true,
+    "output_shape": [
+      1,
+      2
+    ],
+    "checkpoint_sha256": "4d2552d79916b3e6efdf22730047cfa4e8907f17461979634adf861971a14cc5",
+    "torch": "2.7.0+cpu"
+  },
+  "facenet": {
+    "loaded": false,
+    "exception": "EOFError",
+    "error": "EOF read where object expected",
+    "saved_keras_version": "2.1.4"
+  },
+  "source_search": {
+    "cnn_lstm": [],
+    "gan": []
+  },
+  "conflicts": [
+    {
+      "file": "older local HumanAuth-main/app.py",
+      "local_behavior": "Saves and encrypts uploads; manually fuses a different set of checks.",
+      "pr_behavior": "Runs defined checks in memory with a liveness veto and no upload persistence.",
+      "resolution": "STOPPED this file; local version retained in original folder; not imported into gateway."
+    },
+    {
+      "file": "older local GMM-UBM speaker pipeline",
+      "local_behavior": "Different speaker feature/enrollment convention and private enrollment models.",
+      "pr_behavior": "Bundled closed-set GMM matching with documented feature parity.",
+      "resolution": "Retained original local pipeline; not substituted for the bundled voice adapter or private enrollments."
+    }
+  ]
+}

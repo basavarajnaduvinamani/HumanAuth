@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-10-30T16:01:52.886868+00:00",
+  "source_rule": "Strip Roboflow image-extension/rf/hash suffix; source identity is a filename heuristic, not a checkpoint training manifest.",
+  "splits": [
+    {
+      "dataset": "bundled",
+      "split": "train",
+      "images": 183,
+      "images_with_source_in_bundled_train": 183,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "bundled",
+      "split": "valid",
+      "images": 31,
+      "images_with_source_in_bundled_train": 31,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "bundled",
+      "split": "test",
+      "images": 40,
+      "images_with_source_in_bundled_train": 40,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "bundled",
+      "split": "root",
+      "images": 2,
+      "images_with_source_in_bundled_train": 2,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "original_download",
+      "split": "train",
+      "images": 183,
+      "images_with_source_in_bundled_train": 183,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "original_download",
+      "split": "valid",
+      "images": 31,
+      "images_with_source_in_bundled_train": 31,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "original_download",
+      "split": "test",
+      "images": 40,
+      "images_with_source_in_bundled_train": 40,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    },
+    {
+      "dataset": "original_download",
+      "split": "root",
+      "images": 2,
+      "images_with_source_in_bundled_train": 2,
+      "images_with_new_source": 0,
+      "new_sources": 0
+    }
+  ],
+  "held_out_evaluation": "skipped",
+  "reason": "No labeled document images from demonstrably source-disjoint training origins found in checked bundled/original-download datasets. Private uploads/identity documents are ineligible; synthetic UI specimen is unlabeled and not a held-out accuracy set."
+}

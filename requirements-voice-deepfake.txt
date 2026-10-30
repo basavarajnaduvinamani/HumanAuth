@@ -1,0 +1,2 @@
+# Optional local Deep4SNet audio preprocessing; install after requirements.txt
+librosa>=0.10
