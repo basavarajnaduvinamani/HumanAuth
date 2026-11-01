@@ -1,0 +1,57 @@
+{
+  "face": {
+    "name": "face",
+    "status": "ok",
+    "score": 0.6068159937858582,
+    "passed": true,
+    "threshold": 0.5,
+    "label": "live",
+    "detail": "Live-face probability 0.61",
+    "extra": {
+      "faces": 1,
+      "bbox": [
+        268,
+        97,
+        418,
+        279
+      ]
+    },
+    "latency_ms": 730.3864000132307
+  },
+  "document": {
+    "name": "document",
+    "status": "ok",
+    "score": 0.031185757368803024,
+    "passed": false,
+    "threshold": 0.5,
+    "label": "forged",
+    "detail": "Genuine-document probability 0.03, below the 0.50 threshold.",
+    "extra": {
+      "class_order": [
+        "fake",
+        "real"
+      ],
+      "note": "whole-image score; model was trained on region crops"
+    },
+    "latency_ms": 227.33419999713078
+  },
+  "voice": {
+    "name": "voice",
+    "status": "ok",
+    "score": 0.9999360439396737,
+    "passed": true,
+    "threshold": 0.5,
+    "label": "match",
+    "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+    "extra": {
+      "best_match": "Raj",
+      "claimed": "Raj",
+      "mean_loglik": {
+        "Raj": -36.473,
+        "Sahana": -46.131
+      },
+      "note": "closed-set speaker match; not a synthetic-speech detector"
+    },
+    "latency_ms": 106.74760001711547
+  }
+}

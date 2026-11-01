@@ -45,3 +45,20 @@ test-results/
 /FINISH_REPORT_*.md
 .env
 .env.*
+
+# Overnight reports and generated local tooling
+/REPORT_T*_HumanAuth.md
+/RESUME_FACTS_HumanAuth.md
+/AGENTS.md
+/web/node_modules/
+/web/.next/
+/web/.vercel/
+/web/playwright-report/
+/web/test-results/
+/web/public/runtime/
+/web/public/models/*.onnx
+/web/public/models/*.onnx.data
+!/web/src/lib/
+!/web/src/lib/**
+/web/*.tsbuildinfo
+/.overnight/

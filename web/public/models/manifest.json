@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "file": "yolov5s-face.onnx",
+      "size_bytes": 28360137,
+      "sha256": "9385161da56e8b2fc38f565235fb8525cea3de8430803ebd7a71ec98740808de",
+      "source_path": "modules/face_anti_spoofing/saved_models/yolov5s-face.onnx",
+      "precision": "fp32",
+      "licence_note": "Upstream YOLOv5-face; see modules/face_anti_spoofing/README.md. Weight licence not separately established; repository MIT does not establish upstream weight rights."
+    },
+    {
+      "file": "AntiSpoofing_bin_1.5_128.onnx",
+      "size_bytes": 1896015,
+      "sha256": "a6c0553fab996a56962baeb0a49013a03c32b866999f6aea76936b6833929bda",
+      "source_path": "modules/face_anti_spoofing/saved_models/AntiSpoofing_bin_1.5_128.onnx",
+      "precision": "fp32",
+      "licence_note": "Upstream MiniFASNet architecture / Face-AntiSpoofing checkpoint, not trained by the HumanAuth team. See modules/face_anti_spoofing/README.md; weight licence not separately established."
+    },
+    {
+      "file": "document-int8.onnx",
+      "size_bytes": 11229727,
+      "sha256": "a19bd39ba78327a1d7841ea3a9c846a69a529940704c18b0d0e18c643e054e0a",
+      "source_path": "modules/document_forgery_detection/forgery_classifier.pth",
+      "precision": "int8",
+      "licence_note": "Team checkpoint distributed in this MIT repository; training data limitations documented in bench/results/doc_class_map.json."
+    },
+    {
+      "file": "voice-gmm.json",
+      "size_bytes": 85491,
+      "sha256": "89c13ad9cec0f2dc9b301e6825d8ff862115d4a42dc3f657a479befe612d5c72",
+      "source_path": "modules/voice_authentication/gmm_models",
+      "precision": "float64 JSON",
+      "licence_note": "Existing Raj / Sahana enrollment parameters already distributed in this MIT repository. No new enrollments included."
+    }
+  ],
+  "total_bytes": 41571370,
+  "document_real_index": 1,
+  "document_class_order": [
+    "fake",
+    "real"
+  ],
+  "export_attempts": {
+    "int8": "Exported; requires runtime and score parity before selection.",
+    "fp16": "Exported; requires runtime and score parity before selection."
+  },
+  "limits_source": "https://vercel.com/docs/limits#static-file-uploads",
+  "limits_checked": "2026-11-01",
+  "document_file": "document-int8.onnx",
+  "parity": {
+    "face": {
+      "mode": "GO",
+      "max_abs_diff": 4.275089704464108e-8,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    },
+    "document": {
+      "mode": "GO",
+      "max_abs_diff": 0.015919521723441056,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    },
+    "voice": {
+      "mode": "GO",
+      "max_abs_diff": 0,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    }
+  },
+  "selection_attempts": {
+    "document-int8.onnx": {
+      "max_abs_diff": 0.015919521723441056,
+      "all_decisions_match": true
+    }
+  }
+}
