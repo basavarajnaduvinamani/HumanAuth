@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-01T18:12:58.565294+00:00",
+  "project": "humanauth",
+  "plan": "Hobby",
+  "public_production_url": null,
+  "working_preview_url": null,
+  "status": "approved_staged_bootstrap_pending",
+  "reason": "first_deployment_production",
+  "exact_error": "Error: Can't create a Preview deployment. This project has no deployments yet, and a project's first deployment is assigned to Production. To deploy to Production, retry with --prod. Later deployments can use --environment preview.",
+  "command": "cd web && vercel deploy --yes --environment preview",
+  "exit_code": 1,
+  "log_sha256": "d2fb2bc6889f7bc33bd0884a307c2897261a26f6fd5c148104fa7dcceedc1e0f",
+  "unexpected_initial_target": {
+    "deployment_id": "dpl_2fSA4sBqhiUm6xr71RygCqyJW9FQ",
+    "target": "production",
+    "observed_status": "Building",
+    "removed": true,
+    "removal_command": "vercel remove dpl_2fSA4sBqhiUm6xr71RygCqyJW9FQ --yes",
+    "removal_exit_code": 0
+  },
+  "owner_approval_received": true,
+  "application_environment_files_retained": false,
+  "limitations": [
+    "No hosted HTTPS browser flow or served model hashes verified yet",
+    "No public production launch claimed",
+    "Git integration requires owner GitHub login connection"
+  ],
+  "link_check_source": "bench/results/web_link_checks_2026.json",
+  "owner_response": "Approve staged deployment and continue",
+  "resolved_owner_question": "Authorize one staged --prod --skip-domain first deployment, then preview QA before public launch?"
+}
