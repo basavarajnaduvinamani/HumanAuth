@@ -1,0 +1,122 @@
+{
+  "generated_at": "2026-11-01T13:13:49.687292+00:00",
+  "command": "python scripts/evaluate_public_faces.py",
+  "dataset": {
+    "name": "LCC-FASD fixed balanced evaluation subset",
+    "version": "faber24/lcc-fasd version 1",
+    "official_source": "https://pureportal.spbu.ru/files/51584200/CSIT2019_Grishkin_Timoshenko.pdf",
+    "mirror": "https://www.kaggle.com/datasets/faber24/lcc-fasd",
+    "terms": "Scientific research use described by the original authors; Kaggle mirror licence is Unknown. Evaluation only; images not redistributed."
+  },
+  "protocol": "bench/protocol_2026.md",
+  "seed": 20261101,
+  "sample_count": 200,
+  "class_counts": {
+    "bona_fide": 100,
+    "attack": 100
+  },
+  "sample_ids_sha256": "a472aa057aca8c97b5da0d7e1bcc8fcc681c1f96df719e036311dc6e86d8a675",
+  "sample_content_sha256": "ea4b890f036e2fca29cba3409545241c7887e95f990534e488ae01c911d5c6b3",
+  "threshold": 0.5,
+  "bootstrap": {
+    "replicates": 2000,
+    "unit": "stratified images, identity mapping unavailable in evaluation filenames",
+    "method": "percentile"
+  },
+  "scope": "Cross-domain transfer: upstream shipped model describes CelebA-Spoof training. Fixed balanced subset, not full LCC evaluation. Repeated images/identities can make image bootstrap intervals too narrow; no subject-disjoint or population claim. Detector failures remain rejection.",
+  "outputs": {
+    "shipped": {
+      "metrics": {
+        "APCER": 0.27,
+        "BPCER": 0.21,
+        "ACER": 0.24,
+        "AUC": 0.7922999999999999,
+        "EER": 0.22999999999999998
+      },
+      "ci95": {
+        "APCER": [
+          0.18975000000000003,
+          0.36
+        ],
+        "BPCER": [
+          0.13,
+          0.29
+        ],
+        "ACER": [
+          0.18,
+          0.29500000000000004
+        ],
+        "AUC": [
+          0.7250962500000001,
+          0.8592049999999999
+        ],
+        "EER": [
+          0.17000000000000004,
+          0.29000000000000004
+        ]
+      },
+      "latency_ms": {
+        "p50": 371.8537499953527,
+        "p95": 718.4393900111895
+      }
+    },
+    "modern_comparator": {
+      "metrics": {
+        "APCER": 0.3,
+        "BPCER": 0.19,
+        "ACER": 0.245,
+        "AUC": 0.8362999999999998,
+        "EER": 0.21499999999999997
+      },
+      "ci95": {
+        "APCER": [
+          0.21,
+          0.39
+        ],
+        "BPCER": [
+          0.11,
+          0.27
+        ],
+        "ACER": [
+          0.185,
+          0.305
+        ],
+        "AUC": [
+          0.7739975,
+          0.89340625
+        ],
+        "EER": [
+          0.15000000000000002,
+          0.28
+        ]
+      },
+      "latency_ms": {
+        "p50": 377.1980000019539,
+        "p95": 770.5174449947659
+      }
+    }
+  },
+  "model_hashes": {
+    "detector": "9385161da56e8b2fc38f565235fb8525cea3de8430803ebd7a71ec98740808de",
+    "shipped": "a6c0553fab996a56962baeb0a49013a03c32b866999f6aea76936b6833929bda",
+    "modern_comparator": "af2381b88f38769222ed93379e12444e2a50814575de1c46170de570c55a42b6"
+  },
+  "modern_comparison": {
+    "source": "https://github.com/facenox/face-antispoof-onnx",
+    "checkpoint": "models/best/98.20/best_model.onnx",
+    "licence": "Apache-2.0 upstream",
+    "preprocess": "upstream src/inference/preprocess.py: reflected expansion 1.5, AREA reduction / LANCZOS4 enlargement, reflected letterbox, RGB CHW /255",
+    "detector_control": "same shipped detector and face-count rule for both models",
+    "decision": "Keep shipped model: no replacement without browser parity, irrespective of transfer result."
+  },
+  "no_face_or_multiple": 9,
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "cpu_source": ".finish/hardware.json",
+    "logical_cores": 12,
+    "ram_bytes": 16831889408,
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "onnxruntime": "1.31.1"
+  }
+}
