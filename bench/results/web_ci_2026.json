@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-01 17:56:10 UTC",
+  "commit": "a151b32a4d18a0811dba91d1dcc33a8c8fecaac6",
+  "run_url": "https://github.com/basavarajnaduvinamani/HumanAuth/actions/runs/41333489575",
+  "jobs": [
+    {
+      "id": 124928317827,
+      "name": "pytest (full)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124928317963,
+      "name": "pytest (lite)",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 124928318035,
+      "name": "Browser product and privacy gate",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ]
+}

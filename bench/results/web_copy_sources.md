@@ -24,7 +24,7 @@ section labels and schema versions are interface structure, not performance clai
 | 50 warm gateway requests; Xeon 524.62/1506.02 ms | `/evidence` | `bench/results/latency_cpu.json` |
 | i5-12450H gateway 1052.28/1215.62 ms | `/evidence` | `bench/results/latency_cpu_12th_gen_intel_r_core_tm_i5_12450h_20261030T161355969061Z.json` |
 | 30 warm / 3 cold browser runs; all p50/p95 rows | `/evidence` | `bench/results/web_latency_latest.json` points to timestamped run |
-| 0 input-upload bytes / 0 third-party requests | `/evidence` | `bench/results/web_network_audit.json`; assertions in `web/e2e/verification.spec.ts`, web CI job |
+| 0 input-upload bytes / 0 third-party requests; CI assertions | `/`, `/evidence` | `bench/results/web_network_audit.json`; assertions in `web/e2e/verification.spec.ts`, verified `bench/results/web_ci_2026.json` |
 | Fast 3G 150 ms, 204800 B/s, 261.8 s / 49.1 s, 0 repeat model GETs | `/evidence` | `bench/results/web_slow_network.json`; emulated laptop, not physical phone |
 | 96.5% integrated, 96.0% face (scope not identified), 98.5% document TRAINING | `/evidence` only in app | `bench/results/reported_results_reference.json` |
 | Runtime result scores, timings and backend | `/verify` | Current worker result; receipt records them, no fixed accuracy claim |

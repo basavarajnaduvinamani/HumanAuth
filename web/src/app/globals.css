@@ -6,8 +6,8 @@
   --muted: #58645f;
   --line: #d6ddd6;
   --soft: #eef2ec;
-  --accent: #215d50;
-  --accent-hover: #164437;
+  --accent: #252b2b;
+  --accent-hover: #101414;
   --good: #226347;
   --bad: #9e3b2e;
   --warn: #866015;
@@ -20,8 +20,8 @@ html[data-theme="dark"] {
   --muted: #abb8ad;
   --line: #3b4940;
   --soft: #26332c;
-  --accent: #b8d1bd;
-  --accent-hover: #d3e5d5;
+  --accent: #e0e4e0;
+  --accent-hover: #f4f6f3;
   --good: #a9cfad;
   --bad: #f1afa0;
   --warn: #e7c98c;
