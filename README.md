@@ -1,18 +1,58 @@
-# HumanAuth: Multi-Factor AI Identity Verification
+# HumanAuth
+
+Face liveness, a document authenticity signal and enrolled voice matching,
+on your device, with an explained decision.
+
+**Web deployment:** the owner approved Vercel's required staged first-production
+bootstrap; hosted preview QA and public launch are in progress. No working public URL is
+claimed yet. Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
+
+![Actual browser sample result: document rejection with reasons](web/screenshots/result-rejected-desktop.png)
+
+## Runs on your device
+
+The Next.js app downloads models, then runs all three checks in a browser worker.
+Inputs stay in session memory. Model Cache Storage avoids repeat model downloads;
+receipts contain decisions, scores, timings and model hashes, without media.
+The automated sample-flow audit observed **0 input-upload bytes and 0 third-party
+requests** ([request evidence](bench/results/web_network_audit.json)); the same
+assertions passed in [CI](bench/results/web_ci_2026.json). Ordinary page/model
+requests still reach the host. This is a tested application flow, not a claim
+about every browser extension or device.
+
+The model files total **41,571,370 bytes**, excluding runtime
+([manifest](web/public/models/manifest.json)). All **33 browser fixture decisions**
+matched Python, with maximum score differences ≤0.02
+([browser qualification](bench/results/web_browser_parity.json)). Fixture parity
+does not measure fraud-detection accuracy. Browser worker timing, held-out
+transfer diagnostics and limitations are shown on the app's `/evidence` page;
+their [source ledger](bench/results/web_copy_sources.md) links each claim.
+
+The fixed SPECIMEN is genuinely rejected. Voice matching is closed-set against
+Raj and Sahana; it is not synthetic-voice detection or reliable unknown-speaker
+rejection. Face liveness does not compare a face to the photograph on an ID.
+Cold use can take minutes on a slow connection; cached models still need runtime
+and session initialization. This is a research prototype, not a certified
+identity service, and the fusion threshold is not calibrated on held-out data.
+
+See [browser development](web/README.md), [architecture and every benchmark](docs/web.md),
+and [the model/provenance decisions](docs/adr/).
 
 [![CI](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml/badge.svg)](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml)
-[![Grant Funding](https://img.shields.io/badge/Grant%20Funding-ART--Park%2C%20IISc%20%26%20KSCST-gold.svg)](https://artpark.in/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![ONNX](https://img.shields.io/badge/Inference-ONNX%20Runtime-005CED.svg)](https://onnxruntime.ai/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**What it is:** an onboarding-style identity check that scores a live selfie, an ID document photo and a short voice sample with three separate models, then fuses them into one decision with a liveness veto and plain-language reasons.
-
 **Who it is for:** teams prototyping e-KYC or account-recovery flows (banking, government services) who want to see how multi-factor biometric checks behave together, and reviewers who want to inspect a student research prototype end to end.
 
-**Status:** research prototype. It is a 4-person B.Tech major project at Dayananda Sagar University (2024-25), funded by a KSCST / IISc ART-Park student grant. It is not a certified identity service, and the thresholds are not calibrated on a held-out set.
+**Project provenance:** a 4-person B.Tech major project at Dayananda Sagar
+University (2024–25), reference 48S_BE_5942. The source wording is:
+“Please note that this project has received funding from AI & Robotics Technology
+Park (ARTPark), IISc and technical support from KSCST.” The sanction letter,
+signed-report digests and team names are recorded in
+[project provenance](docs/project_provenance.json). [ARTPark source site](https://artpark.in/).
 
-## Demo
+## Local gateway demo
 
 ![Verification result, desktop](docs/img/verify_desktop.png)
 
@@ -20,7 +60,7 @@
 
 These are real gateway outputs from the bundled weights, captured with Playwright at 1280 px and 390 px. The selfie is a face cropped from the YOLOv5 sample image bundled in this repo, blurred in the screenshot. The document is a synthetic "SPECIMEN" card, which the classifier rejects. The voice clip is the bundled `modules/voice_authentication/test.wav`.
 
-## Run it
+## Local API mode (Flask gateway)
 
 ```bash
 pip install -r requirements.txt          # CPU is fine; no GPU needed
