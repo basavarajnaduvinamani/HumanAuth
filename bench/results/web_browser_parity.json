@@ -1,0 +1,328 @@
+{
+  "generated_at": "2026-11-01T17:24:54.247Z",
+  "browser": "156.0.8078.4",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cores": 12,
+    "ram_bytes": 16831889408,
+    "os": "Windows_NT 10.0.26300",
+    "browser": "156.0.8078.4"
+  },
+  "gate": {
+    "face": {
+      "mode": "GO",
+      "max_abs_diff": 3.749336821012861e-7,
+      "cases": 11
+    },
+    "document": {
+      "mode": "GO",
+      "max_abs_diff": 0.015919521723441056,
+      "cases": 11
+    },
+    "voice": {
+      "mode": "GO",
+      "max_abs_diff": 0,
+      "cases": 11
+    }
+  },
+  "rows": [
+    {
+      "id": "face-0",
+      "modality": "face",
+      "python_score": 0.6068159937858582,
+      "browser_score": 0.6068159577009101,
+      "abs_diff": 3.608494802964657e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-1",
+      "modality": "face",
+      "python_score": 0.9999957084655762,
+      "browser_score": 0.9999957511921616,
+      "abs_diff": 4.272658538084784e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-2",
+      "modality": "face",
+      "python_score": 0.9999493956565857,
+      "browser_score": 0.9999493621410528,
+      "abs_diff": 3.351553290453779e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-3",
+      "modality": "face",
+      "python_score": 0.9999649524688721,
+      "browser_score": 0.999964987416145,
+      "abs_diff": 3.4947272964380716e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-4",
+      "modality": "face",
+      "python_score": 0.9998258352279663,
+      "browser_score": 0.999825850157989,
+      "abs_diff": 1.4930022662618114e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-5",
+      "modality": "face",
+      "python_score": 0.981645941734314,
+      "browser_score": 0.9816459099727148,
+      "abs_diff": 3.1761599128543594e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-6",
+      "modality": "face",
+      "python_score": 0.9377370476722717,
+      "browser_score": 0.9377366727385896,
+      "abs_diff": 3.749336821012861e-7,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-7",
+      "modality": "face",
+      "python_score": 0.13568399846553802,
+      "browser_score": 0.1356839678001587,
+      "abs_diff": 3.066537931917246e-8,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-8",
+      "modality": "face",
+      "python_score": 0.20683233439922333,
+      "browser_score": 0.206832702709828,
+      "abs_diff": 3.683106046814544e-7,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-9",
+      "modality": "face",
+      "python_score": 0.13601912558078766,
+      "browser_score": 0.13601925238309015,
+      "abs_diff": 1.2680230249140223e-7,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "face-10",
+      "modality": "face",
+      "python_score": 0.18054988980293274,
+      "browser_score": 0.18054970915123703,
+      "abs_diff": 1.80651695713685e-7,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-0",
+      "modality": "document",
+      "python_score": 0.031185757368803024,
+      "browser_score": 0.016057271113053197,
+      "abs_diff": 0.015128486255749828,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-1",
+      "modality": "document",
+      "python_score": 0.04193608835339546,
+      "browser_score": 0.04308397179115302,
+      "abs_diff": 0.0011478834377575547,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-2",
+      "modality": "document",
+      "python_score": 0.03167380020022392,
+      "browser_score": 0.03554045415570182,
+      "abs_diff": 0.003866653955477896,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-3",
+      "modality": "document",
+      "python_score": 0.022074511274695396,
+      "browser_score": 0.019561863390924538,
+      "abs_diff": 0.0025126478837708584,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-4",
+      "modality": "document",
+      "python_score": 0.028533289209008217,
+      "browser_score": 0.012613767485567163,
+      "abs_diff": 0.015919521723441056,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-5",
+      "modality": "document",
+      "python_score": 0.02111428789794445,
+      "browser_score": 0.01858431315152726,
+      "abs_diff": 0.0025299747464171893,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-6",
+      "modality": "document",
+      "python_score": 0.06770358234643936,
+      "browser_score": 0.05395745101804871,
+      "abs_diff": 0.01374613132839065,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-7",
+      "modality": "document",
+      "python_score": 0.06876540929079056,
+      "browser_score": 0.056198491240981974,
+      "abs_diff": 0.012566918049808584,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-8",
+      "modality": "document",
+      "python_score": 0.06833815574645996,
+      "browser_score": 0.053061149559545634,
+      "abs_diff": 0.015277006186914327,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-9",
+      "modality": "document",
+      "python_score": 0.066485196352005,
+      "browser_score": 0.05626858358007293,
+      "abs_diff": 0.010216612771932074,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "document-10",
+      "modality": "document",
+      "python_score": 0.06523273885250092,
+      "browser_score": 0.0523051469333029,
+      "abs_diff": 0.012927591919198018,
+      "same_pass_fail": true,
+      "backend": "WASM"
+    },
+    {
+      "id": "voice-0",
+      "modality": "voice",
+      "python_score": 0.9999360439396737,
+      "browser_score": 0.9999360439396737,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-1",
+      "modality": "voice",
+      "python_score": 0.9998494315112905,
+      "browser_score": 0.9998494315112905,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-2",
+      "modality": "voice",
+      "python_score": 0.9998534263168739,
+      "browser_score": 0.9998534263168739,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-3",
+      "modality": "voice",
+      "python_score": 0.9998707347591471,
+      "browser_score": 0.9998707347591471,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-4",
+      "modality": "voice",
+      "python_score": 0.9998727716729092,
+      "browser_score": 0.9998727716729092,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-5",
+      "modality": "voice",
+      "python_score": 0.9998729963380742,
+      "browser_score": 0.9998729963380742,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-6",
+      "modality": "voice",
+      "python_score": 0.9998976503226664,
+      "browser_score": 0.9998976503226664,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-7",
+      "modality": "voice",
+      "python_score": 0.9998798949233408,
+      "browser_score": 0.9998798949233408,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-8",
+      "modality": "voice",
+      "python_score": 0.9998915422668851,
+      "browser_score": 0.9998915422668851,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-9",
+      "modality": "voice",
+      "python_score": 0.9999340788170407,
+      "browser_score": 0.9999340788170407,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    },
+    {
+      "id": "voice-10",
+      "modality": "voice",
+      "python_score": 0.9999384260420652,
+      "browser_score": 0.9999384260420652,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "backend": "JavaScript CPU"
+    }
+  ],
+  "scope": "Headless Chromium worker, PNG/WAV encodings of Python reference fixtures. This qualifies only the observed backends; not all devices."
+}

@@ -1,0 +1,336 @@
+{
+  "generated_at": "2026-11-01T17:40:05.492Z",
+  "browser": "27.2",
+  "project": "webkit",
+  "base_url": "http://127.0.0.1:3007",
+  "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
+  "input_upload_bytes": 0,
+  "third_party_requests": 0,
+  "requests": [
+    {
+      "path": "/",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/css/129957c0cd4b49f4.css",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/webpack-70a7ce028ad6d75c.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/794-216401842b802bd7.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/main-app-a557510671886640.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/page-3978b602e365c9a7.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-70201dfdbd63df5f.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/how-it-works",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/how-it-works",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/verify/page-085170c32f730270.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/face.png",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/116.02f0b5b2ffcdc81c.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/122.fe6ae47116bb3af8.js",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/yolov5s-face.onnx",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/document.png",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/document-int8.onnx",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/voice.wav",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/voice-gmm.json",
+      "origin": "http://127.0.0.1:3007",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    }
+  ],
+  "axe_serious_critical": 0,
+  "decision": "reject",
+  "checks": [
+    {
+      "name": "face",
+      "status": "ok",
+      "score": 0.6068159577009101,
+      "passed": true,
+      "threshold": 0.5,
+      "detail": "Live-face probability 0.61.",
+      "latency_ms": 5166.84,
+      "mode": "live",
+      "backend": "WASM"
+    },
+    {
+      "name": "document",
+      "status": "ok",
+      "score": 0.016057271113053197,
+      "passed": false,
+      "threshold": 0.5,
+      "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+      "latency_ms": 1058.7200000000003,
+      "mode": "live",
+      "backend": "WASM"
+    },
+    {
+      "name": "voice",
+      "status": "ok",
+      "score": 0.9999360439396737,
+      "passed": true,
+      "threshold": 0.5,
+      "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+      "latency_ms": 908.9800000000005,
+      "mode": "live",
+      "backend": "JavaScript CPU"
+    }
+  ]
+}

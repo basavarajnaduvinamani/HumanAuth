@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-11-01T17:48:10.930Z",
+  "command": "node_modules/node/bin/node bench/lighthouse.mjs",
+  "results": [
+    {
+      "page": "/",
+      "form_factor": "mobile",
+      "source": "bench/results/lighthouse/landing-mobile.json",
+      "scores": {
+        "performance": 77,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:46:21.593Z"
+    },
+    {
+      "page": "/verify",
+      "form_factor": "mobile",
+      "source": "bench/results/lighthouse/verify-mobile.json",
+      "scores": {
+        "performance": 78,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:46:40.344Z"
+    },
+    {
+      "page": "/evidence",
+      "form_factor": "mobile",
+      "source": "bench/results/lighthouse/evidence-mobile.json",
+      "scores": {
+        "performance": 73,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:47:06.776Z"
+    },
+    {
+      "page": "/",
+      "form_factor": "desktop",
+      "source": "bench/results/lighthouse/landing-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:47:16.920Z"
+    },
+    {
+      "page": "/verify",
+      "form_factor": "desktop",
+      "source": "bench/results/lighthouse/verify-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:47:32.262Z"
+    },
+    {
+      "page": "/evidence",
+      "form_factor": "desktop",
+      "source": "bench/results/lighthouse/evidence-desktop.json",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "browser": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.8078.4 Safari/537.36",
+      "fetch_time": "2026-11-01T17:47:49.717Z"
+    }
+  ]
+}

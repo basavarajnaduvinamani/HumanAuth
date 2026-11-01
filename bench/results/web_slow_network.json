@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-11-01T17:03:48.766Z",
+  "browser": "156.0.8078.4",
+  "profile": {
+    "name": "Fast 3G (explicit CDP profile)",
+    "latency_ms": 150,
+    "download_bytes_per_second": 204800,
+    "upload_bytes_per_second": 96000
+  },
+  "boundary": "Navigation to complete sample result; first and second visits in the same browser context. Second visit retains model Cache Storage.",
+  "results": [
+    {
+      "visit": "first",
+      "elapsed_ms": 261784.5651,
+      "model_network_requests": 4,
+      "model_files": [
+        "http://127.0.0.1:3005/models/yolov5s-face.onnx",
+        "http://127.0.0.1:3005/models/AntiSpoofing_bin_1.5_128.onnx",
+        "http://127.0.0.1:3005/models/document-int8.onnx",
+        "http://127.0.0.1:3005/models/voice-gmm.json"
+      ]
+    },
+    {
+      "visit": "second",
+      "elapsed_ms": 49077.10979999998,
+      "model_network_requests": 0,
+      "model_files": []
+    }
+  ]
+}

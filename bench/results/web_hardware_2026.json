@@ -1,0 +1,13 @@
+{
+  "cpu": {
+    "Name": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 12
+  },
+  "ram_bytes": 16831889408,
+  "os": {
+    "Caption": "Microsoft Windows 11 Home Single Language",
+    "Version": "10.0.26300"
+  },
+  "generated_at": "2026-11-01T22:31:52.8110650+05:30"
+}
