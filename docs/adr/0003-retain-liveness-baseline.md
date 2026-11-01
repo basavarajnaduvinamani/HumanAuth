@@ -1,7 +1,7 @@
 # Retain the shipped liveness model after a transfer comparison
 
 ## Context
-The owner requested a modern model only when it improves ACER with clearly separated intervals and passes browser parity. A fixed, preregistered LCC evaluation subset and the same shipped face detector were used for both models. No threshold fitting was performed.
+The owner requested a modern model only when it improves ACER with clearly separated intervals and passes browser parity. A fixed, locally predeclared LCC evaluation subset and the same shipped face detector were used for both models. The protocol was committed after scoring, not publicly preregistered. No threshold fitting was performed.
 
 ## Options
 A. Replace the shipped MiniFASNet with facenox MiniFASNet V2 SE (Apache-2.0 upstream).

@@ -1,6 +1,7 @@
-# Preregistered public evaluation, 2026-11-01
+# Locally predeclared public evaluation, 2026-11-01
 
-Written before inspecting any new model scores. Fixed seed 20261101. No training,
+Written locally before inspecting any new model scores; committed after the run.
+This was not publicly preregistered. Fixed seed 20261101. No training,
 threshold fitting, checkpoint selection or confidence-driven sample selection.
 Existing document order fake,real and threshold 0.5 remain fixed.
 

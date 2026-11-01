@@ -45,8 +45,9 @@ pip install -r requirements-dev.txt && python -m pytest -q
 
 ### Measured in 2026: public transfer diagnostics
 
-These fixed-threshold evaluations were preregistered in
-[`bench/protocol_2026.md`](bench/protocol_2026.md). They are transfer diagnostics,
+These fixed-threshold evaluations were locally predeclared in
+[`bench/protocol_2026.md`](bench/protocol_2026.md), then committed after scoring;
+they were not publicly preregistered. They are transfer diagnostics,
 not deployment certification or population-level e-KYC accuracy.
 
 | Check / dataset | Metric | Observed | Bootstrap 95% CI | Source |
