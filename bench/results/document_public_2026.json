@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-11-01T12:57:20.212403+00:00",
+  "command": "python scripts/evaluate_public_documents.py",
+  "dataset": {
+    "name": "Dataset of fake identity documents for research purposes",
+    "version": "1.0",
+    "doi": "10.5281/zenodo.8213348",
+    "url": "https://zenodo.org/records/8213348",
+    "licence": "CC-BY-4.0",
+    "archive_checksums": {
+      "original.zip": "md5:20793e556d811682468e147a789052f7",
+      "esp_id_edited_120.zip": "md5:6fc200305522ce9ec34bce5da0e37b2c",
+      "esp_id_edited_140.zip": "md5:42caf1fc80774317ef67b53e0caee25a"
+    }
+  },
+  "protocol": "bench/protocol_2026.md",
+  "seed": 20261101,
+  "sample_count": 300,
+  "source_groups": 100,
+  "class_counts": {
+    "genuine": 100,
+    "forged": 200
+  },
+  "sample_ids_sha256": "c2a543c841675f323d423137496e70ea693a0cf178891cdd64257a839e8e277f",
+  "sample_content_sha256": "cfa54a0886c949ef0dbc5c57d4b6df2958686f7da51b712e2a6f87604bc49281",
+  "training_byte_overlaps": 0,
+  "model": "modules/document_forgery_detection/forgery_classifier.pth",
+  "model_sha256": "80f1108a0df16a96dbd2be856a6d5820a5daac2534e856d3304a0814519249c4",
+  "class_order": [
+    "fake",
+    "real"
+  ],
+  "threshold": 0.5,
+  "metrics": {
+    "accuracy": 0.6633333333333333,
+    "forged_precision": 0.6666666666666666,
+    "forged_recall": 0.99,
+    "roc_auc": 0.4861
+  },
+  "ci95": {
+    "accuracy": [
+      0.6566666666666666,
+      0.6666666666666666
+    ],
+    "forged_precision": [
+      0.6666666666666666,
+      0.6666666666666666
+    ],
+    "forged_recall": [
+      0.97,
+      1.0
+    ],
+    "roc_auc": [
+      0.4767,
+      0.48810000000000003
+    ]
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "unit": "source filename stem, clustering original and both edited versions; filename correspondence assumed from archive naming",
+    "method": "percentile"
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cores": 12,
+    "ram_bytes": 16831889408,
+    "ram_source": ".finish/hardware.json",
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "torch": "2.15.0+cpu"
+  },
+  "scope": "Whole-image cross-domain transfer to synthetic Spanish IDs, not a population KYC or fraud benchmark. No fitting on this source. Byte disjointness checked; same source filename groups cluster edits. Region-crop evaluation unavailable: archive supplies no validated forgery-region boxes.",
+  "region_crop": {
+    "status": "skipped",
+    "reason": "No validated manipulated-region annotations; inventing boxes would change the protocol."
+  },
+  "rejected_inputs": [],
+  "latency_ms": {
+    "p50": 39.851599984103814,
+    "p95": 95.1282499983791
+  }
+}

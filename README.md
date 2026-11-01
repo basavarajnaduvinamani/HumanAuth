@@ -43,6 +43,33 @@ pip install -r requirements-dev.txt && python -m pytest -q
 
 ## Results
 
+### Measured in 2026: public transfer diagnostics
+
+These fixed-threshold evaluations were preregistered in
+[`bench/protocol_2026.md`](bench/protocol_2026.md). They are transfer diagnostics,
+not deployment certification or population-level e-KYC accuracy.
+
+| Check / dataset | Metric | Observed | Bootstrap 95% CI | Source |
+| --- | --- | ---: | --- | --- |
+| Shipped liveness / balanced LCC subset | ACER | 0.240 | 0.180–0.295 | `bench/results/face_public_2026.json` |
+| Newer MiniFAS comparator / same subset | ACER | 0.245 | 0.185–0.305 | `bench/results/face_public_2026.json` |
+| Shipped liveness / same subset | AUC | 0.7923 | 0.72509625–0.859205 | `bench/results/face_public_2026.json` |
+| Shipped liveness / same subset | EER | 0.230 | 0.170–0.290 | `bench/results/face_public_2026.json` |
+| Document / CACTUS synthetic Spanish IDs | Accuracy | 0.6633333333 | 0.6566666667–0.6666666667 | `bench/results/document_public_2026.json` |
+| Document / same source | Forged precision | 0.6666666667 | 0.6666666667–0.6666666667 | `bench/results/document_public_2026.json` |
+| Document / same source | Forged recall | 0.990 | 0.970–1.000 | `bench/results/document_public_2026.json` |
+| Document / same source | ROC AUC | 0.4861 | 0.4767–0.4881 | `bench/results/document_public_2026.json` |
+
+The newer liveness checkpoint did not improve ACER, so the shipped model remains.
+The face run uses 200 balanced evaluation images and image bootstrap intervals;
+identity mapping is absent, so dependence may make intervals too narrow. The
+document run uses 300 images in 100 source-filename groups with clustered intervals.
+Its near-chance AUC is a negative result: high recall largely reflects rejection,
+not reliable genuine/forged separation. No validated edit-region boxes were
+available for region-crop evaluation. Dataset terms, fixed seeds, archive/model
+digests, sample-ID hashes and hardware are in the result files. No evaluation
+media or new enrollment models are committed.
+
 ### Reported in the signed project report
 
 These are reported figures, not rerun or held-out benchmarks. Their signed-report
