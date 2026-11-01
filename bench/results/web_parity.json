@@ -1,0 +1,1281 @@
+{
+  "generated_at": "2026-11-01T12:31:59.706Z",
+  "command": "cd web && npm run parity",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cores": 12,
+    "ram_bytes": 16831889408,
+    "os": "Windows_NT 10.0.26300",
+    "node": "v22.14.0",
+    "onnxruntime": {
+      "common": "1.31.1",
+      "node": "1.31.1"
+    }
+  },
+  "protocol": "Bundled face crop and synthetic SPECIMEN: original + 10 resize/JPEG/brightness variants. Bundled test.wav: original + 10 gain/trimming variants. Not held-out accuracy; no new people. Reference and TS decode the same RGB/PCM bytes.",
+  "gate": {
+    "face": {
+      "mode": "GO",
+      "max_abs_diff": 4.275089704464108e-8,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    },
+    "document": {
+      "mode": "GO",
+      "max_abs_diff": 0.015919521723441056,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    },
+    "voice": {
+      "mode": "GO",
+      "max_abs_diff": 0,
+      "cases": 11,
+      "all_decisions_match": true,
+      "scope": "Node CPU; browser qualification required separately"
+    }
+  },
+  "attempts": {
+    "document-int8.onnx": {
+      "max_abs_diff": 0.015919521723441056,
+      "all_decisions_match": true
+    }
+  },
+  "document_file": "document-int8.onnx",
+  "total_model_bytes": 41571370,
+  "rows": [
+    {
+      "id": "face-0",
+      "modality": "face",
+      "python_score": 0.6068159937858582,
+      "ts_score": 0.606816007474735,
+      "abs_diff": 1.3688876809858641e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1595.308,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.6068159937858582,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 0.61",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            268,
+            97,
+            418,
+            279
+          ]
+        },
+        "latency_ms": 730.3864000132307
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.606816007474735,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.61.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-1",
+      "modality": "face",
+      "python_score": 0.9999957084655762,
+      "ts_score": 0.9999957512164732,
+      "abs_diff": 4.275089704464108e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 909.4225000000006,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999957084655762,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 1.00",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            164,
+            59,
+            255,
+            169
+          ]
+        },
+        "latency_ms": 324.6590000053402
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999957512164732,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-2",
+      "modality": "face",
+      "python_score": 0.9999493956565857,
+      "ts_score": 0.9999493622376318,
+      "abs_diff": 3.3418953937491835e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1418.8658999999989,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999493956565857,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 1.00",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            182,
+            65,
+            280,
+            184
+          ]
+        },
+        "latency_ms": 234.302500000922
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999493622376318,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-3",
+      "modality": "face",
+      "python_score": 0.9999649524688721,
+      "ts_score": 0.9999649873660609,
+      "abs_diff": 3.489718880533843e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1271.454099999999,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999649524688721,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 1.00",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            196,
+            72,
+            305,
+            204
+          ]
+        },
+        "latency_ms": 374.13859998923726
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999649873660609,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-4",
+      "modality": "face",
+      "python_score": 0.9998258352279663,
+      "ts_score": 0.9998258496598282,
+      "abs_diff": 1.4431861927732825e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1218.664999999999,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9998258352279663,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 1.00",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            212,
+            77,
+            331,
+            219
+          ]
+        },
+        "latency_ms": 314.9888000043575
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9998258496598282,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-5",
+      "modality": "face",
+      "python_score": 0.981645941734314,
+      "ts_score": 0.9816459271552643,
+      "abs_diff": 1.4579049634200203e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1196.5203999999994,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.981645941734314,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 0.98",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            228,
+            83,
+            356,
+            235
+          ]
+        },
+        "latency_ms": 407.33190000173636
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9816459271552643,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.98.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-6",
+      "modality": "face",
+      "python_score": 0.9377370476722717,
+      "ts_score": 0.9377370277091578,
+      "abs_diff": 1.9963113939702737e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1193.8703999999998,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9377370476722717,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "live",
+        "detail": "Live-face probability 0.94",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            244,
+            89,
+            380,
+            252
+          ]
+        },
+        "latency_ms": 298.80940000293776
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9377370277091578,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.94.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-7",
+      "modality": "face",
+      "python_score": 0.13568399846553802,
+      "ts_score": 0.13568400275048698,
+      "abs_diff": 4.2849489512164496e-9,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1034.9505999999983,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.13568399846553802,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "spoof",
+        "detail": "Live-face probability 0.14 is below the 0.50 threshold or the face was classed as spoof.",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            260,
+            94,
+            406,
+            269
+          ]
+        },
+        "latency_ms": 348.303799983114
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.13568400275048698,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.14.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-8",
+      "modality": "face",
+      "python_score": 0.20683233439922333,
+      "ts_score": 0.20683236046894365,
+      "abs_diff": 2.606972032692667e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 1050.469799999999,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.20683233439922333,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "spoof",
+        "detail": "Live-face probability 0.21 is below the 0.50 threshold or the face was classed as spoof.",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            276,
+            100,
+            432,
+            287
+          ]
+        },
+        "latency_ms": 312.80689997947775
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.20683236046894365,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.21.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-9",
+      "modality": "face",
+      "python_score": 0.13601912558078766,
+      "ts_score": 0.1360191262999873,
+      "abs_diff": 7.191996442834636e-10,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 990.6010000000024,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.13601912558078766,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "spoof",
+        "detail": "Live-face probability 0.14 is below the 0.50 threshold or the face was classed as spoof.",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            292,
+            106,
+            458,
+            304
+          ]
+        },
+        "latency_ms": 206.44189999438822
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.1360191262999873,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.14.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "face-10",
+      "modality": "face",
+      "python_score": 0.18054988980293274,
+      "ts_score": 0.1805499031604588,
+      "abs_diff": 1.3357526057466984e-8,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 927.7653000000028,
+      "python_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.18054988980293274,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "spoof",
+        "detail": "Live-face probability 0.18 is below the 0.50 threshold or the face was classed as spoof.",
+        "extra": {
+          "faces": 1,
+          "bbox": [
+            309,
+            112,
+            483,
+            320
+          ]
+        },
+        "latency_ms": 192.18340000952594
+      },
+      "ts_result": {
+        "name": "face",
+        "status": "ok",
+        "score": 0.1805499031604588,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Live-face probability 0.18.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-0",
+      "modality": "document",
+      "python_score": 0.031185757368803024,
+      "ts_score": 0.016057271113053197,
+      "abs_diff": 0.015128486255749828,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 470.41389999999956,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.031185757368803024,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.03, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 227.33419999713078
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-1",
+      "modality": "document",
+      "python_score": 0.04193608835339546,
+      "ts_score": 0.04308397179115302,
+      "abs_diff": 0.0011478834377575547,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 233.0503000000026,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.04193608835339546,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.04, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 41.25559999374673
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.04308397179115302,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.04. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-2",
+      "modality": "document",
+      "python_score": 0.03167380020022392,
+      "ts_score": 0.03554045415570182,
+      "abs_diff": 0.003866653955477896,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 269.1882000000005,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.03167380020022392,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.03, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 31.32559999357909
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.03554045415570182,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.04. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-3",
+      "modality": "document",
+      "python_score": 0.022074511274695396,
+      "ts_score": 0.01956186339092454,
+      "abs_diff": 0.002512647883770855,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 301.25750000000335,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.022074511274695396,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.02, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 27.089999988675117
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.01956186339092454,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-4",
+      "modality": "document",
+      "python_score": 0.028533289209008217,
+      "ts_score": 0.012613767485567163,
+      "abs_diff": 0.015919521723441056,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 301.28629999999976,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.028533289209008217,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.03, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 29.223499994259328
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.012613767485567163,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.01. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-5",
+      "modality": "document",
+      "python_score": 0.02111428789794445,
+      "ts_score": 0.01858431315152726,
+      "abs_diff": 0.0025299747464171893,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 293.9362999999976,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.02111428789794445,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.02, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 26.68530002119951
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.01858431315152726,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-6",
+      "modality": "document",
+      "python_score": 0.06770358234643936,
+      "ts_score": 0.05395745101804871,
+      "abs_diff": 0.01374613132839065,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 264.45960000000196,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.06770358234643936,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.07, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 26.600999990478158
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.05395745101804871,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.05. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-7",
+      "modality": "document",
+      "python_score": 0.06876540929079056,
+      "ts_score": 0.056198491240981974,
+      "abs_diff": 0.012566918049808584,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 292.6908000000003,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.06876540929079056,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.07, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 28.80679999361746
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.056198491240981974,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.06. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-8",
+      "modality": "document",
+      "python_score": 0.06833815574645996,
+      "ts_score": 0.053061149559545634,
+      "abs_diff": 0.015277006186914327,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 281.0685000000012,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.06833815574645996,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.07, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 28.571600007126108
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.053061149559545634,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.05. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-9",
+      "modality": "document",
+      "python_score": 0.066485196352005,
+      "ts_score": 0.05626858358007293,
+      "abs_diff": 0.010216612771932074,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 278.38760000000184,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.066485196352005,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.07, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 31.825500016566366
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.05626858358007293,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.06. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "document-10",
+      "modality": "document",
+      "python_score": 0.06523273885250092,
+      "ts_score": 0.0523051469333029,
+      "abs_diff": 0.012927591919198018,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 288.58439999999973,
+      "python_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.06523273885250092,
+        "passed": false,
+        "threshold": 0.5,
+        "label": "forged",
+        "detail": "Genuine-document probability 0.07, below the 0.50 threshold.",
+        "extra": {
+          "class_order": [
+            "fake",
+            "real"
+          ],
+          "note": "whole-image score; model was trained on region crops"
+        },
+        "latency_ms": 28.944999998202547
+      },
+      "ts_result": {
+        "name": "document",
+        "status": "ok",
+        "score": 0.0523051469333029,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.05. Whole-image score; model was trained on region crops.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-0",
+      "modality": "voice",
+      "python_score": 0.9999360439396737,
+      "ts_score": 0.9999360439396737,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 480.6356999999989,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999360439396737,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.473,
+            "Sahana": -46.131
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 106.74760001711547
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999360439396737,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-1",
+      "modality": "voice",
+      "python_score": 0.9998494315112905,
+      "ts_score": 0.9998494315112905,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 445.8016000000025,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998494315112905,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.191,
+            "Sahana": -44.992
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 76.90439998987131
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998494315112905,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-2",
+      "modality": "voice",
+      "python_score": 0.9998534263168739,
+      "ts_score": 0.9998534263168739,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 490.0011000000013,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998534263168739,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.352,
+            "Sahana": -45.18
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 87.445100012701
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998534263168739,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-3",
+      "modality": "voice",
+      "python_score": 0.9998707347591471,
+      "ts_score": 0.9998707347591471,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 431.5808999999972,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998707347591471,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.559,
+            "Sahana": -45.513
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 93.9090000174474
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998707347591471,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-4",
+      "modality": "voice",
+      "python_score": 0.9998727716729092,
+      "ts_score": 0.9998727716729092,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 438.71180000000095,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998727716729092,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.862,
+            "Sahana": -45.831
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 149.9894000007771
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998727716729092,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-5",
+      "modality": "voice",
+      "python_score": 0.9998729963380742,
+      "ts_score": 0.9998729963380742,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 370.58810000000085,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998729963380742,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -37.128,
+            "Sahana": -46.1
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 110.27170001761988
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998729963380742,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-6",
+      "modality": "voice",
+      "python_score": 0.9998976503226664,
+      "ts_score": 0.9998976503226664,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 442.5462000000007,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998976503226664,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -37.236,
+            "Sahana": -46.423
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 116.50609999196604
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998976503226664,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-7",
+      "modality": "voice",
+      "python_score": 0.9998798949233408,
+      "ts_score": 0.9998798949233408,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 443.97249999999985,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998798949233408,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -37.261,
+            "Sahana": -46.288
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 149.96130001964048
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998798949233408,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-8",
+      "modality": "voice",
+      "python_score": 0.9998915422668851,
+      "ts_score": 0.9998915422668851,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 567.7625000000007,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998915422668851,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -37.258,
+            "Sahana": -46.387
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 158.07510001468472
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9998915422668851,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-9",
+      "modality": "voice",
+      "python_score": 0.9999340788170407,
+      "ts_score": 0.9999340788170407,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 444.0640999999996,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999340788170407,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.734,
+            "Sahana": -46.361
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 120.76140000135638
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999340788170407,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    },
+    {
+      "id": "voice-10",
+      "modality": "voice",
+      "python_score": 0.9999384260420652,
+      "ts_score": 0.9999384260420652,
+      "abs_diff": 0,
+      "same_pass_fail": true,
+      "python_status": "ok",
+      "ts_ms": 472.84330000000045,
+      "python_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999384260420652,
+        "passed": true,
+        "threshold": 0.5,
+        "label": "match",
+        "detail": "Voice matches claimed speaker 'Raj' (posterior 1.00).",
+        "extra": {
+          "best_match": "Raj",
+          "claimed": "Raj",
+          "mean_loglik": {
+            "Raj": -36.566,
+            "Sahana": -46.262
+          },
+          "note": "closed-set speaker match; not a synthetic-speech detector"
+        },
+        "latency_ms": 108.43390002264641
+      },
+      "ts_result": {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999384260420652,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live"
+      }
+    }
+  ]
+}
