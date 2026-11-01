@@ -140,6 +140,16 @@ export default function Home() {
               stops capture. A downloaded receipt contains scores and model
               hashes, with no images or audio.
             </p>
+            <p>
+              The automated sample-flow test observed 0 bytes of image or audio
+              uploads and no third-party requests. The same assertions run in
+              every CI build. Ordinary page and model requests still reach the
+              host.
+            </p>
+            <p className="source">
+              Source: bench/results/web_network_audit.json ·
+              bench/results/web_ci_2026.json
+            </p>
             <Link href="/how-it-works#privacy">
               Inspect the privacy design ↗
             </Link>

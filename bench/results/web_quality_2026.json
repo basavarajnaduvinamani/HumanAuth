@@ -1,28 +1,28 @@
 {
-  "generated_at": "2026-11-01T17:48:10.930Z",
+  "generated_at": "2026-11-01T18:12:30.373Z",
   "hardware_source": "bench/results/web_hardware_2026.json",
   "source_gates": {
-    "lint": 0,
     "unit": 0,
-    "date": "2026-11-01T23:06:24.0702205+05:30",
+    "lint": 0,
+    "typecheck": 0,
     "build": 0,
-    "typecheck": 0
+    "date": "2026-11-01T23:29:14.6927096+05:30"
   },
   "python": {
     "command": "python -m pytest -q -rs",
     "passed": 55,
     "exit_code": 0,
-    "log_sha256": "2581ff12c63cc57ec5337a4f9e4e1549af76028fefe92348d4f32b5fcac6c55f"
+    "log_sha256": "6775ca0f85843c6b1e39d79afb449e12469e99ccd4beb4a8d94dfd28f8c545b8"
   },
   "unit": {
     "passed": 18,
     "files": 5,
-    "log_sha256": "ddce70f271859707662e4bfaa41a2efff06bd0bba64a9d766c0deaced8467338"
+    "log_sha256": "8e34d9cac8a77f3048c551cd2014c9332a6989ec6dc9e4146448273245de2089"
   },
   "browser": {
     "stats": {
-      "startTime": "2026-11-01T17:37:25.622Z",
-      "duration": 175575.54499999998,
+      "startTime": "2026-11-01T18:00:09.463Z",
+      "duration": 201483.44,
       "expected": 15,
       "skipped": 0,
       "unexpected": 0,
@@ -33,7 +33,7 @@
       "firefox": "157.0",
       "webkit": "27.2"
     },
-    "result_sha256": "2c7fdd9b67170430afb05ace36da713b548be210df57d45eb8c4eae086e5cb17"
+    "result_sha256": "c96d6d9e46514f2d176793b7929ed63c20a50aad52806b4e6202b5184d649766"
   },
   "axe_serious_critical": 0,
   "lighthouse_source": "bench/results/lighthouse/summary.json",
@@ -46,5 +46,6 @@
     "Fast 3G cold flow exceeded 60 seconds",
     "Verified screenshot is labelled fusion-test illustration, not inference",
     "Persona reference blocked by interstitial"
-  ]
+  ],
+  "deployment_local_source": "bench/results/web_deployment_local.json"
 }
