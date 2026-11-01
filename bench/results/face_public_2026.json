@@ -107,7 +107,9 @@
     "licence": "Apache-2.0 upstream",
     "preprocess": "upstream src/inference/preprocess.py: reflected expansion 1.5, AREA reduction / LANCZOS4 enlargement, reflected letterbox, RGB CHW /255",
     "detector_control": "same shipped detector and face-count rule for both models",
-    "decision": "Keep shipped model: no replacement without browser parity, irrespective of transfer result."
+    "decision": "Keep shipped model: no replacement without browser parity, irrespective of transfer result.",
+    "preprocess_sha256": "dff0ec9869ba3524986a852017b7a2f6a2cdd08841bf857f8ec9b6a35a1e9eb0",
+    "preprocess_source": "https://raw.githubusercontent.com/facenox/face-antispoof-onnx/main/src/inference/preprocess.py"
   },
   "no_face_or_multiple": 9,
   "hardware": {
