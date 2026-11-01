@@ -31,3 +31,53 @@ jobs:
         run: pip install flask numpy pillow onnxruntime opencv-python-headless python_speech_features scipy -r requirements-dev.txt
       - name: Test
         run: python -m pytest -q -rs
+
+  web:
+    name: Browser product and privacy gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - name: Install export environment
+        run: |
+          pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+          pip install flask numpy pillow onnxruntime opencv-python-headless scikit-learn python_speech_features scipy -r scripts/requirements-web-export.txt
+      - name: Install web dependencies
+        working-directory: web
+        run: npm ci
+      - name: Reproduce and gate browser models
+        run: |
+          python scripts/export_web_models.py
+          python scripts/parity/prepare.py
+          cd web && npm run parity
+      - name: Check web source
+        working-directory: web
+        run: |
+          npm run typecheck
+          npm run lint
+          npm test
+          npm run build
+      - name: Install browsers
+        working-directory: web
+        run: npx playwright install --with-deps chromium firefox webkit
+      - name: Verify sample flow, accessibility and zero input uploads
+        working-directory: web
+        run: |
+          npm start > /tmp/humanauth-web.log 2>&1 &
+          for i in $(seq 1 30); do curl -fsS http://127.0.0.1:3000/ >/dev/null && break; sleep 1; done
+          npm run e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-qa
+          path: |
+            web/test-results/
+            bench/results/web_network_audit*.json

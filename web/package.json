@@ -2,6 +2,9 @@
   "name": "humanauth-web",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "node scripts/copy-runtime.mjs && next build --webpack",
@@ -13,6 +16,11 @@
     "parity": "tsx ../scripts/parity/run.ts"
   },
   "dependencies": {
+    "@fontsource/geist": "5.3.0",
+    "@fontsource/geist-mono": "5.3.0",
+    "@jsquash/webp": "1.5.0",
+    "fast-png": "8.0.0",
+    "jpeg-js": "0.4.4",
     "next": "16.4.3",
     "onnxruntime-web": "1.31.1",
     "react": "19.3.1",
@@ -25,14 +33,17 @@
     "@types/node": "26.6.6",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
+    "@typescript/native": "npm:typescript@7.0.2",
     "eslint": "10.14.0",
     "eslint-config-next": "16.4.3",
     "lighthouse": "13.6.0",
+    "node": "24.22.2",
     "onnxruntime-node": "1.31.1",
+    "prettier": "3.9.10",
     "sharp": "0.35.5",
     "tailwindcss": "4.3.3",
     "tsx": "4.23.15",
-    "typescript": "7.0.2",
+    "typescript": "npm:@typescript/typescript6@6.0.2",
     "vitest": "5.0.5"
   }
 }
