@@ -4,8 +4,9 @@ Next.js browser application; inference runs locally in a worker. Use Node 24
 and Python 3.11 for model export. See [architecture and reproduction](../docs/web.md)
 and [model manifest](public/models/manifest.json).
 
-From the repository root, install the gateway/export dependencies used in CI and
-run `python scripts/export_web_models.py`, then:
+Qualified release models are included. To reproduce them, install the Python
+export dependencies and run `python scripts/export_web_models.py` from the
+repository root. For normal web development:
 
 ```powershell
 cd web

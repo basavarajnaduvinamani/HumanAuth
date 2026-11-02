@@ -57,6 +57,9 @@ test-results/
 /web/test-results/
 /web/public/runtime/
 /web/public/models/*.onnx
+!/web/public/models/yolov5s-face.onnx
+!/web/public/models/AntiSpoofing_bin_1.5_128.onnx
+!/web/public/models/document-int8.onnx
 /web/public/models/*.onnx.data
 !/web/src/lib/
 !/web/src/lib/**

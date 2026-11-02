@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev --webpack",
-    "build": "node scripts/copy-runtime.mjs && next build --webpack",
+    "build": "node scripts/check-release-models.mjs && node scripts/copy-runtime.mjs && next build --webpack",
     "start": "next start",
     "typecheck": "tsc --noEmit",
     "lint": "eslint .",

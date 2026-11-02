@@ -42,7 +42,7 @@ npm ci
 npm run parity
 ```
 
-ONNX exports and runtime binaries are ignored build products. Voice JSON and
+The three qualified ONNX release assets are versioned (ADR 0013); runtime binaries remain generated build products. Voice JSON and
 the model manifest are versioned. No optional local Deep4SNet or FaceNet weights
 enter the browser. Read manifest attribution separately from the repository MIT
 licence; upstream weight rights are not established merely by that licence.
@@ -139,3 +139,23 @@ It records no camera frames and does not claim physical-device validation. Set
 `AUDIT_LABEL` to `local`, `preview` or `production` and `BASE_URL` to the exact
 target. It never saves authentication headers and fails rather than following
 an HTTP redirect with an origin-scoped credential.
+
+For the full protected-preview suite on this Windows setup, use:
+
+```powershell
+$env:BASE_URL='https://<verified-preview-host>.vercel.app'
+$env:VERCEL_QA_DEPLOYMENT_ID='dpl_<verified-preview-id>'
+node bench/protected-e2e.mjs
+```
+
+The helper uses the installed authenticated Vercel CLI, checks that the selected
+deployment belongs to the linked project and is a Ready preview, then creates a
+30-minute viewer session and revokes it in `finally`. It keeps the link/cookie in
+memory and turns traces off. This was necessary because Firefox nested workers
+did not complete with the OIDC header wrapper; native cookie transport preserves
+the real browser path. Public production and local/CI runs need no such session.
+
+The suite includes a delayed-JavaScript hydration regression: server-rendered
+controls remain disabled until React handlers are ready, then consent proceeds.
+It adds one scenario per engine to the original five scenarios. No model,
+threshold or existing assertion was weakened.
