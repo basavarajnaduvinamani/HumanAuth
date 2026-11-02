@@ -1,0 +1,214 @@
+{
+  "generated_at": "2026-11-02T19:49:10.359367+00:00",
+  "command": "cd web && npx tsx ../scripts/evaluate_document_localization.ts; python scripts/summarize_document_localization.py",
+  "protocol": "bench/protocol_v2_localization.md",
+  "seed": 20261103,
+  "dataset": {
+    "name": "MIDV-2020 photo bounded subset",
+    "url": "ftp://smartengines.com/midv-2020/dataset/photo.tar",
+    "licence": "CC-BY-SA-2.5",
+    "licence_url": "ftp://smartengines.com/midv-2020/license.txt",
+    "selection": "first ten stored photo members in each of ten templates",
+    "whole_archive_hash_verified": false
+  },
+  "sample_count": 100,
+  "templates": 10,
+  "sample_ids_sha256": "ae3315eab8e7100905c249f1eef64cea06f391eba5641387884da066fec19ffc",
+  "sample_content_sha256": "b7ef48e349282a65794f656b3f9121bc32fdbaf0ef5551e8660cbcdd9cf0cc09",
+  "annotation_hashes": {
+    "alb_id.json": "26415f92261b2c2045a39bfb631574a595f81ec44e505eb0f3c03037fea3ec2e",
+    "aze_passport.json": "acc477f5598c776d62cda9983ed1f1f8eb90e5f3ca527bb0f623c8b8be9c6ccf",
+    "esp_id.json": "b34ee413c235f5b753d1d5ae05c9a37706a79710b427da28423f3babe4d4e976",
+    "est_id.json": "9c5de7b603f63e74617a6e2a2daa133f7c74c564423e61375d4da76d054414e9",
+    "fin_id.json": "7623044c4a30971599b00def23c2ce99174ea01ebbc2248a737a884eaab82549",
+    "grc_passport.json": "9fb0311a04db7fca3846ea9fdf4471a2ae7bf3414e6a395a81ec6b4dd07c682a",
+    "lva_passport.json": "4696e995c58aed008504aa60d30f5690659f5f38888b8e6c46e2cff2c913f805",
+    "rus_internalpassport.json": "054299590fe7db1aee0384957c001bdd201cc8e512fa712b51bdcb6815f4d602",
+    "srb_passport.json": "7284c56a3e2365b2d1ba1ef0936f90efb213ace5b454500bbbcb9f71d2fd37d9",
+    "svk_id.json": "15226fbb9271543579543fcd49dee0461694316f965afdbead47fc3b32387c96"
+  },
+  "algorithm_sha256": "dcd28f6df743d30a42b337903c36dfc5ca03dc675b234779f2c2bac3b52572ae",
+  "method": "Exact TypeScript browser candidate, Otsu/components/convex hull/quad; no learned weights",
+  "metrics": {
+    "coverage": 0.32,
+    "mean_iou": 0.2529770019279404,
+    "median_iou": 0.0,
+    "iou_at_least_05": 0.29,
+    "iou_at_least_08": 0.22
+  },
+  "ci95": {
+    "coverage": [
+      0.2,
+      0.44
+    ],
+    "mean_iou": [
+      0.14723940950731407,
+      0.36639756274279545
+    ],
+    "median_iou": [
+      0.0,
+      0.0
+    ],
+    "iou_at_least_05": [
+      0.17,
+      0.42
+    ],
+    "iou_at_least_08": [
+      0.12,
+      0.34
+    ]
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261103,
+    "unit": "templates then captures within each sampled template",
+    "method": "percentile"
+  },
+  "by_template": {
+    "alb_id": {
+      "n": 10,
+      "coverage": 0.3,
+      "mean_iou": 0.14260329031753397,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.2,
+      "iou_at_least_08": 0.1
+    },
+    "aze_passport": {
+      "n": 10,
+      "coverage": 0.6,
+      "mean_iou": 0.5244334921922759,
+      "median_iou": 0.7281173195585928,
+      "iou_at_least_05": 0.6,
+      "iou_at_least_08": 0.4
+    },
+    "esp_id": {
+      "n": 10,
+      "coverage": 0.4,
+      "mean_iou": 0.21241750235156154,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.2,
+      "iou_at_least_08": 0.1
+    },
+    "est_id": {
+      "n": 10,
+      "coverage": 0.4,
+      "mean_iou": 0.3595858418750241,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.4,
+      "iou_at_least_08": 0.4
+    },
+    "fin_id": {
+      "n": 10,
+      "coverage": 0.1,
+      "mean_iou": 0.08902615160900039,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.1,
+      "iou_at_least_08": 0.1
+    },
+    "grc_passport": {
+      "n": 10,
+      "coverage": 0.4,
+      "mean_iou": 0.37195819313316875,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.4,
+      "iou_at_least_08": 0.4
+    },
+    "lva_passport": {
+      "n": 10,
+      "coverage": 0.2,
+      "mean_iou": 0.18263191973323703,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.2,
+      "iou_at_least_08": 0.2
+    },
+    "rus_internalpassport": {
+      "n": 10,
+      "coverage": 0.4,
+      "mean_iou": 0.3432566915181824,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.4,
+      "iou_at_least_08": 0.3
+    },
+    "srb_passport": {
+      "n": 10,
+      "coverage": 0.3,
+      "mean_iou": 0.24167590797343025,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.3,
+      "iou_at_least_08": 0.2
+    },
+    "svk_id": {
+      "n": 10,
+      "coverage": 0.1,
+      "mean_iou": 0.06218102857598999,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.1,
+      "iou_at_least_08": 0.0
+    }
+  },
+  "by_condition": {
+    "highlight": {
+      "n": 30,
+      "coverage": 0.23333333333333334,
+      "mean_iou": 0.15163486825340783,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.16666666666666666,
+      "iou_at_least_08": 0.1
+    },
+    "keyboard background": {
+      "n": 10,
+      "coverage": 0.3,
+      "mean_iou": 0.26975016629496207,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.3,
+      "iou_at_least_08": 0.3
+    },
+    "low lighting": {
+      "n": 20,
+      "coverage": 0.65,
+      "mean_iou": 0.592699059782733,
+      "median_iou": 0.896517531934101,
+      "iou_at_least_05": 0.65,
+      "iou_at_least_08": 0.6
+    },
+    "outdoors": {
+      "n": 20,
+      "coverage": 0.2,
+      "mean_iou": 0.16122972839041744,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.2,
+      "iou_at_least_08": 0.1
+    },
+    "projective distortion": {
+      "n": 10,
+      "coverage": 0.1,
+      "mean_iou": 0.051305241978692205,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.1,
+      "iou_at_least_08": 0.0
+    },
+    "table background": {
+      "n": 10,
+      "coverage": 0.4,
+      "mean_iou": 0.24595242989922567,
+      "median_iou": 0.0,
+      "iou_at_least_05": 0.3,
+      "iou_at_least_08": 0.2
+    }
+  },
+  "out_of_frame_annotations": 4,
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "ram_bytes": 16831889408,
+    "os": "Windows-10-10.0.26300-SP0",
+    "node": "v24.22.2",
+    "python": "3.11.9",
+    "opencv": "5.0.0"
+  },
+  "timing": {
+    "scope": "Node localisation only, excludes JPEG decode and all model inference; not browser/device camera latency",
+    "p50_ms": 2.9907499999999345,
+    "p95_ms": 12.066095000000017
+  },
+  "scope": "Fixed first ten stored photos per template. Archive order is not a random population sample. Missed/ambiguous detection is zero IoU. Geometry does not establish authenticity or physical-device performance. No tuning after these scores."
+}

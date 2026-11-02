@@ -1,0 +1,3 @@
+# Current stable version checked against PyPI on 2026-11-03.
+# Research environment only; not a gateway/browser runtime dependency.
+timm==1.0.30

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T19:16:21.295Z",
+  "generated_at": "2026-11-02T19:45:55.599Z",
   "browser": "156.0.8078.4",
   "project": "chromium",
   "base_url": "http://127.0.0.1:3013",
@@ -264,31 +264,31 @@
       "media_content_type": false
     },
     {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
       "path": "/samples/synthetic-face-a.png",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/use-cases",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -394,7 +394,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 3452.730000000447,
+      "latency_ms": 2709.875,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -406,7 +406,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 1570.7000000029802,
+      "latency_ms": 1132.3650000020862,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -418,7 +418,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 846.8149999976158,
+      "latency_ms": 544.6199999973178,
       "mode": "live",
       "backend": "JavaScript CPU",
       "wasm_threads": null
