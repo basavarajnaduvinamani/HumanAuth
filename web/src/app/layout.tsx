@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "Inspect face liveness, document authenticity and enrolled voice matching in your browser. Inputs stay on your device.",
-  metadataBase: new URL("https://humanauth-basavarajnaduvinamani34-1831.vercel.app"),
+  metadataBase: new URL("https://humanauth-iota.vercel.app"),
   openGraph: {
     title: "HumanAuth — Identity checks, on your device",
     description: "Three checks. One explained decision. Inspect the evidence.",

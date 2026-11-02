@@ -2,6 +2,6 @@ import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: { userAgent: "*", allow: "/" },
-    sitemap: "https://humanauth-basavarajnaduvinamani34-1831.vercel.app/sitemap.xml",
+    sitemap: "https://humanauth-iota.vercel.app/sitemap.xml",
   };
 }

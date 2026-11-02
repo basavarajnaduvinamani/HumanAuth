@@ -28,6 +28,13 @@ const isolation = {
 assert.equal(isolation.coop, "same-origin");
 assert.equal(isolation.coep, "require-corp");
 assert.match(isolation.permissions || "", /camera=\(self\)/);
+const publicOrigin = new URL(process.env.PUBLIC_SITE_URL || "https://humanauth-iota.vercel.app").origin;
+const html = await root.text();
+assert.ok(html.includes(`content="${publicOrigin}/og.png"`), "OG metadata must use the public production origin");
+assert.ok((await (await get("/robots.txt")).text()).includes(`Sitemap: ${publicOrigin}/sitemap.xml`));
+const sitemap = await (await get("/sitemap.xml")).text();
+for (const route of ["", "/verify", "/how-it-works", "/evidence", "/about"])
+  assert.ok(sitemap.includes(`<loc>${publicOrigin}${route}</loc>`));
 const servedManifest = await (await get("/models/manifest.json")).json();
 assert.deepEqual(servedManifest, manifest);
 const models = [];
@@ -157,6 +164,7 @@ const result = {
   boundary:
     "Served manifest/model hashes and headers, isolated browser context and synthetic camera lifecycle. Does not replace the full sample-flow e2e suite.",
   isolation,
+  metadata: { public_origin: publicOrigin, og_image_matches: true, robots_sitemap_matches: true, sitemap_pages_match: true },
   models,
   camera,
 };
