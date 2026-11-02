@@ -1553,9 +1553,9 @@
     },
     {
       "path": "web/public/og.png",
-      "sha256": "2c73438a89eae78391c66b56e0342723efefb9e380ffcdc3456c011438b6b527",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "a2edd80207f43426c07f50cc64935b0c8e41b2fa6e3eef4872bc0f98d7360e5e",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/public/samples/document.png",
@@ -1577,129 +1577,129 @@
     },
     {
       "path": "web/screenshots/404-1440-dark.png",
-      "sha256": "a5d98645d518e4e2dc3647dca5661f35f15121eefadfa312801dae5cf2fc2423",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "13b5e0258dffc2dc24b1a8a73e43669f6b934957ab4ca93c94e3ddec16762297",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/404-1440-light.png",
-      "sha256": "a8245c3ead0c3ec8fcd61b07d418050c8247eb01fce004264222513a2c25d9f1",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "a07eed5db7e64f9188fa75ffbf33558e3e9da765463206f8d26772b4682b6d75",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/404-390-dark.png",
-      "sha256": "1e7324f967723d56dde664b7a7762bc43a43a627b3938e279d6213aa1299fc96",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "323b025797fa4847984a7f7939fa9717b1664e9e00672acebd94b5cd324f7ca2",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/404-390-light.png",
-      "sha256": "ca8b3a58b119ba0e495e13aab5f7500dea6296b5d48ad0859c60e805eade1e59",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "92dcb6df61e9f2083ab0a69e8a3dd558832bb60451752e0728b114a34564afa7",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/about-1440-dark.png",
-      "sha256": "11804cc40b0cd544234463e790795fcab7773ebb4d15aaa5956c7d72bfc929da",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "3824d54d5c1695af3aac9ff16b00a5ad03c6e73b2597519b1f6447f804e239ba",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/about-1440-light.png",
-      "sha256": "a2396df3e68aee1699fd20801e7e804ee3d3e4b90878d21968e83534f6e2d9db",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "3b47143dd0224315eb3ab8bf1c07b1f5a9dceb333dcc0778fa90b9d947ce2fc7",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/about-390-dark.png",
-      "sha256": "f0ff142cf67166c456bd6a9c8a98e8083120a73eeab8ec37a92391d7e186533f",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "818ca1a8d87961ae7c47798985ddebd4c2b61ed048918fc17c67e69aa2512d79",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/about-390-light.png",
-      "sha256": "51c61fba6f9ac8dcc0510e34e2bd0a82aed966d6065467c9d2bf921348348299",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "f117c9c343c66c3012182cabe3ca1bee27bc842a22ecdae4ee3060297d9d7dc4",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/evidence-1440-dark.png",
-      "sha256": "258443c062d3351b850a37938865c754ee8ea46a4ca32e1b1937d886209e2a1a",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "a8d8d9ddb945595816864834a53d1b555450dcf4ca8c057fcf92f272834170b2",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/evidence-1440-light.png",
-      "sha256": "bf89ccb5dbdc9d1bf2797f1c9b94dcdde5a9b915892c723bb210a157baad0206",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "0861346eb76a6bea782a55a4e105bacff3f7d58d544b1fc9434d275fe0b39b50",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/evidence-390-dark.png",
-      "sha256": "f2fe1830aa907800b42fe237636edd5b26abffd88b7fd6f1ca6b065897395ea1",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "6d3de9657f754c53005f41468aecde37517960e714498005237aba88d64db5df",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/evidence-390-light.png",
-      "sha256": "410be04c62d867cadb8a58575e4e3223903420b1a7a9c2119c679ffa02e1b17d",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "6f5ce939303cfeaa3a2184af3d35af87d0a383dc92a7543051105bcb6f4017bb",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/how-it-works-1440-dark.png",
-      "sha256": "473af546953e792c707e3bf83d813b5284bd120876f61e31b06ce1d7c55f4de6",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "38d26038c220030db9884cb363ac3f0305680ba26cebc35a29a4440c364080d9",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/how-it-works-1440-light.png",
-      "sha256": "95189fdd14dec78ffa6922753285578df243cbb9a929935d43545cef545eb0a4",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "12d92ee11d5581bc2eb9b7a20c491f8338a25059c33ef2a1ebafbae3d71aa94d",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/how-it-works-390-dark.png",
-      "sha256": "101962e24ab1c7e5d404075167f8eada81928c4207b425211b6210d12978e64d",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "c27a7412c996fd15ef0530943244c88f8da150fc3f5f2f051d052f24f3e9da05",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/how-it-works-390-light.png",
-      "sha256": "b26060a4e0244dff4d22f1282f5bdcd82b37f93924b2f3fefa9d2db21c7d1d3f",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "d7ba10c59ad5b62e498b6279a580524442f590e9520d1650bb88d4e0c94044bc",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/landing-1440-dark.png",
-      "sha256": "b431a7d289e726656aaef840c7eabfc33250cbb3e96e63ed70c04e32c5b7677f",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "693412e14d44f76e77a3ae90d476d86c4c98ea00c6b87821a2f21ebae300a48d",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/landing-1440-light.png",
-      "sha256": "1e60ec892fc208457a7063542fbaf966248e4c426902cac9d0c32ad38a4b5eb5",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "bc192a41953b80bcbb2b532280c74f82a84353e83583858530bed660ee1f6ce6",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/landing-390-dark.png",
-      "sha256": "5a39715cbb860103f0a630e35f1fe0e266ef828b65d68cac65d1db185b9089ce",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "1fcbe3a71fc9c58d6de8558717393969d579f62f62e6f1f9f487c81bc8e9ae57",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/landing-390-light.png",
-      "sha256": "0de85dae32d7b27e62742c4d5c0c4bfb8e1995332e15bf52b402dba8c8e44d77",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "758c16b3d49fa34d553de3e2f946571f4a5e1aebb4e6c48699337c419c9dc9a8",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/result-rejected-desktop.png",
-      "sha256": "af16fa7b20b770e07baf569133934dd2caafebf71cd8f607093567af33d6e985",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "04bf54ba8954d671db791f9a6ecd9c33b3228107e3d6058387466e368618b245",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/result-verified-fusion-illustration.png",
@@ -1709,45 +1709,45 @@
     },
     {
       "path": "web/screenshots/verify-1440-dark.png",
-      "sha256": "ee12f4e8d4c3be05a7087a300e0d32647229eabb584ad65a928a91e204b2f280",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "851d802685e531567a501f20191ed01e8475c049dba7ed13f39e0acb2f02c980",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/verify-1440-light.png",
-      "sha256": "c64115d6496ab01ca68e86baa47d79c6b2653e4cf799423908850e9cd1ef3d57",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "2cb3f956498ba6cf3ebf621748ac2fff75779a2eae4eeded308ac137b4442268",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/verify-390-dark.png",
-      "sha256": "8fc00f284c25dedcf09d6b5469587fbf7d8d6281a1366ce66f67b2e031ed6877",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "4fad3a6c84a4baf0b6ab7f288f039fa1f2f38692d9671de5ffa4617cc70e65aa",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/verify-390-light.png",
-      "sha256": "f96ec82227aaf7eba01bc8d1086b69ff02f003d5d3478dea3a0cd0c0b87ce6c0",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "9925914a69b0984129fc5c4cb85ddf3009b3bb4b3d80552263941bc898cb9342",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "web/screenshots/verify-face-phone.png",
-      "sha256": "f405aeccddb0c11e1110e94fb34077611093e63a4e9e01071aaf697ef83024d4",
-      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
-      "source": "HumanAuth application render"
+      "sha256": "445b8cbc8b135f6b9c448eb43c4ccd422ccb2d262342658e794b6b44cb9e9fab",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
     },
     {
       "path": "docs/img/synthetic-web-desktop.png",
-      "sha256": "e29dd975204a4de29966caaaa2863f6dadd73beeca5de2b6771e93a8cc332ef8",
-      "provenance": "UI-only result screenshot, visually reviewed; synthetic inputs only, no face/audio rendered",
-      "source": ".overnight/capture-synthetic.mjs; 1280/390px; 2026-11-02"
+      "sha256": "bc8d04dc65f33749ba0719f1efd7fe3c4d2a2a6f99d6246e89e0fd5968b18313",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": ".overnight/capture-synthetic.mjs; synthetic result only, 1280/390 px; reviewed 2026-11-03"
     },
     {
       "path": "docs/img/synthetic-web-mobile.png",
-      "sha256": "0e5534e637fa6825619d171f8f445b1898976925f001376fc52b3e528f9c57ec",
-      "provenance": "UI-only result screenshot, visually reviewed; synthetic inputs only, no face/audio rendered",
-      "source": ".overnight/capture-synthetic.mjs; 1280/390px; 2026-11-02"
+      "sha256": "4a75bfd2fc4340e0471ccb2ffe7fca074f6724d6d86807da46d017bab4964306",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": ".overnight/capture-synthetic.mjs; synthetic result only, 1280/390 px; reviewed 2026-11-03"
     }
   ],
   "synthetic_template_sha256": [

@@ -4,14 +4,12 @@
   "sanction_sha256": "9d2a40d7997044e769e12c74c01e77e8d69a19ac332c23fb05791fe59a2a9a74",
   "signed_report_source": "HUMANAUTH_Complete_Signed_Project_Report.pdf",
   "signed_report_sha256": "f7df8f7fbf009d701848154e71f0e882f740a5d8185be5746fb1404035b7a24b",
-  "team": [
-    "Basavaraj A Naduvinamani",
-    "Pushpa Priya N",
-    "S Thriveni",
-    "Sahana N"
-  ],
   "funding_exact": "Please note that this project has received funding from AI & Robotics Technology Park (ARTPark), IISc and technical support from KSCST.",
   "project_reference": "48S_BE_5942",
   "paper_reference": "IJRAR Vol 12(1), February 2025, IJRAR25A1939",
-  "paper_status": "Owner-provided reference; official link verification pending"
+  "paper_status": "Reference mismatch verified 2026-11-02: the supplied official identifier is an unrelated publication. HumanAuth publication is not verified.",
+  "site_author": "Basavaraj A Naduvinamani",
+  "paper_checked_url": "https://www.ijrar.org/papers/IJRAR25A1939.pdf",
+  "paper_checked_title": "SyncSpace : AI- Enhanced Video Conferencing with Real Time Presentation Generation",
+  "paper_checked_sha256": "e5e8a4a5b686caff421aa9f48c88de950b9594dd873c5611eec5b2230409791a"
 }

@@ -1,34 +1,29 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "About the project",
+  title: "About the author",
   description:
-    "HumanAuth team, Dayananda Sagar University, project grant and source provenance.",
+    "Basavaraj A Naduvinamani, HumanAuth project origin, grant and source provenance.",
 };
 export default function About() {
   return (
     <>
       <header className="page-heading wrap">
-        <p className="eyebrow">PROJECT / PEOPLE & PROVENANCE</p>
-        <h1>Built to be inspected.</h1>
+        <p className="eyebrow">PROJECT / AUTHOR & PROVENANCE</p>
+        <h1>Basavaraj A Naduvinamani</h1>
         <p className="lead">
-          HumanAuth began as a B.Tech major project at Dayananda Sagar
-          University during 2024–25. This browser edition makes its checks and
-          decisions accessible without a hosted inference server.
+          Data Science & AI master’s student. HumanAuth began as a B.Tech CSE
+          major project at Dayananda Sagar University during 2024–25. This browser
+          edition makes its checks and decisions accessible on your device.
         </p>
       </header>
       <article className="prose wrap">
         <section>
-          <h2>The project team</h2>
-          <ul className="team-list">
-            <li>Basavaraj A Naduvinamani</li>
-            <li>Pushpa Priya N</li>
-            <li>S Thriveni</li>
-            <li>Sahana N</li>
-          </ul>
-          <p className="source">
-            Source: HUMANAUTH_Complete_Signed_Project_Report.pdf, certificate
-            page. Names transcribed without student identification numbers.
-            Source digest: bench/results/reported_results_reference.json.
+          <h2>The author</h2>
+          <p>
+            Built by{" "}
+            <a href="https://github.com/basavarajnaduvinamani">
+              Basavaraj A Naduvinamani
+            </a>.
           </p>
         </section>
         <section>
@@ -52,8 +47,7 @@ export default function About() {
           </p>
         </section>
         <section>
-          <h2>Paper & source</h2>
-          <p>IJRAR Vol 12(1), February 2025, IJRAR25A1939.</p>
+          <h2>Source & licence</h2>
           <p>
             <a href="https://github.com/basavarajnaduvinamani/HumanAuth">
               Explore the public repository ↗

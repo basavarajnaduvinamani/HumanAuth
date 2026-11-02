@@ -64,7 +64,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 528.8799999952316,
         "backend": "JavaScript CPU"
@@ -100,7 +100,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 410.9950000047684,
         "backend": "JavaScript CPU"
@@ -136,7 +136,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 638.6450000107288,
         "backend": "JavaScript CPU"
@@ -174,7 +174,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 522.2750000059605,
         "backend": "JavaScript CPU"
@@ -210,7 +210,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 327.2650000154972,
         "backend": "JavaScript CPU"
@@ -246,7 +246,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 429.32499998807907,
         "backend": "JavaScript CPU"
@@ -282,7 +282,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 484.3600000143051,
         "backend": "JavaScript CPU"
@@ -318,7 +318,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 430.1350000202656,
         "backend": "JavaScript CPU"
@@ -354,7 +354,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 355.39500001072884,
         "backend": "JavaScript CPU"
@@ -390,7 +390,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 312.81999999284744,
         "backend": "JavaScript CPU"
@@ -426,7 +426,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 303.94499999284744,
         "backend": "JavaScript CPU"
@@ -462,7 +462,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 466.7549999952316,
         "backend": "JavaScript CPU"
@@ -498,7 +498,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 358.1099999845028,
         "backend": "JavaScript CPU"
@@ -534,7 +534,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 342.0349999964237,
         "backend": "JavaScript CPU"
@@ -570,7 +570,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 354.625,
         "backend": "JavaScript CPU"
@@ -606,7 +606,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 307.1299999952316,
         "backend": "JavaScript CPU"
@@ -642,7 +642,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 434.0400000214577,
         "backend": "JavaScript CPU"
@@ -678,7 +678,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 410.3850000202656,
         "backend": "JavaScript CPU"
@@ -714,7 +714,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 423.830000013113,
         "backend": "JavaScript CPU"
@@ -750,7 +750,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 392.25,
         "backend": "JavaScript CPU"
@@ -786,7 +786,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 445.53999999165535,
         "backend": "JavaScript CPU"
@@ -822,7 +822,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 288.169999986887,
         "backend": "JavaScript CPU"
@@ -858,7 +858,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 370.74000000953674,
         "backend": "JavaScript CPU"
@@ -894,7 +894,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 294.2549999952316,
         "backend": "JavaScript CPU"
@@ -930,7 +930,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 351.625,
         "backend": "JavaScript CPU"
@@ -966,7 +966,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 404.89500001072884,
         "backend": "JavaScript CPU"
@@ -1002,7 +1002,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 382.27500000596046,
         "backend": "JavaScript CPU"
@@ -1038,7 +1038,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 386.58500000834465,
         "backend": "JavaScript CPU"
@@ -1074,7 +1074,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 453.7549999952316,
         "backend": "JavaScript CPU"
@@ -1110,7 +1110,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 309.93000000715256,
         "backend": "JavaScript CPU"
@@ -1146,7 +1146,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 336.2099999785423,
         "backend": "JavaScript CPU"
@@ -1182,7 +1182,7 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 516.1349999904633,
         "backend": "JavaScript CPU"
@@ -1218,11 +1218,12 @@
         "score": 0.9999360439396737,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
         "latency_ms": 810.2199999988079,
         "backend": "JavaScript CPU"
       }
     ]
-  ]
+  ],
+  "historical_fixture_notice": "Aggregate results from retired personal fixtures. Labels anonymized; all measured numeric observations unchanged. Do not interpret these as synthetic-v2 runs."
 }

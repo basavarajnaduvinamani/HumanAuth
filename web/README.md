@@ -31,7 +31,7 @@ request summaries without media and asserts same-origin static GET requests,
 zero upload bodies, a media-free receipt and no serious/critical axe findings.
 
 No `.env` or API key is needed. Start over clears the session; models remain
-cached. The document sample deliberately produces a rejection. The only bundled
-voice recording is the existing Raj test clip; Sahana is an enrolled comparison
-identity, with no new recording distributed. Live matching is closed-set and
-does not detect synthetic voice or reject unknown speakers reliably.
+cached. The document sample deliberately produces a rejection. Sample speaker A
+and Sample speaker B are generated locally using the pinned Flite runtime. No
+audio recording is shipped. These temporary synthetic fixture templates are
+closed-set matching, with no reliable unknown-speaker rejection or spoof test.

@@ -399,10 +399,11 @@
       "score": 0.9999360439396737,
       "passed": true,
       "threshold": 0.5,
-      "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+      "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
       "latency_ms": 320.6800000000003,
       "mode": "live",
       "backend": "JavaScript CPU"
     }
-  ]
+  ],
+  "historical_fixture_notice": "Aggregate results from retired personal fixtures. Labels anonymized; all measured numeric observations unchanged. Do not interpret these as synthetic-v2 runs."
 }
