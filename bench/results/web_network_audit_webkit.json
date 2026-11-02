@@ -1,15 +1,79 @@
 {
-  "generated_at": "2026-11-02T13:58:59.834Z",
+  "generated_at": "2026-11-02T16:22:22.832Z",
   "browser": "27.2",
   "project": "webkit",
-  "base_url": "https://humanauth-iota.vercel.app",
+  "base_url": "http://127.0.0.1:3013",
   "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
   "input_upload_bytes": 0,
   "third_party_requests": 0,
   "requests": [
     {
       "path": "/",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/css/00bf4177cbf0861f.css",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/webpack-76ec24cc05a49346.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/794-216401842b802bd7.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/main-app-a557510671886640.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/page-3978b602e365c9a7.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-8d18d14a9c735e34.js",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -17,7 +81,7 @@
     },
     {
       "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -25,71 +89,7 @@
     },
     {
       "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/css/c6e340579fdc034d.css",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/webpack-5c37f213e2010317.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/4bd1b696-cd566323a07c169f.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/794-342d1110ac8a18e2.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/main-app-4d2b9f560fded4f1.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/500-863cc2266cad9a2f.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/page-eb0ef238ec44c886.js",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/layout-98d92c6b571cbc92.js",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -97,7 +97,7 @@
     },
     {
       "path": "/",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -105,7 +105,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -113,7 +113,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -121,7 +121,7 @@
     },
     {
       "path": "/about",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -129,7 +129,7 @@
     },
     {
       "path": "/verify",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -137,7 +137,7 @@
     },
     {
       "path": "/verify",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -145,7 +145,7 @@
     },
     {
       "path": "/verify",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -153,15 +153,7 @@
     },
     {
       "path": "/",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -169,7 +161,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -177,15 +169,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "https://humanauth-iota.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -193,39 +177,47 @@
     },
     {
       "path": "/about",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/app/verify/page-dd18dac6ecb30f51.js",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/samples/face.png",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/_next/static/chunks/app/verify/page-2ad5df375f37d414.js",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/884.95b1b55787cc835e.js",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/samples/synthetic-face-a.png",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/122.1a51c44bcd16429c.js",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/_next/static/chunks/832.65a460d44c20b1e6.js",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/525.239599df3cbcbf9e.js",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -233,7 +225,7 @@
     },
     {
       "path": "/models/yolov5s-face.onnx",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -241,7 +233,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -249,7 +241,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -257,7 +249,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -265,7 +257,7 @@
     },
     {
       "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -273,7 +265,7 @@
     },
     {
       "path": "/samples/document.png",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -281,23 +273,23 @@
     },
     {
       "path": "/models/document-int8.onnx",
-      "origin": "https://humanauth-iota.vercel.app",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/samples/voice.wav",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/models/flite-synthesis.wasm.gz",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/models/voice-gmm.json",
-      "origin": "https://humanauth-iota.vercel.app",
+      "path": "/models/synthetic-voice-reference.json",
+      "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -310,11 +302,11 @@
     {
       "name": "face",
       "status": "ok",
-      "score": 0.6068159577009101,
+      "score": 0.9999999480695392,
       "passed": true,
       "threshold": 0.5,
-      "detail": "Live-face probability 0.61.",
-      "latency_ms": 5647.08,
+      "detail": "Live-face probability 1.00.",
+      "latency_ms": 2512.22,
       "mode": "live",
       "backend": "WASM"
     },
@@ -325,18 +317,18 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 1405.3400000000001,
+      "latency_ms": 615.2799999999997,
       "mode": "live",
       "backend": "WASM"
     },
     {
       "name": "voice",
       "status": "ok",
-      "score": 0.9999360439396737,
+      "score": 0.9999999992763322,
       "passed": true,
       "threshold": 0.5,
-      "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 583.2600000000002,
+      "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+      "latency_ms": 1204.2600000000002,
       "mode": "live",
       "backend": "JavaScript CPU"
     }

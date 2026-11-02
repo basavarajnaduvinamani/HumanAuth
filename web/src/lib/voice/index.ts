@@ -204,7 +204,7 @@ export function checkVoice(
   rate: number,
   channels: number,
   models: VoiceModels,
-  claimed = "Raj",
+  claimed = "Sample speaker A",
 ) {
   const x = features(enrollmentPCM(pcm, rate, channels)),
     names = Object.keys(models.speakers).sort();

@@ -1,6 +1,6 @@
 {
-  "source": "bench/results/web_latency_i5_12450h_2026-11-01T17-23-26-941Z.json",
-  "generated_at": "2026-11-01T17:23:26.874Z",
+  "source": "bench/results/web_latency_i5_12450h_2026-11-02T16-15-38-677Z.json",
+  "generated_at": "2026-11-02T16:15:38.676Z",
   "command": "cd web && node bench/browser.mjs",
   "hardware": {
     "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
@@ -14,23 +14,23 @@
   "cold_runs": 3,
   "stages": {
     "face": {
-      "p50_ms": 345.7224999964237,
-      "p95_ms": 510.81650000661614,
+      "p50_ms": 405.12999999988824,
+      "p95_ms": 523.5889999998734,
       "backend": "WASM"
     },
     "document": {
-      "p50_ms": 403.33250001072884,
-      "p95_ms": 470.1952500000596,
+      "p50_ms": 354.4850000003353,
+      "p95_ms": 400.4710000002757,
       "backend": "WASM"
     },
     "voice": {
-      "p50_ms": 384.43000000715256,
-      "p95_ms": 519.5119999989868,
+      "p50_ms": 188.26499999966472,
+      "p95_ms": 237.54475000072273,
       "backend": "JavaScript CPU"
     },
     "total": {
-      "p50_ms": 1153.862500011921,
-      "p95_ms": 1460.8790000036358,
+      "p50_ms": 956.4050000011921,
+      "p95_ms": 1135.6695000004954,
       "backend": "mixed"
     }
   },
@@ -39,13 +39,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 5024.960000008345,
+        "latency_ms": 2926.6699999999255,
         "backend": "WASM"
       },
       {
@@ -56,18 +56,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 857.9950000047684,
+        "latency_ms": 569.0649999994785,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 528.8799999952316,
+        "latency_ms": 485.3849999997765,
         "backend": "JavaScript CPU"
       }
     ],
@@ -75,13 +75,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 4180.030000001192,
+        "latency_ms": 2012.304999999702,
         "backend": "WASM"
       },
       {
@@ -92,18 +92,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 777.9249999821186,
+        "latency_ms": 563.0600000005215,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 410.9950000047684,
+        "latency_ms": 476.7050000000745,
         "backend": "JavaScript CPU"
       }
     ],
@@ -111,13 +111,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 3530.2249999940395,
+        "latency_ms": 1970.300000000745,
         "backend": "WASM"
       },
       {
@@ -128,18 +128,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 766.5750000178814,
+        "latency_ms": 563.8000000007451,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 638.6450000107288,
+        "latency_ms": 475.84000000171363,
         "backend": "JavaScript CPU"
       }
     ]
@@ -149,13 +149,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 348.27000001072884,
+        "latency_ms": 365.320000000298,
         "backend": "WASM"
       },
       {
@@ -166,18 +166,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 363.0349999964237,
+        "latency_ms": 349.035000000149,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 522.2750000059605,
+        "latency_ms": 189.90000000037253,
         "backend": "JavaScript CPU"
       }
     ],
@@ -185,13 +185,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 337.4200000166893,
+        "latency_ms": 454.52999999932945,
         "backend": "WASM"
       },
       {
@@ -202,18 +202,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 412.3550000190735,
+        "latency_ms": 299.785000000149,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 327.2650000154972,
+        "latency_ms": 189.10999999940395,
         "backend": "JavaScript CPU"
       }
     ],
@@ -221,13 +221,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 420.0400000214577,
+        "latency_ms": 306.02500000037253,
         "backend": "WASM"
       },
       {
@@ -238,18 +238,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 575.5,
+        "latency_ms": 318.679999999702,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 429.32499998807907,
+        "latency_ms": 180.78999999910593,
         "backend": "JavaScript CPU"
       }
     ],
@@ -257,13 +257,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 342.19499999284744,
+        "latency_ms": 435.589999999851,
         "backend": "WASM"
       },
       {
@@ -274,18 +274,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 341.13000002503395,
+        "latency_ms": 378.30000000074506,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 484.3600000143051,
+        "latency_ms": 214.75,
         "backend": "JavaScript CPU"
       }
     ],
@@ -293,13 +293,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 300.2099999785423,
+        "latency_ms": 376.65000000037253,
         "backend": "WASM"
       },
       {
@@ -310,18 +310,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 350.9050000011921,
+        "latency_ms": 358.13000000081956,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 430.1350000202656,
+        "latency_ms": 184.75999999977648,
         "backend": "JavaScript CPU"
       }
     ],
@@ -329,13 +329,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 299.2800000011921,
+        "latency_ms": 479.35500000044703,
         "backend": "WASM"
       },
       {
@@ -346,18 +346,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 349.69499999284744,
+        "latency_ms": 395.179999999702,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 355.39500001072884,
+        "latency_ms": 223.12999999895692,
         "backend": "JavaScript CPU"
       }
     ],
@@ -365,13 +365,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 306.0849999785423,
+        "latency_ms": 331.1650000009686,
         "backend": "WASM"
       },
       {
@@ -382,18 +382,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 419.6749999821186,
+        "latency_ms": 346.23499999940395,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 312.81999999284744,
+        "latency_ms": 182.84999999962747,
         "backend": "JavaScript CPU"
       }
     ],
@@ -401,13 +401,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 387.46000000834465,
+        "latency_ms": 559.1750000007451,
         "backend": "WASM"
       },
       {
@@ -418,18 +418,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 412.7300000190735,
+        "latency_ms": 393.38000000081956,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 303.94499999284744,
+        "latency_ms": 200.92999999970198,
         "backend": "JavaScript CPU"
       }
     ],
@@ -437,13 +437,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 408.5900000035763,
+        "latency_ms": 321.35999999940395,
         "backend": "WASM"
       },
       {
@@ -454,18 +454,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 473.5049999952316,
+        "latency_ms": 287.61999999918044,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 466.7549999952316,
+        "latency_ms": 177.11500000022352,
         "backend": "JavaScript CPU"
       }
     ],
@@ -473,13 +473,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 333.77000001072884,
+        "latency_ms": 411.035000000149,
         "backend": "WASM"
       },
       {
@@ -490,18 +490,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 402.8449999988079,
+        "latency_ms": 329.60999999940395,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 358.1099999845028,
+        "latency_ms": 223.16500000096858,
         "backend": "JavaScript CPU"
       }
     ],
@@ -509,13 +509,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 329.794999986887,
+        "latency_ms": 324.09999999962747,
         "backend": "WASM"
       },
       {
@@ -526,18 +526,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 379.52500000596046,
+        "latency_ms": 338.0499999988824,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 342.0349999964237,
+        "latency_ms": 181.58500000089407,
         "backend": "JavaScript CPU"
       }
     ],
@@ -545,13 +545,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 452.0849999785423,
+        "latency_ms": 406.695000000298,
         "backend": "WASM"
       },
       {
@@ -562,18 +562,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 420.1400000154972,
+        "latency_ms": 288.2949999999255,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 354.625,
+        "latency_ms": 189.75,
         "backend": "JavaScript CPU"
       }
     ],
@@ -581,13 +581,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 414.30000001192093,
+        "latency_ms": 311.2700000014156,
         "backend": "WASM"
       },
       {
@@ -598,18 +598,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 427.69500002264977,
+        "latency_ms": 309.30000000074506,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 307.1299999952316,
+        "latency_ms": 180.85999999940395,
         "backend": "JavaScript CPU"
       }
     ],
@@ -617,13 +617,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 427.1899999976158,
+        "latency_ms": 577.4949999991804,
         "backend": "WASM"
       },
       {
@@ -634,18 +634,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 417.19999998807907,
+        "latency_ms": 445.26999999955297,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 434.0400000214577,
+        "latency_ms": 249.31000000052154,
         "backend": "JavaScript CPU"
       }
     ],
@@ -653,13 +653,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 310.58500000834465,
+        "latency_ms": 327.0049999989569,
         "backend": "WASM"
       },
       {
@@ -670,18 +670,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 384.8149999976158,
+        "latency_ms": 353.7050000000745,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 410.3850000202656,
+        "latency_ms": 170.39499999955297,
         "backend": "JavaScript CPU"
       }
     ],
@@ -689,13 +689,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 280.830000013113,
+        "latency_ms": 475.6849999986589,
         "backend": "WASM"
       },
       {
@@ -706,18 +706,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 371.9950000047684,
+        "latency_ms": 342.52500000037253,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 423.830000013113,
+        "latency_ms": 220.125,
         "backend": "JavaScript CPU"
       }
     ],
@@ -725,13 +725,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 402.55500000715256,
+        "latency_ms": 360.4900000002235,
         "backend": "WASM"
       },
       {
@@ -742,18 +742,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 458.6100000143051,
+        "latency_ms": 318.125,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 392.25,
+        "latency_ms": 176.38499999977648,
         "backend": "JavaScript CPU"
       }
     ],
@@ -761,13 +761,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 388.1299999952316,
+        "latency_ms": 480.0949999988079,
         "backend": "WASM"
       },
       {
@@ -778,18 +778,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 376.21000000834465,
+        "latency_ms": 352.00500000081956,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 445.53999999165535,
+        "latency_ms": 190.4050000011921,
         "backend": "JavaScript CPU"
       }
     ],
@@ -797,13 +797,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 473.40000000596046,
+        "latency_ms": 428.47499999962747,
         "backend": "WASM"
       },
       {
@@ -814,18 +814,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 408.68000000715256,
+        "latency_ms": 404.80000000074506,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 288.169999986887,
+        "latency_ms": 280.61999999918044,
         "backend": "JavaScript CPU"
       }
     ],
@@ -833,13 +833,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 271.4200000166893,
+        "latency_ms": 429.64000000059605,
         "backend": "WASM"
       },
       {
@@ -850,18 +850,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 373.794999986887,
+        "latency_ms": 359.93500000052154,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 370.74000000953674,
+        "latency_ms": 183.94500000029802,
         "backend": "JavaScript CPU"
       }
     ],
@@ -869,13 +869,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 362.0750000178814,
+        "latency_ms": 352.9750000014901,
         "backend": "WASM"
       },
       {
@@ -886,18 +886,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 426.3899999856949,
+        "latency_ms": 379.84000000171363,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 294.2549999952316,
+        "latency_ms": 191.80000000074506,
         "backend": "JavaScript CPU"
       }
     ],
@@ -905,13 +905,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 398.0900000035763,
+        "latency_ms": 473.820000000298,
         "backend": "WASM"
       },
       {
@@ -922,18 +922,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 414.8400000035763,
+        "latency_ms": 340.9900000002235,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 351.625,
+        "latency_ms": 195.04000000096858,
         "backend": "JavaScript CPU"
       }
     ],
@@ -941,13 +941,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 435.80500000715256,
+        "latency_ms": 359.339999999851,
         "backend": "WASM"
       },
       {
@@ -958,18 +958,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 397.1449999809265,
+        "latency_ms": 334.98000000044703,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 404.89500001072884,
+        "latency_ms": 178.410000000149,
         "backend": "JavaScript CPU"
       }
     ],
@@ -977,13 +977,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 287.7950000166893,
+        "latency_ms": 456.25500000081956,
         "backend": "WASM"
       },
       {
@@ -994,18 +994,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 365.96000000834465,
+        "latency_ms": 382.054999999702,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 382.27500000596046,
+        "latency_ms": 192.72000000067055,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1013,13 +1013,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 291.0649999976158,
+        "latency_ms": 356.5,
         "backend": "WASM"
       },
       {
@@ -1030,18 +1030,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 379.125,
+        "latency_ms": 357.13000000081956,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 386.58500000834465,
+        "latency_ms": 178.52500000037253,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1049,13 +1049,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 315.27500000596046,
+        "latency_ms": 433.6100000012666,
         "backend": "WASM"
       },
       {
@@ -1066,18 +1066,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 389.56999999284744,
+        "latency_ms": 357.070000000298,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 453.7549999952316,
+        "latency_ms": 182.1399999987334,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1085,13 +1085,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 541.4300000071526,
+        "latency_ms": 402.98000000044703,
         "backend": "WASM"
       },
       {
@@ -1102,18 +1102,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 466.15000000596046,
+        "latency_ms": 395.160000000149,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 309.93000000715256,
+        "latency_ms": 187.4199999999255,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1121,13 +1121,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 343.1749999821186,
+        "latency_ms": 457.2400000002235,
         "backend": "WASM"
       },
       {
@@ -1138,18 +1138,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 403.82000002264977,
+        "latency_ms": 373.82499999925494,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 336.2099999785423,
+        "latency_ms": 183.13499999977648,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1157,13 +1157,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 555.6700000166893,
+        "latency_ms": 394.88000000081956,
         "backend": "WASM"
       },
       {
@@ -1174,18 +1174,18 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 418.53999999165535,
+        "latency_ms": 355.26500000059605,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 516.1349999904633,
+        "latency_ms": 198.85500000044703,
         "backend": "JavaScript CPU"
       }
     ],
@@ -1193,13 +1193,13 @@
       {
         "name": "face",
         "status": "ok",
-        "score": 0.6068159577009101,
+        "score": 0.9999999480695392,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Live-face probability 0.61.",
+        "detail": "Live-face probability 1.00.",
         "mode": "live",
         "guidance": "One face found. Hold still and capture when ready.",
-        "latency_ms": 319.625,
+        "latency_ms": 403.56499999947846,
         "backend": "WASM"
       },
       {
@@ -1210,20 +1210,21 @@
         "threshold": 0.5,
         "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
         "mode": "live",
-        "latency_ms": 368.5300000011921,
+        "latency_ms": 382.05000000074506,
         "backend": "WASM"
       },
       {
         "name": "voice",
         "status": "ok",
-        "score": 0.9999360439396737,
+        "score": 0.9999999992763322,
         "passed": true,
         "threshold": 0.5,
-        "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
         "mode": "live",
-        "latency_ms": 810.2199999988079,
+        "latency_ms": 182.2700000014156,
         "backend": "JavaScript CPU"
       }
     ]
-  ]
+  ],
+  "inputs": "AI-generated fictional face A, code-generated SPECIMEN card, locally generated Flite speech. Synthetic fixture timing, not visitor accuracy or physical-camera latency."
 }

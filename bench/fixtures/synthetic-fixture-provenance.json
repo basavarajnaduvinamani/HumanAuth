@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "purpose": "Synthetic test fixtures only; not real people or evaluation accuracy data",
+  "faces": [
+    {
+      "file": "web/public/samples/synthetic-face-a.png",
+      "sha256": "d0b9006aa310593270daa9a5bdbdf29cf0a8a6852e48c7d63375527bf2ee1c5d",
+      "generator": "built-in image_gen tool",
+      "reference_image_used": false,
+      "identity": "entirely fictional AI-generated adult; not owner or teammate",
+      "source_asset_id": "exec-25a21d9c-73f5-4d79-95a7-01c968e85eca.png",
+      "created_at_utc": "2026-11-02T15:16:57.117911+00:00"
+    },
+    {
+      "file": "web/public/samples/synthetic-face-b.png",
+      "sha256": "d2ee3c9e53ce982cad842b32be6fb9ec1ffbd3cde1786fcc9720a418d462fb00",
+      "generator": "built-in image_gen tool",
+      "reference_image_used": false,
+      "identity": "entirely fictional AI-generated adult; not owner or teammate",
+      "source_asset_id": "exec-615ebd4a-5e00-4119-a08b-236d646e27ba.png",
+      "created_at_utc": "2026-11-02T15:18:20.359771+00:00"
+    }
+  ]
+}

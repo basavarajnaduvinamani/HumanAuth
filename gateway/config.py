@@ -21,7 +21,7 @@ class Config:
     face_detector_path: Path = MODULES / "face_anti_spoofing/saved_models/yolov5s-face.onnx"
     antispoof_path: Path = MODULES / "face_anti_spoofing/saved_models/AntiSpoofing_bin_1.5_128.onnx"
     document_model_path: Path = MODULES / "document_forgery_detection/forgery_classifier.pth"
-    voice_models_dir: Path = MODULES / "voice_authentication/gmm_models"
+    voice_models_dir: Path = REPO_ROOT / "bench/fixtures/synthetic_voice"
 
     # The document classifier's output order. The repo's inference scripts decode
     # index 0 as "Real", but bench/doc_class_map.py shows index 0 agrees with the
