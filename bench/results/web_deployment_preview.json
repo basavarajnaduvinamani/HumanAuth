@@ -1,12 +1,18 @@
 {
-  "generated_at": "2026-11-01T18:38:36.398Z",
+  "generated_at": "2026-11-02T13:50:40.711Z",
   "label": "preview",
-  "base_url": "https://humanauth-q3290tjyr-basavarajnaduvinamani34-1831.vercel.app/",
+  "base_url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app/",
   "boundary": "Served manifest/model hashes and headers, isolated browser context and synthetic camera lifecycle. Does not replace the full sample-flow e2e suite.",
   "isolation": {
     "coop": "same-origin",
     "coep": "require-corp",
     "permissions": "camera=(self), microphone=(self)"
+  },
+  "metadata": {
+    "public_origin": "https://humanauth-iota.vercel.app",
+    "og_image_matches": true,
+    "robots_sitemap_matches": true,
+    "sitemap_pages_match": true
   },
   "models": [
     {

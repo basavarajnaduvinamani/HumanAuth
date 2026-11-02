@@ -1,5 +1,17 @@
 # Changelog
 
+## 2026-11-02 — Public Vercel launch
+
+- Publish the qualified browser product at https://humanauth-iota.vercel.app.
+- Recover once from interrupted model transfer, discarding partial bytes while
+  retaining manifest size/SHA verification; add two regression tests.
+- Verify temporary preview access before hosted QA and revoke it afterward.
+- Qualify the protected preview and public production with all 18 browser tests,
+  model integrity, security/cache headers and synthetic camera lifecycle checks.
+- Correct Open Graph, robots and sitemap links to Vercel's assigned public host.
+- Record fresh preview/public Lighthouse reports and a real Chrome sample flow.
+  Preserve the earlier scientific measurements and their limitations.
+
 ## 2026-11-02 — Preview qualification and cutoff handoff
 
 - Prevent cold SSR controls from accepting input before hydration; add a

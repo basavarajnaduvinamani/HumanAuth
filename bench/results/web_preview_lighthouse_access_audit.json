@@ -1,0 +1,14 @@
+{
+  "started_at": "2026-11-02T13:52:38.609Z",
+  "completed_at": "2026-11-02T13:54:18.484Z",
+  "base_url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app/",
+  "deployment_id": "dpl_4UgNZD19S78pk98xGz6Y2FnSLoR5",
+  "suite": "lighthouse",
+  "access": "expiring viewer link and host-scoped in-memory cookie",
+  "requested_ttl_seconds": 1800,
+  "revoked": true,
+  "credentials_persisted": false,
+  "cookie_scope": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app",
+  "trace_enabled": false,
+  "exit_code": 0
+}
