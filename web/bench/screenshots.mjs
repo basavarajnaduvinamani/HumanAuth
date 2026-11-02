@@ -13,6 +13,7 @@ for (const width of [1440, 390])
       "/how-it-works",
       "/evidence",
       "/about",
+      "/use-cases",
       "/404",
     ]) {
       await page.setViewportSize({
