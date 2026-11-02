@@ -1,5 +1,16 @@
 # Changelog
 
+## 2026-11-02 — Preview qualification and cutoff handoff
+
+- Prevent cold SSR controls from accepting input before hydration; add a
+  regression across Chromium, Firefox and WebKit.
+- Add expiring, revocable preview access for cross-browser QA, with credentials
+  held in memory and credential-bearing traces disabled.
+- Disable the hosting feedback toolbar to preserve same-origin-only requests.
+- Version the three qualified ONNX release assets and check their manifest
+  hashes before builds, so Git builds do not depend on local generated files.
+- Leave public production launch pending the corrected hosted preview gate.
+
 ## 2026-11-01 — Browser product and transfer evidence
 
 - Add the Next.js browser product with face liveness, a document demo signal and
