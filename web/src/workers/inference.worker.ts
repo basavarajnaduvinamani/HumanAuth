@@ -5,6 +5,7 @@ import { checkVoice, decodeWav, VoiceModels } from "../lib/voice";
 import { CheckResult } from "../lib/types";
 import { decodeImage } from "../lib/decode-image";
 import { WorkerRequest, WorkerResponse } from "../lib/worker-messages";
+import { downloadModel } from "../lib/model-download";
 ort.env.wasm.wasmPaths = "/runtime/";
 ort.env.wasm.numThreads = self.crossOriginIsolated
   ? Math.min(4, self.navigator.hardwareConcurrency || 1)
@@ -62,24 +63,7 @@ async function asset(file: string, id: number) {
       cached: true,
     });
   } else {
-    let response: Response;
-    try {
-      response = await fetch(key, { cache: "force-cache" });
-    } catch {
-      throw Error("Model download failed. Check your connection and retry.");
-    }
-    if (!response.ok || !response.body)
-      throw Error(
-        `Model download failed (${response.status}). Retry when connected.`,
-      );
-    const reader = response.body.getReader(),
-      chunks: Uint8Array[] = [];
-    let loaded = 0;
-    for (;;) {
-      const { done, value } = await reader.read();
-      if (done) break;
-      chunks.push(value);
-      loaded += value.byteLength;
+    bytes = await downloadModel(key, (loaded) => {
       emit({
         id,
         type: "progress",
@@ -88,14 +72,7 @@ async function asset(file: string, id: number) {
         total: entry.size_bytes,
         cached: false,
       });
-    }
-    const joined = new Uint8Array(loaded);
-    let offset = 0;
-    for (const c of chunks) {
-      joined.set(c, offset);
-      offset += c.length;
-    }
-    bytes = joined.buffer;
+    });
   }
   const sha = Array.from(
     new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)),
