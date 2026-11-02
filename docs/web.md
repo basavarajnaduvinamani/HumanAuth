@@ -159,3 +159,15 @@ The suite includes a delayed-JavaScript hydration regression: server-rendered
 controls remain disabled until React handlers are ready, then consent proceeds.
 It adds one scenario per engine to the original five scenarios. No model,
 threshold or existing assertion was weakened.
+
+For hosted Lighthouse, set `VERCEL_QA_SUITE=lighthouse` before running the same
+protected-preview helper. It audits `/`, `/verify` and `/evidence` in mobile and
+desktop modes, checks final URLs, redacts credentials before writing reports,
+and revokes access afterward. The helper first verifies that its cookie reaches
+the actual application. Protected audits retain that cookie by disabling the
+initial storage reset; each audit still uses a new browser with no app cache.
+
+Model transport retries once after a fetch or response-stream interruption,
+discarding partial bytes and fetching afresh. HTTP errors remain actionable;
+size and SHA-256 checks still precede caching and inference. This does not alter
+the models, preprocessing, thresholds or the original measurement scopes.

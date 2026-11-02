@@ -59,6 +59,8 @@ let credentialLeakDetected = false;
 const started = new Date().toISOString();
 try {
   const created = api({ ttl: 1800 });
+  console.log("Temporary viewer grant metadata", JSON.stringify(findLinks(created).map(
+    ({ createdAt, expiresAt, scope }) => ({ createdAt, expiresAt, scope }))));
   const candidates = findLinks(created).sort(
     (a, b) => Number(b.createdAt || 0) - Number(a.createdAt || 0),
   );
@@ -87,6 +89,22 @@ try {
   if (!cookies.length)
     throw Error("Expiring viewer access did not return a cookie.");
   cookieValues = cookies.map((c) => c.value);
+  console.log("Access bootstrap", response.status, cookies.map((c) => c.name));
+  let accessReady = false;
+  const cookieHeader = cookies.map((c) => `${c.name}=${c.value}`).join("; ");
+  for (let attempt = 0; attempt < 20; attempt++) {
+    const check = await fetch(new URL("/verify", base), {
+      headers: { cookie: cookieHeader }, redirect: "manual", cache: "no-store",
+    });
+    const body = await check.text();
+    if (check.status === 200 && body.includes("Verify with HumanAuth")) {
+      accessReady = true;
+      break;
+    }
+    if (attempt === 0 || attempt === 19) console.log("Access readiness HTTP", check.status);
+    await new Promise((resolve) => setTimeout(resolve, 500));
+  }
+  assert.ok(accessReady, "Temporary preview access did not reach the application");
   const env = {
     ...process.env,
     VERCEL_PREVIEW_COOKIE: JSON.stringify(cookies),
