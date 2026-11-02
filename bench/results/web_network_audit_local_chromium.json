@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-01T18:00:30.093Z",
+  "generated_at": "2026-11-02T13:29:25.724Z",
   "browser": "156.0.8078.4",
   "project": "chromium",
-  "base_url": "http://127.0.0.1:3008",
+  "base_url": "http://127.0.0.1:3011",
   "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
   "input_upload_bytes": 0,
   "third_party_requests": 0,
   "requests": [
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -17,15 +17,15 @@
     },
     {
       "path": "/_next/static/css/00bf4177cbf0861f.css",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/webpack-70a7ce028ad6d75c.js",
-      "origin": "http://127.0.0.1:3008",
+      "path": "/_next/static/chunks/webpack-bf7f85447415d599.js",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -33,7 +33,7 @@
     },
     {
       "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -41,7 +41,7 @@
     },
     {
       "path": "/_next/static/chunks/794-216401842b802bd7.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -49,7 +49,7 @@
     },
     {
       "path": "/_next/static/chunks/main-app-a557510671886640.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -57,7 +57,7 @@
     },
     {
       "path": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -65,15 +65,15 @@
     },
     {
       "path": "/_next/static/chunks/app/page-3978b602e365c9a7.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/app/layout-70201dfdbd63df5f.js",
-      "origin": "http://127.0.0.1:3008",
+      "path": "/_next/static/chunks/app/layout-8d18d14a9c735e34.js",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -81,7 +81,7 @@
     },
     {
       "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -89,7 +89,7 @@
     },
     {
       "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -97,7 +97,7 @@
     },
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -105,7 +105,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -113,7 +113,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -121,7 +121,7 @@
     },
     {
       "path": "/about",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -129,7 +129,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -137,7 +137,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -145,15 +145,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3008",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -161,7 +153,7 @@
     },
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -169,7 +161,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -177,7 +169,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -185,15 +177,7 @@
     },
     {
       "path": "/about",
-      "origin": "http://127.0.0.1:3008",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/verify/page-085170c32f730270.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -201,7 +185,15 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/verify/page-dbaf9fe0af6b1573.js",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -209,15 +201,15 @@
     },
     {
       "path": "/samples/face.png",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/116.02f0b5b2ffcdc81c.js",
-      "origin": "http://127.0.0.1:3008",
+      "path": "/_next/static/chunks/884.c9c701e7effb9923.js",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -225,7 +217,7 @@
     },
     {
       "path": "/_next/static/chunks/122.fe6ae47116bb3af8.js",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -233,7 +225,7 @@
     },
     {
       "path": "/models/yolov5s-face.onnx",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -241,7 +233,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -249,7 +241,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -257,7 +249,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -265,7 +257,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -273,7 +265,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -281,7 +273,7 @@
     },
     {
       "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -289,7 +281,7 @@
     },
     {
       "path": "/samples/document.png",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -297,7 +289,7 @@
     },
     {
       "path": "/models/document-int8.onnx",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -305,7 +297,7 @@
     },
     {
       "path": "/samples/voice.wav",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -313,7 +305,7 @@
     },
     {
       "path": "/models/voice-gmm.json",
-      "origin": "http://127.0.0.1:3008",
+      "origin": "http://127.0.0.1:3011",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -330,7 +322,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 0.61.",
-      "latency_ms": 5261.245000004768,
+      "latency_ms": 2305.089999999851,
       "mode": "live",
       "backend": "WASM"
     },
@@ -341,7 +333,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 1858.1150000095367,
+      "latency_ms": 699.7949999999255,
       "mode": "live",
       "backend": "WASM"
     },
@@ -352,7 +344,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Raj'; claimed 'Raj'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 679.1400000154972,
+      "latency_ms": 366.695000000298,
       "mode": "live",
       "backend": "JavaScript CPU"
     }

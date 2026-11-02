@@ -3,9 +3,9 @@
 Face liveness, a document authenticity signal and enrolled voice matching,
 on your device, with an explained decision.
 
-**Web deployment:** the owner approved Vercel's required staged first-production
-bootstrap; hosted preview QA and public launch are in progress. No working public URL is
-claimed yet. Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
+**Live:** [humanauth-iota.vercel.app](https://humanauth-iota.vercel.app) ·
+[Evidence and limits](https://humanauth-iota.vercel.app/evidence).
+Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
 
 ![Actual browser sample result: document rejection with reasons](web/screenshots/result-rejected-desktop.png)
 
