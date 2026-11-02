@@ -6,6 +6,7 @@ import { CheckResult, Modality } from "../lib/types";
 import { infer, wipeInference } from "../lib/browser-inference";
 import { receipt } from "../lib/receipt";
 import { ResultSheet } from "./result-sheet";
+import { useHydrated } from "../lib/use-hydrated";
 const steps = ["Consent", "Face", "Document", "Voice", "Result"];
 type Progress = {
   file: string;
@@ -42,6 +43,7 @@ function encodeWav(buffer: AudioBuffer): ArrayBuffer {
   return out;
 }
 export function VerificationFlow() {
+  const hydrated = useHydrated();
   const [step, setStep] = useState(0),
     [consent, setConsent] = useState(false),
     [results, setResults] = useState<CheckResult[]>([]),
@@ -493,6 +495,7 @@ export function VerificationFlow() {
                 <label className="consent-label">
                   <input
                     type="checkbox"
+                    disabled={!hydrated}
                     checked={consent}
                     onChange={(e) => setConsent(e.target.checked)}
                   />
@@ -504,7 +507,7 @@ export function VerificationFlow() {
                 <div className="flow-actions">
                   <button
                     className="button"
-                    disabled={!consent}
+                    disabled={!hydrated || !consent}
                     onClick={() => {
                       setStep(1);
                       if (
@@ -519,6 +522,7 @@ export function VerificationFlow() {
                   </button>
                   <button
                     className="text-button"
+                    disabled={!hydrated}
                     onClick={() => {
                       void runSamples();
                     }}

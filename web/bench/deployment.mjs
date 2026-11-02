@@ -56,13 +56,35 @@ const browser = await chromium.launch({
 let camera;
 try {
   const context = await browser.newContext({ permissions: ["camera"] });
+  if (token) {
+    const policy = root.headers.get("content-security-policy") || "";
+    for (const directive of [
+      "connect-src 'self'",
+      "worker-src 'self'",
+      "script-src 'self'",
+    ])
+      assert.ok(policy.includes(directive));
+    await context.setExtraHTTPHeaders(headers);
+  }
   if (token)
     await context.route("**/*", async (route) => {
       const request = route.request();
       const scoped = new URL(request.url()).origin === base.origin;
-      await route.continue({
-        headers: { ...request.headers(), ...(scoped ? headers : {}) },
-      });
+      if (!scoped) {
+        await route.abort("blockedbyclient");
+        return;
+      }
+      const clean = { ...request.headers() };
+      delete clean["x-vercel-trusted-oidc-idp-token"];
+      try {
+        const response = await route.fetch({
+          headers: { ...clean, ...(scoped ? headers : {}) },
+          maxRedirects: 0,
+        });
+        await route.fulfill({ response });
+      } catch {
+        await route.abort("failed");
+      }
     });
   const page = await context.newPage();
   await page.goto(new URL("/verify", base).href);
@@ -96,16 +118,14 @@ try {
     console.log(
       JSON.stringify({
         camera_alerts: await page.getByRole("alert").allTextContents(),
-        video: await page
-          .locator("video")
-          .evaluateAll((videos) =>
-            videos.map((v) => ({
-              ready: v.readyState,
-              width: v.videoWidth,
-              paused: v.paused,
-              has_stream: !!v.srcObject,
-            })),
-          ),
+        video: await page.locator("video").evaluateAll((videos) =>
+          videos.map((v) => ({
+            ready: v.readyState,
+            width: v.videoWidth,
+            paused: v.paused,
+            has_stream: !!v.srcObject,
+          })),
+        ),
       }),
     );
     throw error;

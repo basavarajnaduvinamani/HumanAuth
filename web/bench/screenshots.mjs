@@ -1,4 +1,4 @@
-import { chromium } from "@playwright/test";
+import { chromium, expect } from "@playwright/test";
 import { mkdir, writeFile } from "node:fs/promises";
 const base = process.env.BASE_URL || "http://127.0.0.1:3003";
 const browser = await chromium.launch(),
@@ -20,6 +20,9 @@ for (const width of [1440, 390])
         height: width === 1440 ? 1000 : 844,
       });
       await page.goto(`${base}${route}`);
+      await expect(
+        page.getByRole("button", { name: "Theme: toggle dark theme" }),
+      ).toBeEnabled();
       await page.evaluate((t) => {
         document.documentElement.dataset.theme = t;
       }, theme);

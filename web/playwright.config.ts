@@ -8,7 +8,10 @@ export default defineConfig({
   reporter: [["list"], ["json", { outputFile: "test-results/results.json" }]],
   use: {
     baseURL: process.env.BASE_URL || "http://127.0.0.1:3000",
-    trace: "retain-on-failure",
+    trace:
+      process.env.VERCEL_OIDC_TOKEN || process.env.VERCEL_PREVIEW_COOKIE
+        ? "off"
+        : "retain-on-failure",
   },
   projects: [
     { name: "chromium", use: { ...devices["Desktop Chrome"] } },
