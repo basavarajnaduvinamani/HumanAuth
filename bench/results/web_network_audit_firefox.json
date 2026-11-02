@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:40:58.531Z",
+  "generated_at": "2026-11-02T19:16:39.225Z",
   "browser": "157.0",
   "project": "firefox",
   "base_url": "http://127.0.0.1:3013",
@@ -128,6 +128,14 @@
       "media_content_type": false
     },
     {
+      "path": "/use-cases",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
       "path": "/about",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
@@ -177,6 +185,14 @@
     },
     {
       "path": "/evidence",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/use-cases",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -314,7 +330,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 2325.8,
+      "latency_ms": 2427.9,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -326,7 +342,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 572.6000000000004,
+      "latency_ms": 554.0800000000004,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -338,7 +354,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 586.3399999999997,
+      "latency_ms": 579.4599999999996,
       "mode": "live",
       "backend": "JavaScript CPU",
       "wasm_threads": null

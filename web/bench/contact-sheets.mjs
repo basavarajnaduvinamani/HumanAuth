@@ -5,6 +5,7 @@ for (const page of [
   "how-it-works",
   "evidence",
   "about",
+  "use-cases",
   "404",
 ]) {
   const pieces = [];

@@ -160,6 +160,72 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section className="section wrap">
+        <div className="section-heading">
+          <p className="eyebrow">04 / REAL-WORLD CONTEXT</p>
+          <h2>Where checks like these are used</h2>
+          <p>
+            Banking and governance come first. These are sourced workflows and
+            research possibilities; HumanAuth does not provide these services.
+          </p>
+        </div>
+        <div
+          className="table-scroll"
+          tabIndex={0}
+          role="region"
+          aria-label="Identity workflow examples"
+        >
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Setting</th>
+                <th scope="col">What the official workflow checks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <Link href="/use-cases#bank-onboarding">
+                    Bank account opening
+                  </Link>
+                </th>
+                <td>
+                  Officer-led live video, photo matching and identity evidence.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <Link href="/use-cases#pension">
+                    Pension life certificates
+                  </Link>
+                </th>
+                <td>Face authentication as one official biometric route.</td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <Link href="/use-cases#documents">
+                    Citizen document checks
+                  </Link>
+                </th>
+                <td>
+                  Issuer-signed evidence, distinct from visual tampering scores.
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <Link href="/use-cases#digiyatra">Airport journeys</Link>
+                </th>
+                <td>
+                  Voluntary face-assisted travel with journey credentials.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <Link href="/use-cases">
+          Read the sources and research boundaries ↗
+        </Link>
+      </section>
     </>
   );
 }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:40:42.678Z",
+  "generated_at": "2026-11-02T19:16:21.295Z",
   "browser": "156.0.8078.4",
   "project": "chromium",
   "base_url": "http://127.0.0.1:3013",
@@ -80,7 +80,7 @@
       "media_content_type": false
     },
     {
-      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
+      "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -88,7 +88,7 @@
       "media_content_type": false
     },
     {
-      "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
+      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -113,6 +113,14 @@
     },
     {
       "path": "/evidence",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/use-cases",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -169,6 +177,14 @@
     },
     {
       "path": "/evidence",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/use-cases",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -232,7 +248,39 @@
       "media_content_type": false
     },
     {
+      "path": "/use-cases",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
       "path": "/about",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -241,30 +289,6 @@
     },
     {
       "path": "/samples/synthetic-face-a.png",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/evidence",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/about",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -370,7 +394,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 2720.474999997765,
+      "latency_ms": 3452.730000000447,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -382,7 +406,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 1321.515000000596,
+      "latency_ms": 1570.7000000029802,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -394,7 +418,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 702.765000000596,
+      "latency_ms": 846.8149999976158,
       "mode": "live",
       "backend": "JavaScript CPU",
       "wasm_threads": null

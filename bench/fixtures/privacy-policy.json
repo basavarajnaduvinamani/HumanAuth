@@ -1553,9 +1553,9 @@
     },
     {
       "path": "web/public/og.png",
-      "sha256": "a2edd80207f43426c07f50cc64935b0c8e41b2fa6e3eef4872bc0f98d7360e5e",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "9d5b172e708536491e8fef0e6ec050f9791ba5665da833b4a0b8f1f191b03277",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/public/samples/document.png",
@@ -1577,129 +1577,129 @@
     },
     {
       "path": "web/screenshots/404-1440-dark.png",
-      "sha256": "13b5e0258dffc2dc24b1a8a73e43669f6b934957ab4ca93c94e3ddec16762297",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "e19dd0bf00b96b47bb15e1b78deecaf74cf6b7bff32b725ecfb29245e5c01e8c",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/404-1440-light.png",
-      "sha256": "a07eed5db7e64f9188fa75ffbf33558e3e9da765463206f8d26772b4682b6d75",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "19313841196ef79ac88d531a77b936e4a3ecf7cb4b3be8613341aaa7a248bfce",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/404-390-dark.png",
-      "sha256": "323b025797fa4847984a7f7939fa9717b1664e9e00672acebd94b5cd324f7ca2",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "65af018e327647cffff43748ad46fad4f2ff16c0a259e36e1ff11df43396edfd",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/404-390-light.png",
-      "sha256": "92dcb6df61e9f2083ab0a69e8a3dd558832bb60451752e0728b114a34564afa7",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "384ce2fa8ced30a8c0b2739970352b44958538c300cd6806ea897b87c3dd57b1",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/about-1440-dark.png",
-      "sha256": "3824d54d5c1695af3aac9ff16b00a5ad03c6e73b2597519b1f6447f804e239ba",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "95b24e0d5c48778a7fb2c0106fc08fe99649346e14f3e6dd2065f410933b3949",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/about-1440-light.png",
-      "sha256": "3b47143dd0224315eb3ab8bf1c07b1f5a9dceb333dcc0778fa90b9d947ce2fc7",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "c1f657533be69ca70e21cc597f7a2bd0d14888b62f910a10c50abb026c3a6a4f",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/about-390-dark.png",
-      "sha256": "818ca1a8d87961ae7c47798985ddebd4c2b61ed048918fc17c67e69aa2512d79",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "e68628572f66bdc0a4cc347f18af1605284d38685fa76840637489da759ba713",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/about-390-light.png",
-      "sha256": "f117c9c343c66c3012182cabe3ca1bee27bc842a22ecdae4ee3060297d9d7dc4",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "f23aeb5306eb0926353686c01ed8ee544f302d09dbda49399c5363bbbbf183e0",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/evidence-1440-dark.png",
-      "sha256": "a8d8d9ddb945595816864834a53d1b555450dcf4ca8c057fcf92f272834170b2",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "ac392c81e0778d1e9af2845d584c4b3c3b98e97566818ea3aa476885211ec488",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/evidence-1440-light.png",
-      "sha256": "0861346eb76a6bea782a55a4e105bacff3f7d58d544b1fc9434d275fe0b39b50",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "8a86cbb480bab2127c6d1b18a6642cbdf714325b3471bca8624d58a7ef9bafaa",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/evidence-390-dark.png",
-      "sha256": "6d3de9657f754c53005f41468aecde37517960e714498005237aba88d64db5df",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "4fb4aa9652f31889b1b442f093e88c8e438d14844dba2796918182a8ac5896c5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/evidence-390-light.png",
-      "sha256": "6f5ce939303cfeaa3a2184af3d35af87d0a383dc92a7543051105bcb6f4017bb",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "43823588a76c4d13fdb7ea9f18c4ecee9258811ef81be6702823cbe70175d6a5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/how-it-works-1440-dark.png",
-      "sha256": "38d26038c220030db9884cb363ac3f0305680ba26cebc35a29a4440c364080d9",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "095a0bff0b69688e693ecfc5e7260b5d3288c1b8c740e256413a8edbc4470532",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/how-it-works-1440-light.png",
-      "sha256": "12d92ee11d5581bc2eb9b7a20c491f8338a25059c33ef2a1ebafbae3d71aa94d",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "4c40f6198927c522e2b2f54567834f3f858f20c0a5ffb085ac0b5336de88adcf",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/how-it-works-390-dark.png",
-      "sha256": "c27a7412c996fd15ef0530943244c88f8da150fc3f5f2f051d052f24f3e9da05",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "6e1154973d14d5e69d3c31932a19a33f3f90f060c13327f02c89c985ac4a532d",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/how-it-works-390-light.png",
-      "sha256": "d7ba10c59ad5b62e498b6279a580524442f590e9520d1650bb88d4e0c94044bc",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "bfa00299cdd50568feaf3a786193908ca2358651d3f02e1405fdf97f22d4e2d4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/landing-1440-dark.png",
-      "sha256": "693412e14d44f76e77a3ae90d476d86c4c98ea00c6b87821a2f21ebae300a48d",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "4a0047c37222a9601c3b01f427e90d652c6b4bf9f5a1817692c36099b2df7dd5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/landing-1440-light.png",
-      "sha256": "bc192a41953b80bcbb2b532280c74f82a84353e83583858530bed660ee1f6ce6",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "73deababe615cc1e9711040b78a46c5b928b0378c7ef7c9a64241065e1c4927e",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/landing-390-dark.png",
-      "sha256": "1fcbe3a71fc9c58d6de8558717393969d579f62f62e6f1f9f487c81bc8e9ae57",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "6311580d378204c1b16b988b907cb59fa6489e2e77290f34cd9da4ec7fae2f62",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/landing-390-light.png",
-      "sha256": "758c16b3d49fa34d553de3e2f946571f4a5e1aebb4e6c48699337c419c9dc9a8",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "d1a5624b8cc419fe9754ae7bee8ce55b2a0cdeba30052c694c04ae3408cef09a",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/result-rejected-desktop.png",
-      "sha256": "04bf54ba8954d671db791f9a6ecd9c33b3228107e3d6058387466e368618b245",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "3d2fb369eeeda2a8fae0b27b2d229b25ebf995429eee52c87ee3c37ffc14cfd4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/result-verified-fusion-illustration.png",
@@ -1709,33 +1709,33 @@
     },
     {
       "path": "web/screenshots/verify-1440-dark.png",
-      "sha256": "851d802685e531567a501f20191ed01e8475c049dba7ed13f39e0acb2f02c980",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "d6ae0be92a12e899ee58096399a943285219abeeff82c64f089522f9a2409f98",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/verify-1440-light.png",
-      "sha256": "2cb3f956498ba6cf3ebf621748ac2fff75779a2eae4eeded308ac137b4442268",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "f48cc83761a08310c0aafc01b671851fae727e63dd01b54c4332c0d84d527c8d",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/verify-390-dark.png",
-      "sha256": "4fad3a6c84a4baf0b6ab7f288f039fa1f2f38692d9671de5ffa4617cc70e65aa",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "7b5e2be862f7d5fd8ca866b57197fd0678e812c6bc24ae7ee480cfadc0006ff4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/verify-390-light.png",
-      "sha256": "9925914a69b0984129fc5c4cb85ddf3009b3bb4b3d80552263941bc898cb9342",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "60fd74a4ed57e429338782368a7e80671a42d5ee1d31a0eae97d5ed70f0b0aa2",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "web/screenshots/verify-face-phone.png",
-      "sha256": "445b8cbc8b135f6b9c448eb43c4ccd422ccb2d262342658e794b6b44cb9e9fab",
-      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
-      "source": "web/bench/screenshots.mjs and .overnight/capture-synthetic.mjs; existing components, both themes and 1440/390 widths"
+      "sha256": "81552880e3eb561dcfdd0b81b2914f438b12f7b399a29f63278b3cdb9d75f1e5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     },
     {
       "path": "docs/img/synthetic-web-desktop.png",
@@ -1748,6 +1748,30 @@
       "sha256": "4a75bfd2fc4340e0471ccb2ffe7fca074f6724d6d86807da46d017bab4964306",
       "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
       "source": ".overnight/capture-synthetic.mjs; synthetic result only, 1280/390 px; reviewed 2026-11-03"
+    },
+    {
+      "path": "web/screenshots/use-cases-1440-dark.png",
+      "sha256": "9631b2ed409625ed76052b00b30db02fd4a0a1aa88b07322935ed6da73a8ee1c",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-1440-light.png",
+      "sha256": "dd53a2db07194a5ea0ca7380e7176ce0d57821b1b55e59eb97303ab09be9ff25",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-390-dark.png",
+      "sha256": "41362539ad42dbb58764a048f90e40cf6d391444628fc036c72e6e040223dc41",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-390-light.png",
+      "sha256": "e124afc46652614266f899131cc3a601a9183d531355185b4c2070b5616efd9b",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
     }
   ],
   "synthetic_template_sha256": [

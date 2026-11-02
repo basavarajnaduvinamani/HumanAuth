@@ -164,7 +164,9 @@ test("sample flow, receipt, privacy and accessibility", async ({
   const chunks: Buffer[] = [];
   for await (const chunk of stream!) chunks.push(Buffer.from(chunk));
   const body = JSON.parse(Buffer.concat(chunks).toString());
-  expect(JSON.stringify(body)).not.toMatch(/\b(?:Pushpa|Thriveni|Sahana|Raj|Navya|Damodar|Girisha?)\b|Uday[\s_-]*Kumar/iu);
+  expect(JSON.stringify(body)).not.toMatch(
+    /\b(?:Pushpa|Thriveni|Sahana|Raj|Navya|Damodar|Girisha?)\b|Uday[\s_-]*Kumar/iu,
+  );
   expect(body.decision).toBe("reject");
   expect(body.checks).toHaveLength(3);
   expect(
@@ -272,6 +274,7 @@ test("every page has no serious or critical accessibility violations at phone wi
     "/how-it-works",
     "/evidence",
     "/about",
+    "/use-cases",
     "/missing-page",
   ]) {
     await page.goto(path);
@@ -290,6 +293,31 @@ test("every page has no serious or critical accessibility violations at phone wi
     ).toEqual([]);
   }
 });
+test("use-case citations and proposed scenarios stay distinct", async ({
+  page,
+}) => {
+  await page.goto("/use-cases");
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText(
+    "Where identity checks are used",
+  );
+  await expect(page.locator(".lead")).toContainText(
+    "HumanAuth is a research demo",
+  );
+  await expect(page.locator("#bank-onboarding")).toContainText(
+    "does not perform bank CDD",
+  );
+  await expect(page.locator("#nist")).toContainText("no NIST assurance level");
+  await expect(
+    page.getByRole("heading", { name: "Entry scenarios to study" }),
+  ).toBeVisible();
+  expect(
+    await page.locator("article a[href^='https://']").count(),
+  ).toBeGreaterThan(20);
+  await expect(
+    page.getByRole("navigation").getByRole("link", { name: "Use cases" }),
+  ).toHaveAttribute("href", "/use-cases");
+});
+
 test("model download failure offers a retry without uploading media", async ({
   page,
 }) => {

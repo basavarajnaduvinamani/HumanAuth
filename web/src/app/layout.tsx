@@ -50,6 +50,7 @@ export default function RootLayout({
             <nav aria-label="Main navigation">
               <Link href="/how-it-works">How it works</Link>
               <Link href="/evidence">Evidence</Link>
+              <Link href="/use-cases">Use cases</Link>
               <Link href="/about">About</Link>
             </nav>
             <div className="header-actions">
