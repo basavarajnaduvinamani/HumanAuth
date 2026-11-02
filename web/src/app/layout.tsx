@@ -66,7 +66,11 @@ export default function RootLayout({
             <Link href="/" className="brand">
               HumanAuth
             </Link>
-            <p>Research prototype. Decisions you can inspect.</p>
+            <p>
+              <a href="https://github.com/basavarajnaduvinamani">
+                Built by Basavaraj A Naduvinamani
+              </a>
+            </p>
           </div>
           <div>
             <Link href="/evidence">Evidence & limits</Link>

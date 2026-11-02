@@ -164,6 +164,7 @@ test("sample flow, receipt, privacy and accessibility", async ({
   const chunks: Buffer[] = [];
   for await (const chunk of stream!) chunks.push(Buffer.from(chunk));
   const body = JSON.parse(Buffer.concat(chunks).toString());
+  expect(JSON.stringify(body)).not.toMatch(/\b(?:Pushpa|Thriveni|Sahana|Raj|Navya|Damodar|Girisha?)\b|Uday[\s_-]*Kumar/iu);
   expect(body.decision).toBe("reject");
   expect(body.checks).toHaveLength(3);
   expect(

@@ -20,7 +20,7 @@ assertions passed in [CI](bench/results/web_ci_2026.json). Ordinary page/model
 requests still reach the host. This is a tested application flow, not a claim
 about every browser extension or device.
 
-The model files total **41,571,370 bytes**, excluding runtime
+The model and synthesis artifacts total **56,083,046 bytes**, excluding the ONNX runtime
 ([manifest](web/public/models/manifest.json)). All **33 browser fixture decisions**
 matched Python, with maximum score differences ≤0.02
 ([browser qualification](bench/results/web_browser_parity.json)). Fixture parity
@@ -28,9 +28,9 @@ does not measure fraud-detection accuracy. Browser worker timing, held-out
 transfer diagnostics and limitations are shown on the app's `/evidence` page;
 their [source ledger](bench/results/web_copy_sources.md) links each claim.
 
-The fixed SPECIMEN is genuinely rejected. Voice matching is closed-set against
-Raj and Sahana; it is not synthetic-voice detection or reliable unknown-speaker
-rejection. Face liveness does not compare a face to the photograph on an ID.
+The fixed SPECIMEN is rejected. The temporary voice fixture compares two locally
+synthesized speakers; it does not reliably reject unknown speakers or test voice
+spoofing. Face liveness does not compare a face to the photograph on an ID.
 Cold use can take minutes on a slow connection; cached models still need runtime
 and session initialization. This is a research prototype, not a certified
 identity service, and the fusion threshold is not calibrated on held-out data.
@@ -49,7 +49,7 @@ and [the model/provenance decisions](docs/adr/).
 University (2024–25), reference 48S_BE_5942. The source wording is:
 “Please note that this project has received funding from AI & Robotics Technology
 Park (ARTPark), IISc and technical support from KSCST.” The sanction letter,
-signed-report digests and team names are recorded in
+signed-report digests and funding transcription are recorded in
 [project provenance](docs/project_provenance.json). [ARTPark source site](https://artpark.in/).
 
 ## Synthetic browser demo
@@ -70,7 +70,7 @@ python -m gateway --port 5000            # open http://localhost:5000
 Or use the API directly:
 
 ```bash
-curl -F selfie=@me.jpg -F document=@id.jpg -F voice=@me.wav -F claimed_identity=Raj \
+curl -F selfie=@local.jpg -F document=@specimen.png -F voice=@local.wav -F 'claimed_identity=Sample speaker A' \
      http://localhost:5000/api/verify
 curl http://localhost:5000/api/health    # which modules are loaded, and why not
 ```
@@ -117,11 +117,9 @@ These are reported figures, not rerun or held-out benchmarks. Their signed-repor
 locations and source digest are recorded in
 [`bench/results/reported_results_reference.json`](bench/results/reported_results_reference.json).
 
-| Task | Reported value | Scope |
-| --- | ---: | --- |
-| Integrated authentication | 96.5% | not identified |
-| Facial anti-spoofing | 96.0% | not identified |
-| Document classifier | 98.5% | training |
+The original report is discussed separately under “Original 2024 report” on
+[/evidence](https://humanauth-iota.vercel.app/evidence). Its training and
+scope-unidentified results are not browser-product accuracy measurements.
 
 The upstream face module retains its own results table for attribution; those are
 not the team's runs. Earlier unsupported overall-fraud, latency and acceptance-rate
@@ -210,9 +208,9 @@ docs/img/           screenshots
 * Inspect the local hardware row and recovery evidence above before choosing resume claims.
 * A held-out, source-disjoint evaluation of each module and of the fusion rule (attack acceptance and genuine rejection rates), before any accuracy is quoted beyond the reported figures above.
 
-## Team and credit
+## Author and project origin
 
-HumanAuth was built as a B.Tech CSE major project (Phase II, 2024-25) at the School of Engineering, Dayananda Sagar University, by **Basavaraj A Naduvinamani** (lead engineer), **Pushpa Priya N**, **S Thriveni** and **Sahana N**, guided by Prof. Navya Damodar.
+Built by [Basavaraj A Naduvinamani](https://github.com/basavarajnaduvinamani). HumanAuth began as a B.Tech CSE major project (Phase II, 2024–25) at Dayananda Sagar University.
 
 ## Funding
 

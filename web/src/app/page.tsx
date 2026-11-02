@@ -46,22 +46,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="credentials wrap">
-        <span className="eyebrow">BUILT AS A STUDENT PROJECT</span>
-        <div>
-          <p>
-            Dayananda Sagar University <span className="separator">/</span>{" "}
-            B.Tech · 2024–25 <span className="separator">/</span> KSCST Student
-            Project Programme
-          </p>
-          <p className="caption">
-            Please note that this project has received funding from AI &amp;
-            Robotics Technology Park (ARTPark), IISc and technical support from
-            KSCST.
-          </p>
-        </div>
-        <Link href="/about">Project provenance ↗</Link>
-      </section>
       <section className="section wrap pipeline-section">
         <div className="section-heading">
           <p className="eyebrow">01 / THE DECISION PATH</p>

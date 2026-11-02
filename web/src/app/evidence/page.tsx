@@ -120,8 +120,9 @@ export default function Evidence() {
         <section>
           <h2>Original 2024 report</h2>
           <p>
-            96.5% integrated and 96.0% face anti-spoofing (scope not
-            identified), and 98.5% as document TRAINING accuracy.
+            The report states 96.5% integrated authentication and 96.0% face
+            anti-spoofing, with scope not identified. Its document figure is a
+            training result, not held-out accuracy.
           </p>
           <p>
             These are signed-report figures, not measurements from this browser
@@ -144,9 +145,9 @@ export default function Evidence() {
               Whole-document scores are a demo signal.
             </li>
             <li>
-              Voice is closed-set speaker matching against Raj and Sahana, not
-              deepfake detection. Unknown speakers are still assigned to the
-              nearest enrollment.
+              Voice currently compares two synthetic fixture speakers. It is
+              closed-set matching: unknown speakers are still assigned to the
+              nearest enrollment. It does not test voice spoofing.
             </li>
             <li>
               The fusion threshold of 0.66 is not calibrated on held-out data.

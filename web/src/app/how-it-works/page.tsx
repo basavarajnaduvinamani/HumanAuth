@@ -24,34 +24,34 @@ export default function Architecture() {
               <thead>
                 <tr>
                   <th>Check</th>
-                  <th>Preprocessing → model → decision</th>
+                  <th>Preprocessing â†’ model â†’ decision</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>Face</td>
                   <td>
-                    RGB → 640 × 640 letterbox → YOLOv5s-face → NMS → square
-                    crop, expansion 1.5 with black padding → 128 × 128 RGB, CHW
-                    / 255 → MiniFASNet → softmax class 0, live ≥ 0.5 and argmax
+                    RGB â†’ 640 Ã— 640 letterbox â†’ YOLOv5s-face â†’ NMS â†’ square
+                    crop, expansion 1.5 with black padding â†’ 128 Ã— 128 RGB, CHW
+                    / 255 â†’ MiniFASNet â†’ softmax class 0, live â‰¥ 0.5 and argmax
                     live.
                   </td>
                 </tr>
                 <tr>
                   <td>Document</td>
                   <td>
-                    PIL-equivalent bilinear resize to 224 × 224 → CHW / 255, no
-                    additional normalization → ResNet18 → softmax class 1 (real)
-                    ≥ 0.5. Class order: fake, real.
+                    PIL-equivalent bilinear resize to 224 Ã— 224 â†’ CHW / 255, no
+                    additional normalization â†’ ResNet18 â†’ softmax class 1 (real)
+                    â‰¥ 0.5. Class order: fake, real.
                   </td>
                 </tr>
                 <tr>
                   <td>Voice</td>
                   <td>
-                    44.1 kHz stereo int16 → pre-emphasis → rectangular frames →
-                    1103-point FFT → 26 mel filters → 20 MFCC, DCT-II, lifter
-                    22, log energy → population scaling → 20 deltas → enrolled
-                    diagonal GMM mean log likelihood → speaker posterior ≥ 0.5
+                    44.1 kHz stereo int16 â†’ pre-emphasis â†’ rectangular frames â†’
+                    1103-point FFT â†’ 26 mel filters â†’ 20 MFCC, DCT-II, lifter
+                    22, log energy â†’ population scaling â†’ 20 deltas â†’ enrolled
+                    diagonal GMM mean log likelihood â†’ speaker posterior â‰¥ 0.5
                     and best match is the claimed speaker.
                   </td>
                 </tr>
@@ -59,8 +59,8 @@ export default function Architecture() {
             </table>
           </div>
           <p className="source">
-            Sources: gateway/checks/face.py · gateway/checks/document.py ·
-            gateway/checks/voice.py · web/src/lib/
+            Sources: gateway/checks/face.py Â· gateway/checks/document.py Â·
+            gateway/checks/voice.py Â· web/src/lib/
           </p>
         </section>
         <section>
@@ -68,15 +68,15 @@ export default function Architecture() {
           <ol>
             <li>
               Liveness veto: the face check ran and did not find exactly one
-              live face → REJECT.
+              live face â†’ REJECT.
             </li>
-            <li>Any other check ran and failed → REJECT.</li>
+            <li>Any other check ran and failed â†’ REJECT.</li>
             <li>
               Any check did not produce a score (not provided, module
-              unavailable, error) → REVIEW. The gateway never approves on
+              unavailable, error) â†’ REVIEW. The gateway never approves on
               partial evidence.
             </li>
-            <li>Weighted mean of the scores below 0.66 → REJECT.</li>
+            <li>Weighted mean of the scores below 0.66 â†’ REJECT.</li>
             <li>Otherwise APPROVE.</li>
           </ol>
           <p>
@@ -84,7 +84,7 @@ export default function Architecture() {
             original fusion module and has not been calibrated on held-out data.
           </p>
           <p className="source">
-            Sources: gateway/fusion.py · gateway/config.py ·
+            Sources: gateway/fusion.py Â· gateway/config.py Â·
             web/src/lib/fusion.ts
           </p>
         </section>
@@ -110,8 +110,8 @@ export default function Architecture() {
             endpoint.
           </p>
           <p className="source">
-            Sources: web/src/workers/inference.worker.ts ·
-            web/src/lib/receipt.ts · web/src/components/verification-flow.tsx
+            Sources: web/src/workers/inference.worker.ts Â·
+            web/src/lib/receipt.ts Â· web/src/components/verification-flow.tsx
           </p>
         </section>
         <section>
@@ -122,10 +122,10 @@ export default function Architecture() {
             running Flask.
           </p>
           <pre tabIndex={0} aria-label="Local gateway commands">
-            <code>{`pip install -r requirements.txt\npython -m gateway --port 5000\ncurl http://localhost:5000/api/health\ncurl -F selfie=@selfie.jpg -F document=@document.png \\\n  -F voice=@voice.wav -F claimed_identity=Raj \\\n  http://localhost:5000/api/verify`}</code>
+            <code>{`pip install -r requirements.txt\npython -m gateway --port 5000\ncurl http://localhost:5000/api/health\ncurl -F selfie=@selfie.jpg -F document=@document.png \\\n  -F voice=@voice.wav -F claimed_identity="Sample speaker A" \\\n  http://localhost:5000/api/verify`}</code>
           </pre>
           <p className="source">
-            Sources: gateway/__main__.py · gateway/app.py
+            Sources: gateway/__main__.py Â· gateway/app.py
           </p>
         </section>
         <section>

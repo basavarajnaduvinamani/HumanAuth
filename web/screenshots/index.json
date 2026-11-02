@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-01T19:05:04.060Z",
+  "generated_at": "2026-11-02T18:41:40.915Z",
   "files": [
     "screenshots/landing-1440-light.png",
     "screenshots/verify-1440-light.png",
@@ -26,8 +26,7 @@
     "screenshots/about-390-dark.png",
     "screenshots/404-390-dark.png",
     "screenshots/verify-face-phone.png",
-    "screenshots/result-rejected-desktop.png",
-    "screenshots/result-verified-fusion-illustration.png"
+    "screenshots/result-rejected-desktop.png"
   ],
-  "verified_screenshot": "screenshots/result-verified-fusion-illustration.png: explicitly labelled fusion unit-test illustration; not model inference."
+  "verified_screenshot": "Not produced: the fixed bundled SPECIMEN is rejected. No fabricated approval."
 }

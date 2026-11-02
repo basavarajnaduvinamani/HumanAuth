@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T18:05:51.684Z",
+  "generated_at": "2026-11-02T18:36:44.591Z",
   "label": "preview",
-  "base_url": "https://humanauth-5kf7cbltd-basavarajnaduvinamani34-1831.vercel.app/",
+  "base_url": "https://humanauth-igyxi3fhb-basavarajnaduvinamani34-1831.vercel.app/",
   "boundary": "Served manifest/model hashes and headers, isolated browser context and synthetic camera lifecycle. Does not replace the full sample-flow e2e suite.",
   "isolation": {
     "coop": "same-origin",
