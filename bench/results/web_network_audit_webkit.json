@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T16:22:22.832Z",
+  "generated_at": "2026-11-02T18:01:16.589Z",
   "browser": "27.2",
   "project": "webkit",
   "base_url": "http://127.0.0.1:3013",
@@ -306,7 +306,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 2512.22,
+      "latency_ms": 2190.56,
       "mode": "live",
       "backend": "WASM"
     },
@@ -317,7 +317,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 615.2799999999997,
+      "latency_ms": 719.2400000000002,
       "mode": "live",
       "backend": "WASM"
     },
@@ -328,7 +328,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 1204.2600000000002,
+      "latency_ms": 1370.7999999999997,
       "mode": "live",
       "backend": "JavaScript CPU"
     }

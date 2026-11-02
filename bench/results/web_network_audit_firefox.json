@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T16:22:03.681Z",
+  "generated_at": "2026-11-02T18:00:55.851Z",
   "browser": "157.0",
   "project": "firefox",
   "base_url": "http://127.0.0.1:3013",
@@ -96,14 +96,6 @@
       "media_content_type": false
     },
     {
-      "path": "/icon.svg",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
       "path": "/",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
@@ -129,6 +121,14 @@
     },
     {
       "path": "/about",
+      "origin": "http://127.0.0.1:3013",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/icon.svg",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -314,7 +314,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 2217.66,
+      "latency_ms": 1937.08,
       "mode": "live",
       "backend": "WASM"
     },
@@ -325,7 +325,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 340.4200000000001,
+      "latency_ms": 341.05999999999995,
       "mode": "live",
       "backend": "WASM"
     },
@@ -336,7 +336,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 569.9000000000001,
+      "latency_ms": 615.5999999999999,
       "mode": "live",
       "backend": "JavaScript CPU"
     }

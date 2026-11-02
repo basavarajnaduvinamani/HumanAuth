@@ -36,16 +36,11 @@ SAMPLE_SELFIE = REPO / "web/public/samples/synthetic-face-a.png"
 def sample_inputs():
     """Fictional generated face, synthetic card, and locally synthesized speech."""
     from scripts.synthetic.prepare import synthetic_wav
-    from PIL import Image, ImageDraw
-    buf = io.BytesIO()
     selfie = SAMPLE_SELFIE.read_bytes()
-    d = Image.new("RGB", (860, 540), (236, 240, 246))
-    g = ImageDraw.Draw(d)
-    g.rectangle((0, 0, 860, 90), fill=(39, 83, 214))
-    g.text((30, 30), "SPECIMEN - SYNTHETIC TEST DOCUMENT", fill="white")
-    buf = io.BytesIO()
-    d.save(buf, "PNG")
-    return selfie, buf.getvalue(), synthetic_wav()
+    # Freeze the reviewed code-generated card bytes. Pillow's default font and
+    # encoder differ across versions/platforms; parity must not rewrite releases.
+    document = (REPO / "web/public/samples/document.png").read_bytes()
+    return selfie, document, synthetic_wav()
 
 
 def load_inputs(args):
