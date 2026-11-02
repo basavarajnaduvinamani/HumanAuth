@@ -48,6 +48,7 @@ test-results/
 
 # Overnight reports and generated local tooling
 /REPORT_T*_HumanAuth.md
+/REPORT_M_HumanAuth.md
 /RESUME_FACTS_HumanAuth.md
 /AGENTS.md
 /web/node_modules/
@@ -65,3 +66,31 @@ test-results/
 !/web/src/lib/**
 /web/*.tsbuildinfo
 /.overnight/
+
+# Biometric capture/enrollment files are local-only; never release audio assets.
+*.wav
+*.mp3
+*.m4a
+*.flac
+*.ogg
+*.opus
+*.aac
+*.aiff
+*.webm
+*.mp4
+*.mov
+*.pcm
+*.rgb
+*.gmm
+*.pickle
+*.pkl
+*.joblib
+**/face_database/
+**/gmm_models/
+**/recordings/
+**/captures/
+**/enrollments/
+**/enrolments/
+/modules/voice_authentication/facenet_model/model.h5
+/web/public/models/voice-gmm.json
+/web/public/licenses/

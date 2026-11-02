@@ -52,13 +52,13 @@ Park (ARTPark), IISc and technical support from KSCST.” The sanction letter,
 signed-report digests and team names are recorded in
 [project provenance](docs/project_provenance.json). [ARTPark source site](https://artpark.in/).
 
-## Local gateway demo
+## Synthetic browser demo
 
-![Verification result, desktop](docs/img/verify_desktop.png)
+![Synthetic browser sample result, desktop](docs/img/synthetic-web-desktop.png)
 
-<p align="center"><img src="docs/img/verify_mobile.png" alt="Verification result on a 390 px phone screen" width="260"></p>
+<p align="center"><img src="docs/img/synthetic-web-mobile.png" alt="Synthetic browser sample result on a 390 px screen" width="260"></p>
 
-These are real gateway outputs from the bundled weights, captured with Playwright at 1280 px and 390 px. The selfie is a face cropped from the YOLOv5 sample image bundled in this repo, blurred in the screenshot. The document is a synthetic "SPECIMEN" card, which the classifier rejects. The voice clip is the bundled `modules/voice_authentication/test.wav`.
+These are browser inference outputs captured with Playwright at 1280 px and 390 px using a fictional AI-generated portrait, a code-generated SPECIMEN card and locally synthesized Flite speech. No personal recording or enrollment is bundled. The sample is rejected because the document check fails. This demonstrates the pipeline, not identity accuracy or photo-attack resistance. Synthetic fixture provenance is in [bench/fixtures](bench/fixtures/synthetic-fixture-provenance.json).
 
 ## Local API mode (Flask gateway)
 

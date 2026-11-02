@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
       - name: Install (full)
         if: matrix.profile == 'full'
         run: |
@@ -31,6 +34,8 @@ jobs:
         run: pip install flask numpy pillow onnxruntime opencv-python-headless python_speech_features scipy -r requirements-dev.txt
       - name: Test
         run: python -m pytest -q -rs
+      - name: Reject private media in tracked and public files
+        run: python scripts/privacy_guard.py
 
   web:
     name: Browser product and privacy gate
@@ -55,6 +60,7 @@ jobs:
         run: npm ci
       - name: Reproduce and gate browser models
         run: |
+          cd web && node scripts/check-release-models.mjs && cd ..
           python scripts/export_web_models.py
           python scripts/parity/prepare.py
           cd web && npm run parity
@@ -65,6 +71,8 @@ jobs:
           npm run lint
           npm test
           npm run build
+      - name: Reject private media in source and built site
+        run: python scripts/privacy_guard.py --built
       - name: Install browsers
         working-directory: web
         run: npx playwright install --with-deps chromium firefox webkit

@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "models": [
     {
       "file": "yolov5s-face.onnx",
@@ -26,15 +26,28 @@
       "licence_note": "Team checkpoint distributed in this MIT repository; training data limitations documented in bench/results/doc_class_map.json."
     },
     {
-      "file": "voice-gmm.json",
-      "size_bytes": 85491,
-      "sha256": "89c13ad9cec0f2dc9b301e6825d8ff862115d4a42dc3f657a479befe612d5c72",
-      "source_path": "modules/voice_authentication/gmm_models",
+      "file": "synthetic-voice-reference.json",
+      "size_bytes": 83600,
+      "sha256": "333264acf0b42f2ac9d5c5ee5b71d77de620dfddd4cc4b96f10a35caa20f7c5d",
+      "source_path": "bench/fixtures/synthetic_voice/reference.json",
       "precision": "float64 JSON",
-      "licence_note": "Existing Raj / Sahana enrollment parameters already distributed in this MIT repository. No new enrollments included."
+      "licence_note": "Generated only from local Flite synthetic speech; no personal enrollment. Fixture compatibility, not visitor verification."
+    },
+    {
+      "file": "flite-synthesis.wasm.gz",
+      "size_bytes": 14513567,
+      "sha256": "4f45b8184785c528f31898706b3eef88c2ebf3c1fcbbf104ea6f15e293fc996c",
+      "source_path": "licenses/flite-COPYING.txt",
+      "precision": "gzip of WASM plus embedded synthesis voices",
+      "licence_note": "Flite permissive CMU/BSD-like collection; retain full licenses/flite-COPYING.txt and file-specific notices. Public research-demo redistribution permitted.",
+      "source_url": "https://github.com/echogarden-project/flite-wasi",
+      "package_version": "0.1.1",
+      "uncompressed_bytes": 21530456
     }
   ],
-  "total_bytes": 41571370,
+  "total_bytes": 56083046,
+  "voice_file": "synthetic-voice-reference.json",
+  "synthetic_speech_file": "flite-synthesis.wasm.gz",
   "document_real_index": 1,
   "document_class_order": [
     "fake",
@@ -50,7 +63,7 @@
   "parity": {
     "face": {
       "mode": "GO",
-      "max_abs_diff": 4.275089704464108e-8,
+      "max_abs_diff": 5.193046082041519e-08,
       "cases": 11,
       "all_decisions_match": true,
       "scope": "Node CPU; browser qualification required separately"

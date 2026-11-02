@@ -6,6 +6,7 @@ import { CheckResult } from "../lib/types";
 import { decodeImage } from "../lib/decode-image";
 import { WorkerRequest, WorkerResponse } from "../lib/worker-messages";
 import { downloadModel } from "../lib/model-download";
+import { synthesizeSpeech } from "../lib/synthetic-speech";
 ort.env.wasm.wasmPaths = "/runtime/";
 ort.env.wasm.numThreads = self.crossOriginIsolated
   ? Math.min(4, self.navigator.hardwareConcurrency || 1)
@@ -91,7 +92,8 @@ async function asset(file: string, id: number) {
   return bytes;
 }
 async function process(request: WorkerRequest) {
-  const { id, name, bytes } = request;
+  const { id, name } = request;
+  let bytes = request.bytes;
   try {
     let backend = "JavaScript CPU";
     const run: Runner = async (file, x, dims) => {
@@ -132,9 +134,16 @@ async function process(request: WorkerRequest) {
     // Cold stage timing includes download and initialization; warm reuses sessions.
     const started = performance.now();
     let output: CheckResult;
+    if (request.synthetic) {
+      if (name !== "voice") throw Error("Synthetic speech is only a voice sample.");
+      bytes = await synthesizeSpeech(
+        await asset(manifest.synthetic_speech_file, id),
+        request.synthetic.speaker, request.synthetic.phrase,
+      );
+    }
     if (name === "voice") {
       const models = JSON.parse(
-          new TextDecoder().decode(await asset("voice-gmm.json", id)),
+          new TextDecoder().decode(await asset("synthetic-voice-reference.json", id)),
         ) as VoiceModels,
         audio = decodeWav(bytes);
       output = checkVoice(
@@ -142,7 +151,7 @@ async function process(request: WorkerRequest) {
         audio.rate,
         audio.channels,
         models,
-        request.claimed || "Raj",
+        request.claimed || "Sample speaker A",
       );
     } else
       output = await checkImage(

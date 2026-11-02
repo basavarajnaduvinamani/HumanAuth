@@ -1,12 +1,13 @@
 import { chromium } from "@playwright/test";
 import { readFile, writeFile } from "node:fs/promises";
 import os from "node:os";
+import { synthesize } from "../../scripts/synthetic/synthesize.mjs";
 const base = process.env.BASE_URL || "http://127.0.0.1:3002",
   browser = await chromium.launch();
 const originals = await Promise.all(
-  ["face.png", "document.png", "voice.wav"].map((n) =>
-    readFile(`public/samples/${n}`),
-  ),
+  [readFile("public/samples/synthetic-face-a.png"),
+   readFile("public/samples/document.png"),
+   synthesize("This is a synthetic sample phrase for local testing.", "slt")],
 );
 async function open() {
   const page = await browser.newPage();
@@ -31,10 +32,11 @@ async function open() {
 }
 const cold = [];
 let page;
-for (let i = 0; i < 3; i++) {
+const parityOnly = process.env.PARITY_ONLY === "1";
+for (let i = 0; i < (parityOnly ? 1 : 3); i++) {
   page = await open();
   cold.push(await page.evaluate(() => window.__qaResults));
-  if (i < 2) await page.close();
+  if (!parityOnly && i < 2) await page.close();
 }
 let id = 10000;
 async function invoke(name, bytes) {
@@ -55,13 +57,13 @@ async function invoke(name, bytes) {
           };
         worker.addEventListener("message", handler);
         const bytes = new Uint8Array(data).buffer;
-        worker.postMessage({ id, name, bytes, claimed: "Raj" }, [bytes]);
+        worker.postMessage({ id, name, bytes, claimed: "Sample speaker A" }, [bytes]);
       }),
     { name, data: Array.from(bytes), id: ++id },
   );
 }
 const warm = [];
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < (parityOnly ? 0 : 30); i++) {
   const rows = [];
   for (const [j, n] of ["face", "document", "voice"].entries())
     rows.push(await invoke(n, originals[j]));
@@ -74,7 +76,7 @@ const quantile = (a, p) => {
     lo = Math.floor(pos);
   return s[lo] + (s[Math.ceil(pos)] - s[lo]) * (pos - lo);
 };
-const stages = Object.fromEntries(
+const stages = parityOnly ? {} : Object.fromEntries(
   ["face", "document", "voice", "total"].map((n) => {
     const v = warm.map((row) =>
       n === "total"
@@ -104,6 +106,7 @@ const output = {
   },
   boundary:
     "Worker stage includes decode, preprocessing and inference. Cold includes model fetch/session initialization. Warm retains worker and sessions. Total is sum of stage compute, excluding page render and capture.",
+  inputs: "AI-generated fictional face A, code-generated SPECIMEN card, locally generated Flite speech. Synthetic fixture timing, not visitor accuracy or physical-camera latency.",
   warm_runs: 30,
   cold_runs: 3,
   stages,
@@ -111,6 +114,7 @@ const output = {
   warm,
 };
 const name = `web_latency_i5_12450h_${new Date().toISOString().replace(/[:.]/g, "-")}`;
+if (!parityOnly) {
 await writeFile(
   `../bench/results/${name}.json`,
   JSON.stringify(output, null, 2) + "\n",
@@ -135,15 +139,16 @@ await writeFile(
   JSON.stringify({ source: `bench/results/${name}.json`, ...output }, null, 2) +
     "\n",
 );
+}
 // Browser qualification runs the same selected models and shared code on
 // lossless encodings of the exact Python reference RGB/PCM fixtures.
 const refs = JSON.parse(
-    await readFile("../.overnight/parity/references.json", "utf8"),
+    await readFile("../.overnight/parity-v2/references.json", "utf8"),
   ),
   rows = [];
 for (const r of refs.rows) {
   const bytes = await readFile(
-      `../.overnight/parity/${r.id}.${r.modality === "voice" ? "wav" : "png"}`,
+      `../.overnight/parity-v2/${r.id}.${r.modality === "voice" ? "wav" : "png"}`,
     ),
     ts = await invoke(r.modality, bytes);
   rows.push({
@@ -186,5 +191,7 @@ await writeFile(
     2,
   ) + "\n",
 );
-console.log(md, gate);
+console.log(gate);
 await browser.close();
+if (Object.values(gate).some((g) => g.mode !== "GO" || g.cases < 11))
+  throw Error("Browser parity gate failed");

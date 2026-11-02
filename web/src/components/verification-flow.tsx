@@ -50,7 +50,7 @@ export function VerificationFlow() {
     [busy, setBusy] = useState(false),
     [error, setError] = useState(""),
     [progress, setProgress] = useState<Progress | null>(null),
-    [speaker, setSpeaker] = useState("Raj"),
+    [speaker, setSpeaker] = useState("Sample speaker A"),
     [camera, setCamera] = useState(false),
     [recording, setRecording] = useState(false),
     [feedback, setFeedback] = useState("Position one face inside the guide."),
@@ -82,6 +82,7 @@ export function VerificationFlow() {
     name: Modality,
     bytes: ArrayBuffer,
     advance = true,
+    synthetic?: { speaker: "Sample speaker A" | "Sample speaker B"; phrase: number },
   ) => {
     setError("");
     setBusy(true);
@@ -90,7 +91,7 @@ export function VerificationFlow() {
     try {
       const output = await infer(name, bytes, speaker, (p) => {
         if (gen === generation.current) setProgress(p);
-      });
+      }, synthetic);
       if (gen !== generation.current) return;
       setResults((prev) => [...prev.filter((r) => r.name !== name), output]);
       if (advance) setStep({ face: 2, document: 3, voice: 4 }[name]);
@@ -109,7 +110,11 @@ export function VerificationFlow() {
   };
   const sample = async (name: Modality, advance = true) => {
     try {
-      const filename = name === "voice" ? "voice.wav" : name + ".png";
+      if (name === "voice")
+        return processInput(name, new ArrayBuffer(0), advance, {
+          speaker: speaker === "Sample speaker B" ? "Sample speaker B" : "Sample speaker A", phrase: 0,
+        });
+      const filename = name === "face" ? "synthetic-face-a.png" : "document.png";
       const r = await fetch("/samples/" + filename);
       if (!r.ok) throw Error("Sample download failed. Please retry.");
       return processInput(name, await r.arrayBuffer(), advance);
@@ -236,7 +241,7 @@ export function VerificationFlow() {
           const r = await infer(
             "face",
             await blob.arrayBuffer(),
-            "Raj",
+            "Sample speaker A",
             () => {},
           );
           if (!cancelled && gen === generation.current)
@@ -612,8 +617,8 @@ export function VerificationFlow() {
                 {step === 3 && (
                   <>
                     <p>
-                      This matches only Raj and Sahana, the enrolled speakers.
-                      For visitors, the bundled Raj sample is the realistic
+                      This matches only Sample speaker A and Sample speaker B, the enrolled speakers.
+                      For visitors, the bundled Sample speaker A sample is the realistic
                       path. It does not detect synthetic speech.
                     </p>
                     <label className="field-label" htmlFor="speaker">
@@ -625,8 +630,8 @@ export function VerificationFlow() {
                       onChange={(e) => setSpeaker(e.target.value)}
                       disabled={busy || recording}
                     >
-                      <option>Raj</option>
-                      <option>Sahana</option>
+                      <option>Sample speaker A</option>
+                      <option>Sample speaker B</option>
                     </select>
                     <svg
                       className="recording"
@@ -691,7 +696,7 @@ export function VerificationFlow() {
                   >
                     {busy
                       ? "Processing…"
-                      : `Use ${step === 1 ? "face" : step === 2 ? "SPECIMEN" : "Raj voice"} sample →`}
+                      : `Use ${step === 1 ? "face" : step === 2 ? "SPECIMEN" : "Sample speaker A voice"} sample →`}
                   </button>
                   <button className="text-button" onClick={reset}>
                     Start over

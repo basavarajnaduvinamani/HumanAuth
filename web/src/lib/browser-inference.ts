@@ -11,6 +11,7 @@ export function infer(
   bytes: ArrayBuffer,
   claimed: string,
   onProgress: (m: Extract<WorkerResponse, { type: "progress" }>) => void,
+  synthetic?: WorkerRequest["synthetic"],
 ): Promise<CheckResult> {
   if (typeof Worker === "undefined")
     throw Error(
@@ -58,7 +59,7 @@ export function infer(
     current.addEventListener("message", handler);
     current.addEventListener("error", error);
     current.postMessage(
-      { id: requestId, name, bytes, claimed } satisfies WorkerRequest,
+      { id: requestId, name, bytes, claimed, synthetic } satisfies WorkerRequest,
       [bytes],
     );
   });
