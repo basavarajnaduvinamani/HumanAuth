@@ -1,31 +1,19 @@
 {
-  "checked_at": "2026-11-01T18:12:58.565294+00:00",
+  "recorded_at": "2026-11-02T13:01:31.607531+00:00",
+  "status": "unfinished_at_cutoff",
+  "cutoff": "2026-11-02T04:00:00+05:30",
   "project": "humanauth",
   "plan": "Hobby",
-  "public_production_url": null,
-  "working_preview_url": null,
-  "status": "approved_staged_bootstrap_pending",
-  "reason": "first_deployment_production",
-  "exact_error": "Error: Can't create a Preview deployment. This project has no deployments yet, and a project's first deployment is assigned to Production. To deploy to Production, retry with --prod. Later deployments can use --environment preview.",
-  "command": "cd web && vercel deploy --yes --environment preview",
-  "exit_code": 1,
-  "log_sha256": "d2fb2bc6889f7bc33bd0884a307c2897261a26f6fd5c148104fa7dcceedc1e0f",
-  "unexpected_initial_target": {
-    "deployment_id": "dpl_2fSA4sBqhiUm6xr71RygCqyJW9FQ",
-    "target": "production",
-    "observed_status": "Building",
-    "removed": true,
-    "removal_command": "vercel remove dpl_2fSA4sBqhiUm6xr71RygCqyJW9FQ --yes",
-    "removal_exit_code": 0
-  },
-  "owner_approval_received": true,
-  "application_environment_files_retained": false,
-  "limitations": [
-    "No hosted HTTPS browser flow or served model hashes verified yet",
-    "No public production launch claimed",
-    "Git integration requires owner GitHub login connection"
-  ],
-  "link_check_source": "bench/results/web_link_checks_2026.json",
-  "owner_response": "Approve staged deployment and continue",
-  "resolved_owner_question": "Authorize one staged --prod --skip-domain first deployment, then preview QA before public launch?"
+  "owner_staged_exception": "Approve staged deployment and continue",
+  "staged_id": "dpl_FbTNszNidU8nQQM1fA94NDURCPPY",
+  "staged_url": "https://humanauth-k4zzfh73l-basavarajnaduvinamani34-1831.vercel.app",
+  "staged_alias_note": "Default alias appeared despite --skip-domain and was explicitly removed before preview QA",
+  "preview_id": "dpl_F7iYGbgqDjninXDFKcQrDdeuFEaH",
+  "preview_url": "https://humanauth-q3290tjyr-basavarajnaduvinamani34-1831.vercel.app",
+  "preview_gate": "14/15 before hydration fix; local fixed revision 18/18; not redeployed",
+  "production_url": "https://humanauth-basavarajnaduvinamani34-1831.vercel.app",
+  "production_status": "Not launched; fresh curl 404",
+  "git_integration": "Login Connection to GitHub required; CLI deployment remains available",
+  "next_action": "Deploy corrected preview, run all 18 tests and hosted integrity gate, rerun final QA, then production under existing authorization",
+  "source_link_checks": "bench/results/web_link_checks_cutoff.json"
 }
