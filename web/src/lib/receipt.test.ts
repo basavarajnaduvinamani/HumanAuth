@@ -13,3 +13,7 @@ it("allowlists receipt fields, excluding media even if present in runtime object
   expect(body).not.toContain("selfie");
   expect(JSON.parse(body).decision).toBe("review");
 });
+it.each([1, 0, 100, undefined])("records only bounded numeric WASM thread counts (%s)", (threads) => {
+  const r = {...result("face", 0.9, true, "Live"), backend: "WASM", wasm_threads: threads};
+  expect(receipt([r], []).checks[0].wasm_threads).toBe(threads === 1 ? 1 : null);
+});

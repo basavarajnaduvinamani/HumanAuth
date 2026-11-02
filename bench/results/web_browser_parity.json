@@ -1,6 +1,7 @@
 {
-  "generated_at": "2026-11-02T16:18:20.313Z",
+  "generated_at": "2026-11-02T18:23:26.828Z",
   "browser": "156.0.8078.4",
+  "engine": "chromium",
   "hardware": {
     "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
     "logical_cores": 12,
@@ -11,7 +12,7 @@
   "gate": {
     "face": {
       "mode": "GO",
-      "max_abs_diff": 5.193046082041519e-8,
+      "max_abs_diff": 5.193055985230899e-8,
       "cases": 11
     },
     "document": {
@@ -30,19 +31,21 @@
       "id": "face-0",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999480695392,
-      "abs_diff": 5.193046082041519e-8,
+      "browser_score": 0.9999999480694401,
+      "abs_diff": 5.193055985230899e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-1",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999913105094,
-      "abs_diff": 8.689490571534009e-9,
+      "browser_score": 0.9999999913105012,
+      "abs_diff": 8.689498787184391e-9,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-2",
@@ -51,25 +54,28 @@
       "browser_score": 0.9999999085577967,
       "abs_diff": 3.18375584784647e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-3",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999673340878,
-      "abs_diff": 3.266591219741599e-8,
+      "browser_score": 0.99999996733415,
+      "abs_diff": 3.266585002492661e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-4",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999941162905,
-      "abs_diff": 5.883709519594049e-9,
+      "browser_score": 0.9999999941162963,
+      "abs_diff": 5.883703746434321e-9,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-5",
@@ -78,25 +84,28 @@
       "browser_score": 0.999999998181524,
       "abs_diff": 1.8184760364192698e-9,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-6",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999536225165,
-      "abs_diff": 4.6377483520210205e-8,
+      "browser_score": 0.9999999536224723,
+      "abs_diff": 4.6377527707086585e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-7",
       "modality": "face",
       "python_score": 1,
-      "browser_score": 0.9999999893263408,
-      "abs_diff": 1.0673659178728201e-8,
+      "browser_score": 0.9999999893263508,
+      "abs_diff": 1.067364918672098e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-8",
@@ -105,25 +114,28 @@
       "browser_score": 0.9999997141736543,
       "abs_diff": 4.7407766601281764e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-9",
       "modality": "face",
       "python_score": 0.9999992847442627,
-      "browser_score": 0.9999992719504112,
-      "abs_diff": 1.279385153374335e-8,
+      "browser_score": 0.9999992719511055,
+      "abs_diff": 1.279315720026375e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "face-10",
       "modality": "face",
       "python_score": 0.999998152256012,
-      "browser_score": 0.9999981225452882,
-      "abs_diff": 2.971072377011552e-8,
+      "browser_score": 0.9999981225426026,
+      "abs_diff": 2.971340939961209e-8,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-0",
@@ -132,7 +144,8 @@
       "browser_score": 0.016057271113053197,
       "abs_diff": 0.015128486255749828,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-1",
@@ -141,7 +154,8 @@
       "browser_score": 0.04308397179115302,
       "abs_diff": 0.0011478834377575547,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-2",
@@ -150,7 +164,8 @@
       "browser_score": 0.03554045415570182,
       "abs_diff": 0.003866653955477896,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-3",
@@ -159,7 +174,8 @@
       "browser_score": 0.019561863390924538,
       "abs_diff": 0.0025126478837708584,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-4",
@@ -168,7 +184,8 @@
       "browser_score": 0.012613767485567163,
       "abs_diff": 0.015919521723441056,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-5",
@@ -177,7 +194,8 @@
       "browser_score": 0.01858431315152726,
       "abs_diff": 0.0025299747464171893,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-6",
@@ -186,7 +204,8 @@
       "browser_score": 0.05395745101804871,
       "abs_diff": 0.01374613132839065,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-7",
@@ -195,7 +214,8 @@
       "browser_score": 0.056198491240981974,
       "abs_diff": 0.012566918049808584,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-8",
@@ -204,7 +224,8 @@
       "browser_score": 0.053061149559545634,
       "abs_diff": 0.015277006186914327,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-9",
@@ -213,7 +234,8 @@
       "browser_score": 0.05626858358007293,
       "abs_diff": 0.010216612771932074,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "document-10",
@@ -222,7 +244,8 @@
       "browser_score": 0.0523051469333029,
       "abs_diff": 0.012927591919198018,
       "same_pass_fail": true,
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "id": "voice-0",
@@ -324,5 +347,5 @@
       "backend": "JavaScript CPU"
     }
   ],
-  "scope": "Headless Chromium worker, PNG/WAV encodings of Python reference fixtures. This qualifies only the observed backends; not all devices."
+  "scope": "Headless chromium worker, lossless PNG/WAV encodings of the same synthetic Python reference fixtures. This qualifies only the observed backends; not held-out accuracy or all devices."
 }

@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-02T13:50:40.711Z",
+  "generated_at": "2026-11-02T18:05:51.684Z",
   "label": "preview",
-  "base_url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app/",
+  "base_url": "https://humanauth-5kf7cbltd-basavarajnaduvinamani34-1831.vercel.app/",
   "boundary": "Served manifest/model hashes and headers, isolated browser context and synthetic camera lifecycle. Does not replace the full sample-flow e2e suite.",
   "isolation": {
     "coop": "same-origin",
@@ -37,9 +37,16 @@
       "matches_manifest": true
     },
     {
-      "file": "voice-gmm.json",
-      "bytes": 85491,
-      "sha256": "89c13ad9cec0f2dc9b301e6825d8ff862115d4a42dc3f657a479befe612d5c72",
+      "file": "synthetic-voice-reference.json",
+      "bytes": 83600,
+      "sha256": "333264acf0b42f2ac9d5c5ee5b71d77de620dfddd4cc4b96f10a35caa20f7c5d",
+      "cache_control": "public, max-age=31536000, immutable",
+      "matches_manifest": true
+    },
+    {
+      "file": "flite-synthesis.wasm.gz",
+      "bytes": 14513567,
+      "sha256": "4f45b8184785c528f31898706b3eef88c2ebf3c1fcbbf104ea6f15e293fc996c",
       "cache_control": "public, max-age=31536000, immutable",
       "matches_manifest": true
     }

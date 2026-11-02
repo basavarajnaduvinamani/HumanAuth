@@ -8,9 +8,11 @@ import { WorkerRequest, WorkerResponse } from "../lib/worker-messages";
 import { downloadModel } from "../lib/model-download";
 import { synthesizeSpeech } from "../lib/synthetic-speech";
 ort.env.wasm.wasmPaths = "/runtime/";
-ort.env.wasm.numThreads = self.crossOriginIsolated
-  ? Math.min(4, self.navigator.hardwareConcurrency || 1)
-  : 1;
+// Keep inference off the UI thread without starting an additional WASM pool.
+// Linux Firefox stalled at threaded initialization in CI after both runtime
+// files downloaded. A single thread avoids that startup dependency for everyone
+// rather than selecting behavior by user-agent or weakening the browser gate.
+ort.env.wasm.numThreads = 1;
 ort.env.telemetryEnabled = false;
 const sessions = new Map<
   string,
@@ -162,6 +164,7 @@ async function process(request: WorkerRequest) {
       );
     output.latency_ms = performance.now() - started;
     output.backend = backend;
+    if (backend === "WASM") output.wasm_threads = ort.env.wasm.numThreads;
     emit({ id, type: "result", result: output });
   } catch (e) {
     emit({

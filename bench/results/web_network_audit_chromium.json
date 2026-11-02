@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T18:00:38.660Z",
+  "generated_at": "2026-11-02T18:21:26.456Z",
   "browser": "156.0.8078.4",
   "project": "chromium",
   "base_url": "http://127.0.0.1:3013",
@@ -24,7 +24,7 @@
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/webpack-76ec24cc05a49346.js",
+      "path": "/_next/static/chunks/webpack-319f7fcfc5bd1790.js",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -192,47 +192,7 @@
       "media_content_type": false
     },
     {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/verify/page-2ad5df375f37d414.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/evidence",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/about",
+      "path": "/_next/static/chunks/app/verify/page-ac04f5c8576c4805.js",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -248,39 +208,7 @@
       "media_content_type": false
     },
     {
-      "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/evidence",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/about",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/832.65a460d44c20b1e6.js",
+      "path": "/_next/static/chunks/832.8fba68b18cf9aec7.js",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -297,30 +225,6 @@
     },
     {
       "path": "/models/yolov5s-face.onnx",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
       "origin": "http://127.0.0.1:3013",
       "method": "GET",
       "request_body_bytes": 0,
@@ -390,13 +294,14 @@
     {
       "name": "face",
       "status": "ok",
-      "score": 0.9999999480695392,
+      "score": 0.9999999480694401,
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 2751.260000001639,
+      "latency_ms": 2587.184999998659,
       "mode": "live",
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "name": "document",
@@ -405,9 +310,10 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 805.7399999983609,
+      "latency_ms": 1406.105000000447,
       "mode": "live",
-      "backend": "WASM"
+      "backend": "WASM",
+      "wasm_threads": 1
     },
     {
       "name": "voice",
@@ -416,9 +322,10 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 838.9600000008941,
+      "latency_ms": 745.6700000017881,
       "mode": "live",
-      "backend": "JavaScript CPU"
+      "backend": "JavaScript CPU",
+      "wasm_threads": null
     }
   ]
 }
