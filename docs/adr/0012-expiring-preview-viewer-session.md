@@ -26,3 +26,10 @@ changing inference threading. The access audit records only scope, requested
 expiry, revocation and exit status. The public production flow is tested without
 this setup. The earlier transport experiments and hydration defect remain in
 the task report rather than being hidden by retries or relaxed assertions.
+# Launch qualification follow-up
+
+One fresh-preview run reached Vercel login rather than the application after
+cookie bootstrap. Before starting a suite, verify that a cookie-authenticated
+request to the exact preview /verify returns HTTP 200 with application content.
+Bound readiness polling; fail closed and revoke the grant if it never succeeds.
+No test assertion or deployment protection is relaxed.

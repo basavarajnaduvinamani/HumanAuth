@@ -4,7 +4,10 @@ import { chromium } from "@playwright/test";
 import assert from "node:assert/strict";
 import { mkdir, writeFile } from "node:fs/promises";
 const base = process.env.BASE_URL || "http://127.0.0.1:3003";
-await mkdir("../bench/results/lighthouse", { recursive: true });
+const label = process.env.LIGHTHOUSE_AUDIT_LABEL;
+assert.ok(label === undefined || label === "production");
+const outputName = label === "production" ? "lighthouse-production" : "lighthouse";
+await mkdir(`../bench/results/${outputName}`, { recursive: true });
 const summary = [];
 const cookies = JSON.parse(process.env.VERCEL_PREVIEW_COOKIE || "[]");
 assert.ok(Array.isArray(cookies));
@@ -62,11 +65,11 @@ for (const formFactor of ["mobile", "desktop"])
       assert.equal(new URL(output.lhr.finalDisplayedUrl).origin, new URL(base).origin,
         "Lighthouse must audit the application rather than a protection redirect");
       assert.equal(new URL(output.lhr.finalDisplayedUrl).pathname, route);
-      await writeFile(`../bench/results/lighthouse/${filename}`, redact(output.report));
+      await writeFile(`../bench/results/${outputName}/${filename}`, redact(output.report));
       const row = {
         page: route,
         form_factor: formFactor,
-        source: `bench/results/lighthouse/${filename}`,
+        source: `bench/results/${outputName}/${filename}`,
         scores: Object.fromEntries(
           Object.entries(output.lhr.categories).map(([k, v]) => [
             k,
@@ -83,7 +86,7 @@ for (const formFactor of ["mobile", "desktop"])
     }
   }
 await writeFile(
-  "../bench/results/lighthouse/summary.json",
+  `../bench/results/${outputName}/summary.json`,
   JSON.stringify(
     {
       generated_at: new Date().toISOString(),
