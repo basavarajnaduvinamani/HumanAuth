@@ -1,4 +1,6 @@
 import hashlib
+import json
+from pathlib import Path
 import pytest
 from scripts.privacy_guard import violations
 
@@ -32,3 +34,12 @@ def test_reviewed_synthetic_image_is_allowed_but_changes_are_refused():
 def test_code_and_public_document_annotations_are_allowed():
     assert violations("dataset/labels/a.txt", b"0 0.5 0.5 1 1", {}) == []
     assert violations("src/speech.ts", b'const mime = "audio/wav";', {}) == []
+
+
+def test_benchmark_uses_the_reviewed_card_without_platform_rasterization():
+    from bench.latency import sample_inputs
+    root = Path(__file__).resolve().parents[1]
+    policy = json.loads((root / 'bench/fixtures/privacy-policy.json').read_text())
+    row = next(r for r in policy['images'] if r['path'] == 'web/public/samples/document.png')
+    _, document, _ = sample_inputs()
+    assert hashlib.sha256(document).hexdigest() == row['sha256']

@@ -23,8 +23,6 @@ samples=sample_inputs()
 cfg=Config()
 checks={'face':FaceLivenessCheck(cfg),'document':DocumentCheck(cfg),'voice':VoiceCheck(cfg)}
 rows=[]
-public=ROOT/'web/public/samples'
-public.mkdir(parents=True,exist_ok=True)
 for modality,blob in zip(checks,samples):
     if modality!='voice':
         base=Image.open(io.BytesIO(blob)).convert('RGB')
@@ -39,8 +37,6 @@ for modality,blob in zip(checks,samples):
             im.save(dest/f'{name}.png')
             ref=checks[modality].run(a).to_dict()
             rows.append(dict(id=name,modality=modality,width=im.width,height=im.height,file=f'{name}.rgb',python=ref))
-            if i==0 and modality=='document':
-                im.save(public/'document.png')
     else:
         rate,audio=load_wav('voice',blob,cfg)
         for i in range(11):
