@@ -5,6 +5,8 @@ import path from "node:path";
 import assert from "node:assert/strict";
 
 const base = new URL(process.env.BASE_URL);
+const suite = process.env.VERCEL_QA_SUITE || "e2e";
+assert.ok(["e2e", "lighthouse"].includes(suite));
 const deployment = process.env.VERCEL_QA_DEPLOYMENT_ID;
 assert.ok(deployment && /^dpl_[a-zA-Z0-9]+$/.test(deployment));
 assert.equal(base.protocol, "https:");
@@ -92,7 +94,9 @@ try {
   delete env.VERCEL_OIDC_TOKEN;
   const run = spawnSync(
     process.execPath,
-    ["node_modules/@playwright/test/cli.js", "test"],
+    suite === "e2e"
+      ? ["node_modules/@playwright/test/cli.js", "test"]
+      : ["bench/lighthouse.mjs"],
     {
       env,
       encoding: "utf8",
@@ -108,13 +112,17 @@ try {
   process.stdout.write(scrub((run.stdout || "") + (run.stderr || "")));
   code = run.status ?? 1;
   // Reporter output must not retain either the viewer link or cookie.
-  const filename = "test-results/results.json";
-  const report = await readFile(filename, "utf8");
-  const clean = scrub(report);
-  if (clean !== report) {
-    credentialLeakDetected = true;
-    await writeFile(filename, clean);
-    code = 1;
+  const filenames = suite === "e2e" ? ["test-results/results.json"] :
+    ["landing", "verify", "evidence"].flatMap((page) =>
+      ["mobile", "desktop"].map((mode) => `../bench/results/lighthouse/${page}-${mode}.json`));
+  for (const filename of filenames) {
+    const report = await readFile(filename, "utf8");
+    const clean = scrub(report);
+    if (clean !== report) {
+      credentialLeakDetected = true;
+      await writeFile(filename, clean);
+      code = 1;
+    }
   }
 } catch {
   console.error(
@@ -135,13 +143,15 @@ try {
     }
   }
   await writeFile(
-    "../bench/results/web_preview_access_audit.json",
+    suite === "e2e" ? "../bench/results/web_preview_access_audit.json" :
+      "../bench/results/web_preview_lighthouse_access_audit.json",
     JSON.stringify(
       {
         started_at: started,
         completed_at: new Date().toISOString(),
         base_url: base.href,
         deployment_id: deployment,
+        suite,
         access: "expiring viewer link and host-scoped in-memory cookie",
         requested_ttl_seconds: 1800,
         revoked,
