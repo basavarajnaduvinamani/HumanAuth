@@ -3,6 +3,112 @@ import AxeBuilder from "@axe-core/playwright";
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
 import manifest from "../public/models/manifest.json";
+test.beforeEach(async ({ context }) => {
+  if (process.env.VERCEL_PREVIEW_COOKIE) {
+    try {
+      const origin = new URL(process.env.BASE_URL || "http://127.0.0.1:3000")
+        .origin;
+      const parsed: unknown = JSON.parse(process.env.VERCEL_PREVIEW_COOKIE);
+      if (!Array.isArray(parsed) || !parsed.length) throw Error();
+      const cookies = parsed.map((entry: unknown) => {
+        if (!entry || typeof entry !== "object") throw Error();
+        const cookie = entry as Record<string, unknown>;
+        if (
+          typeof cookie.url !== "string" ||
+          new URL(cookie.url).origin !== origin ||
+          typeof cookie.name !== "string" ||
+          typeof cookie.value !== "string"
+        )
+          throw Error();
+        return {
+          url: origin + "/",
+          name: cookie.name,
+          value: cookie.value,
+          httpOnly: true,
+          secure: true,
+          sameSite: "Lax" as const,
+        };
+      });
+      await context.addCookies(cookies);
+    } catch {
+      throw Error(
+        "Protected preview cookie setup failed; diagnostics suppressed.",
+      );
+    }
+    return;
+  }
+  const token = process.env.VERCEL_OIDC_TOKEN;
+  if (!token) return;
+  const origin = new URL(process.env.BASE_URL || "http://127.0.0.1:3000")
+    .origin;
+  const bootstrap = await context.request.get(origin + "/", {
+    headers: { "x-vercel-trusted-oidc-idp-token": token },
+    maxRedirects: 0,
+  });
+  expect(bootstrap.status()).toBe(200);
+  const policy = bootstrap.headers()["content-security-policy"] || "";
+  for (const directive of [
+    "connect-src 'self'",
+    "worker-src 'self'",
+    "script-src 'self'",
+  ])
+    expect(policy).toContain(directive);
+  await bootstrap.dispose();
+  // Nested module workers bypass request routing in Playwright. Context headers
+  // cover them; the origin allowlist and same-origin worker CSP bound the scope.
+  await context.setExtraHTTPHeaders({
+    "x-vercel-trusted-oidc-idp-token": token,
+  });
+  await context.route("**/*", async (route) => {
+    const request = route.request();
+    if (new URL(request.url()).origin !== origin) {
+      await route.abort("blockedbyclient");
+      return;
+    }
+    const headers = { ...request.headers() };
+    delete headers["x-vercel-trusted-oidc-idp-token"];
+    if (new URL(request.url()).origin === origin)
+      headers["x-vercel-trusted-oidc-idp-token"] = token;
+    try {
+      // Resolve each redirect separately so credentials remain origin-scoped.
+      const response = await route.fetch({ headers, maxRedirects: 0 });
+      await route.fulfill({ response });
+    } catch {
+      // Never include secret-bearing fetch diagnostics in test logs or traces.
+      await route.abort("failed");
+    }
+  });
+});
+test("server-rendered controls wait for hydration before accepting input", async ({
+  page,
+}) => {
+  let release!: () => void;
+  const ready = new Promise<void>((resolve) => {
+    release = resolve;
+  });
+  await page.route("**/_next/static/**/*.js", async (route) => {
+    await ready;
+    await route.continue();
+  });
+  try {
+    await page.goto("/verify", { waitUntil: "commit" });
+    const sample = page.getByRole("button", {
+      name: "Use sample data",
+      exact: false,
+    });
+    await expect(sample).toBeDisabled();
+    await expect(page.getByRole("checkbox")).toBeDisabled();
+    release();
+    await expect(sample).toBeEnabled();
+    await page.getByRole("checkbox").check();
+    await page.getByRole("button", { name: "Continue", exact: false }).click();
+    await expect(
+      page.getByRole("heading", { name: "Is a live face present?" }),
+    ).toBeVisible();
+  } finally {
+    release();
+  }
+});
 test("sample flow, receipt, privacy and accessibility", async ({
   page,
   browser,

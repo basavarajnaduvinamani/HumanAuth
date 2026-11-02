@@ -24,3 +24,9 @@ The advisory panel recommended the staged path and disclosed that its unique
 URL may be reachable. The owner explicitly replied “Approve staged deployment
 and continue”. This authorizes the one production-environment bootstrap with
 `--skip-domain`, then explicit preview QA before domain assignment.
+
+After the staged build reached Ready, its default alias appeared despite the
+requested `--skip-domain` flag. The agent removed only that alias, retained the
+staged deployment, and verified an empty alias list before hosted preview QA.
+Logs record this observed CLI/platform behavior; the stage was not represented
+as guaranteed private or as a completed public launch.
