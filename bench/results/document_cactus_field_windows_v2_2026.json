@@ -1,0 +1,100 @@
+{
+  "generated_at": "2026-11-02T19:36:25.965330+00:00",
+  "command": "python scripts/evaluate_cactus_field_windows.py",
+  "protocol": "bench/protocol_v2_document.md, same-source amendment",
+  "dataset": {
+    "name": "Dataset of fake identity documents for research purposes",
+    "version": "1.0",
+    "doi": "10.5281/zenodo.8213348",
+    "licence": "CC-BY-4.0",
+    "archive_checksums": {
+      "original.zip": "md5:20793e556d811682468e147a789052f7",
+      "esp_id_edited_120.zip": "md5:6fc200305522ce9ec34bce5da0e37b2c",
+      "esp_id_edited_140.zip": "md5:42caf1fc80774317ef67b53e0caee25a"
+    }
+  },
+  "annotations": {
+    "source": "https://datasets.cvc.uab.es/SIDTD/templates.zip",
+    "path": "templates/Annotations/reals/esp_id.json",
+    "sha256": "d0d88ba453ec73ea98ca90025cb32224dbcb628b6bbcbaf5cd030e0782a2710f",
+    "verified_byte_identical_originals": 100,
+    "scope": "Original MIDV field windows; not edited-field manipulation masks"
+  },
+  "sample_count": 300,
+  "source_groups": 100,
+  "field_count_distribution": {
+    "14": 300
+  },
+  "sample_ids_sha256": "c2a543c841675f323d423137496e70ea693a0cf178891cdd64257a839e8e277f",
+  "sample_content_sha256": "cfa54a0886c949ef0dbc5c57d4b6df2958686f7da51b712e2a6f87604bc49281",
+  "model_sha256": "80f1108a0df16a96dbd2be856a6d5820a5daac2534e856d3304a0814519249c4",
+  "threshold": 0.5,
+  "aggregation": "Mean forged probability over every original annotated rectangular field; equal weights; no field selection",
+  "results": {
+    "whole": {
+      "metrics": {
+        "roc_auc": 0.4861,
+        "forged_precision": 0.6666666666666666,
+        "forged_recall": 0.99
+      },
+      "ci95": {
+        "roc_auc": [
+          0.4767,
+          0.48810000000000003
+        ],
+        "forged_precision": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "forged_recall": [
+          0.97,
+          1.0
+        ]
+      }
+    },
+    "field_mean": {
+      "metrics": {
+        "roc_auc": 0.4582,
+        "forged_precision": 0.6666666666666666,
+        "forged_recall": 1.0
+      },
+      "ci95": {
+        "roc_auc": [
+          0.43834874999999995,
+          0.4722037499999999
+        ],
+        "forged_precision": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "forged_recall": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "paired_auc_difference": {
+    "value": -0.02789999999999998,
+    "ci95": [
+      -0.045802499999999954,
+      -0.009200000000000041
+    ]
+  },
+  "bootstrap": {
+    "seed": 20261101,
+    "replicates": 2000,
+    "unit": "original document filename cluster",
+    "method": "percentile"
+  },
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cores": 12,
+    "torch_threads": 2,
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "torch": "2.15.0+cpu"
+  },
+  "elapsed_seconds": 290.2352089999986,
+  "scope": "Exploratory same-case field-window diagnostic. Previously seen CACTUS cases, not a new held-out selection set. Original windows may miss expanded edited text. Aggregation differs from whole-image scoring. No causality, exact forgery-localisation or real-ID validity claim."
+}

@@ -1,0 +1,550 @@
+{
+  "generated_at": "2026-11-02T19:29:19.853643+00:00",
+  "command": "scripts/evaluate_document_v2.py",
+  "protocol": "bench/protocol_v2_document.md",
+  "seed": 20261103,
+  "dataset": {
+    "name": "SIDTD templates",
+    "url": "https://datasets.cvc.uab.es/SIDTD/templates.zip",
+    "archive_sha256": "e21a1c8bb85a184137faac160641f67bfe39b96b50ce1f645626e10a35567c0f",
+    "archive_bytes": 1273966468,
+    "licence": "Repository CC BY 4.0; TC11 landing page CC BY-SA 3.0 discrepancy, local research only, no redistribution"
+  },
+  "sample_ids_sha256": "ea5cfe149dc140e9e258789ad32a9c7346a56bae4dfffda47586c295a552d300",
+  "sample_content_sha256": "70a295d4f2c455660eef2ca2c2ce48289d426d14ec00a754ef6e07df059171e8",
+  "counts": {
+    "train": {
+      "regions": 1026,
+      "unique_images": 831,
+      "sources": 306,
+      "classes": {
+        "0": 501,
+        "1": 525
+      },
+      "templates": [
+        "alb_id",
+        "esp_id",
+        "est_id",
+        "lva_passport",
+        "srb_passport",
+        "svk_id"
+      ]
+    },
+    "dev": {
+      "regions": 311,
+      "unique_images": 252,
+      "sources": 91,
+      "classes": {
+        "0": 150,
+        "1": 161
+      },
+      "templates": [
+        "fin_id",
+        "rus_internalpassport"
+      ]
+    },
+    "test": {
+      "regions": 305,
+      "unique_images": 242,
+      "sources": 87,
+      "classes": {
+        "0": 150,
+        "1": 155
+      },
+      "templates": [
+        "aze_passport",
+        "grc_passport"
+      ]
+    }
+  },
+  "excluded_annotations": {},
+  "zero_training_byte_overlap": true,
+  "hardware": {
+    "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+    "logical_cores": 12,
+    "torch_threads": 2,
+    "os": "Windows-10-10.0.26300-SP0",
+    "python": "3.11.9",
+    "torch": "2.15.0+cpu"
+  },
+  "bootstrap": {
+    "replicates": 2000,
+    "seed": 20261103,
+    "unit": "original document source clusters within the fixed held-out template subset",
+    "method": "percentile"
+  },
+  "scope": "Bounded SIDTD source/template-disjoint paired field study. Whole-image scores repeat per annotated field for paired comparison; unique-image counts are explicit. Not a full benchmark or real-ID result.",
+  "results": {
+    "shipped/whole": {
+      "model_sha256": "80f1108a0df16a96dbd2be856a6d5820a5daac2534e856d3304a0814519249c4",
+      "fit": null,
+      "threshold": 0.6458638906478882,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.5227956989247312,
+          "forged_precision": 0.5081967213114754,
+          "forged_recall": 1.0
+        },
+        "ci95": {
+          "roc_auc": [
+            0.508477933694959,
+            0.5450820309859973
+          ],
+          "forged_precision": [
+            0.5016946299149688,
+            0.5157894736842106
+          ],
+          "forged_recall": [
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.5227956989247312,
+          "forged_precision": 0.5066666666666667,
+          "forged_recall": 0.9806451612903225
+        },
+        "ci95": {
+          "roc_auc": [
+            0.508477933694959,
+            0.5450820309859973
+          ],
+          "forged_precision": [
+            0.5015197568389058,
+            0.5133333333333333
+          ],
+          "forged_recall": [
+            0.948051948051948,
+            1.0
+          ]
+        }
+      },
+      "elapsed_seconds": 132.7097681999985
+    },
+    "shipped/annotated-field": {
+      "model_sha256": "80f1108a0df16a96dbd2be856a6d5820a5daac2534e856d3304a0814519249c4",
+      "fit": null,
+      "threshold": 0.9709593057632446,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.46464516129032263,
+          "forged_precision": 0.5016611295681063,
+          "forged_recall": 0.9741935483870968
+        },
+        "ci95": {
+          "roc_auc": [
+            0.42244520468285834,
+            0.504674586527935
+          ],
+          "forged_precision": [
+            0.49185667752442996,
+            0.5115511551155115
+          ],
+          "forged_recall": [
+            0.9470198675496688,
+            0.9939024390243902
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.46464516129032263,
+          "forged_precision": 0.9,
+          "forged_recall": 0.05806451612903226
+        },
+        "ci95": {
+          "roc_auc": [
+            0.42244520468285834,
+            0.504674586527935
+          ],
+          "forged_precision": [
+            0.7272727272727273,
+            1.0
+          ],
+          "forged_recall": [
+            0.024386548410938656,
+            0.09615384615384616
+          ]
+        }
+      },
+      "elapsed_seconds": 160.58690639999986
+    },
+    "mobilenet/whole": {
+      "model_sha256": "778a1f7709b020b8c2f24ffee18336e39f46c99631cf676dcae2608d12f1a81d",
+      "fit": {
+        "C": 0.01,
+        "dev_auc": 0.5201242236024844
+      },
+      "threshold": 0.64620441198349,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.5364731182795699,
+          "forged_precision": 0.516260162601626,
+          "forged_recall": 0.8193548387096774
+        },
+        "ci95": {
+          "roc_auc": [
+            0.5246939545961286,
+            0.5575482836094091
+          ],
+          "forged_precision": [
+            0.5060228963663418,
+            0.5279030340189138
+          ],
+          "forged_recall": [
+            0.7236842105263158,
+            0.906832298136646
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.5364731182795699,
+          "forged_precision": 0.5210526315789473,
+          "forged_recall": 0.6387096774193548
+        },
+        "ci95": {
+          "roc_auc": [
+            0.5246939545961286,
+            0.5575482836094091
+          ],
+          "forged_precision": [
+            0.5026455026455027,
+            0.5416666666666666
+          ],
+          "forged_recall": [
+            0.5297619047619048,
+            0.7378161319364871
+          ]
+        }
+      },
+      "elapsed_seconds": 89.89572309999858
+    },
+    "mobilenet/annotated-field": {
+      "model_sha256": "778a1f7709b020b8c2f24ffee18336e39f46c99631cf676dcae2608d12f1a81d",
+      "fit": {
+        "C": 1.0,
+        "dev_auc": 0.9719668737060042
+      },
+      "threshold": 0.9579454064369202,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.9683870967741935,
+          "forged_precision": 0.8418079096045198,
+          "forged_recall": 0.9612903225806452
+        },
+        "ci95": {
+          "roc_auc": [
+            0.9448397827186537,
+            0.9860392529378379
+          ],
+          "forged_precision": [
+            0.7939698492462312,
+            0.8902458693941778
+          ],
+          "forged_recall": [
+            0.9298161268556006,
+            0.9870150816925011
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.9683870967741935,
+          "forged_precision": 0.9266666666666666,
+          "forged_recall": 0.896774193548387
+        },
+        "ci95": {
+          "roc_auc": [
+            0.9448397827186537,
+            0.9860392529378379
+          ],
+          "forged_precision": [
+            0.884348556495769,
+            0.9662162162162162
+          ],
+          "forged_recall": [
+            0.8523365647526722,
+            0.9387817322050772
+          ]
+        }
+      },
+      "elapsed_seconds": 89.35626100000081
+    },
+    "dinov2/whole": {
+      "model_sha256": "ad14b697ce5de7ae86954a0553a1f83aa29d0874bd381f22c6557c47d1a0f2af",
+      "fit": {
+        "C": 0.01,
+        "dev_auc": 0.5071635610766045
+      },
+      "threshold": 0.9170476198196411,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.5501935483870968,
+          "forged_precision": 0.4931506849315068,
+          "forged_recall": 0.4645161290322581
+        },
+        "ci95": {
+          "roc_auc": [
+            0.5264794559141174,
+            0.585768860397611
+          ],
+          "forged_precision": [
+            0.4795903449098938,
+            0.5061747685185185
+          ],
+          "forged_recall": [
+            0.3536406025824964,
+            0.5748540419161676
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.5501935483870968,
+          "forged_precision": 0.0,
+          "forged_recall": 0.0
+        },
+        "ci95": {
+          "roc_auc": [
+            0.5264794559141174,
+            0.585768860397611
+          ],
+          "forged_precision": [
+            0.0,
+            0.0
+          ],
+          "forged_recall": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "elapsed_seconds": 247.02557010000237
+    },
+    "dinov2/annotated-field": {
+      "model_sha256": "ad14b697ce5de7ae86954a0553a1f83aa29d0874bd381f22c6557c47d1a0f2af",
+      "fit": {
+        "C": 0.01,
+        "dev_auc": 0.957639751552795
+      },
+      "threshold": 0.36818772554397583,
+      "threshold_source": "dev balanced accuracy, tie higher threshold",
+      "historical_threshold": {
+        "value": 0.5,
+        "metrics": {
+          "roc_auc": 0.9492903225806452,
+          "forged_precision": 0.946969696969697,
+          "forged_recall": 0.8064516129032258
+        },
+        "ci95": {
+          "roc_auc": [
+            0.9233197738269915,
+            0.9713398705921503
+          ],
+          "forged_precision": [
+            0.9097573479152427,
+            0.9779411764705882
+          ],
+          "forged_recall": [
+            0.7397187922052865,
+            0.8742138364779874
+          ]
+        }
+      },
+      "calibrated": {
+        "metrics": {
+          "roc_auc": 0.9492903225806452,
+          "forged_precision": 0.9295774647887324,
+          "forged_recall": 0.8516129032258064
+        },
+        "ci95": {
+          "roc_auc": [
+            0.9233197738269915,
+            0.9713398705921503
+          ],
+          "forged_precision": [
+            0.8888888888888888,
+            0.9645390070921985
+          ],
+          "forged_recall": [
+            0.7970840926841968,
+            0.9074074074074074
+          ]
+        }
+      },
+      "elapsed_seconds": 178.30834440000035
+    }
+  },
+  "candidates": {
+    "mobilenet": {
+      "model_id": "mobilenetv3_small_100.lamb_in1k",
+      "timm": "1.0.30",
+      "preprocessing": {
+        "input_size": [
+          3,
+          224,
+          224
+        ],
+        "interpolation": "bicubic",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "crop_pct": 0.875,
+        "crop_mode": "center"
+      },
+      "training": "frozen encoder; L2 logistic head, dev-selected regularisation",
+      "licence": "Apache-2.0 per exact model card",
+      "source_url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
+      "pretrained_config": {
+        "url": "https://github.com/rwightman/pytorch-image-models/releases/download/v0.1-weights/mobilenetv3_small_100_lamb-266a294c.pth",
+        "hf_hub_id": "timm/mobilenetv3_small_100.lamb_in1k",
+        "architecture": "mobilenetv3_small_100",
+        "tag": "lamb_in1k",
+        "custom_load": false,
+        "input_size": [
+          3,
+          224,
+          224
+        ],
+        "fixed_input_size": false,
+        "interpolation": "bicubic",
+        "crop_pct": 0.875,
+        "crop_mode": "center",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "num_classes": 1000,
+        "pool_size": [
+          7,
+          7
+        ],
+        "first_conv": "conv_stem",
+        "classifier": "classifier",
+        "license": "apache-2.0"
+      }
+    },
+    "dinov2": {
+      "model_id": "vit_small_patch14_dinov2.lvd142m",
+      "timm": "1.0.30",
+      "preprocessing": {
+        "input_size": [
+          3,
+          224,
+          224
+        ],
+        "interpolation": "bicubic",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "crop_pct": 1.0,
+        "crop_mode": "center"
+      },
+      "training": "frozen encoder; L2 logistic head, dev-selected regularisation",
+      "licence": "Apache-2.0 per exact model card",
+      "source_url": "https://huggingface.co/timm/vit_small_patch14_dinov2.lvd142m",
+      "pretrained_config": {
+        "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth",
+        "hf_hub_id": "timm/vit_small_patch14_dinov2.lvd142m",
+        "architecture": "vit_small_patch14_dinov2",
+        "tag": "lvd142m",
+        "custom_load": false,
+        "input_size": [
+          3,
+          518,
+          518
+        ],
+        "fixed_input_size": true,
+        "interpolation": "bicubic",
+        "crop_pct": 1.0,
+        "crop_mode": "center",
+        "mean": [
+          0.485,
+          0.456,
+          0.406
+        ],
+        "std": [
+          0.229,
+          0.224,
+          0.225
+        ],
+        "num_classes": 0,
+        "pool_size": null,
+        "first_conv": "patch_embed.proj",
+        "classifier": "head",
+        "license": "apache-2.0"
+      }
+    }
+  },
+  "paired_auc_comparisons": {
+    "mobilenet/whole minus shipped/whole": {
+      "difference": 0.013677419354838682,
+      "ci95": [
+        -0.007266336166344917,
+        0.0374044947344821
+      ]
+    },
+    "mobilenet/annotated-field minus shipped/annotated-field": {
+      "difference": 0.5037419354838709,
+      "ci95": [
+        0.4543738602754353,
+        0.5512492674313325
+      ]
+    },
+    "dinov2/whole minus shipped/whole": {
+      "difference": 0.027397849462365564,
+      "ci95": [
+        -0.015168485764970768,
+        0.07199844117897276
+      ]
+    },
+    "dinov2/annotated-field minus shipped/annotated-field": {
+      "difference": 0.48464516129032253,
+      "ci95": [
+        0.43557724546443477,
+        0.5329375194899081
+      ]
+    },
+    "shipped annotated-field minus whole": {
+      "difference": -0.05815053763440858,
+      "ci95": [
+        -0.1049760554310144,
+        -0.018032892676592336
+      ]
+    }
+  },
+  "status": "completed requested model comparisons; not browser-qualified"
+}
