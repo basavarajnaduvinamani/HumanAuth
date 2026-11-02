@@ -178,6 +178,9 @@ test("sample flow, receipt, privacy and accessibility", async ({
   expect(body.checks[0].passed).toBe(true);
   expect(body.checks[1].passed).toBe(false);
   expect(body.checks[2].passed).toBe(true);
+  for (const check of body.checks) {
+    if (check.backend === "WASM") expect(check.wasm_threads).toBe(1);
+  }
   expect(requests.filter((r) => r.origin !== new URL(base).origin)).toEqual([]);
   expect(
     requests.filter(

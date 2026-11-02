@@ -1,9 +1,12 @@
-import { chromium } from "@playwright/test";
+import { chromium, firefox, webkit } from "@playwright/test";
 import { readFile, writeFile } from "node:fs/promises";
 import os from "node:os";
 import { synthesize } from "../../scripts/synthetic/synthesize.mjs";
+const browserName = process.env.QA_BROWSER || "chromium";
+if (!["chromium", "firefox", "webkit"].includes(browserName))
+  throw Error("Unsupported QA browser");
 const base = process.env.BASE_URL || "http://127.0.0.1:3002",
-  browser = await chromium.launch();
+  browser = await { chromium, firefox, webkit }[browserName].launch();
 const originals = await Promise.all(
   [readFile("public/samples/synthetic-face-a.png"),
    readFile("public/samples/document.png"),
@@ -159,6 +162,7 @@ for (const r of refs.rows) {
     abs_diff: Math.abs(r.python.score - ts.score),
     same_pass_fail: r.python.passed === ts.passed,
     backend: ts.backend,
+    wasm_threads: ts.wasm_threads,
   });
 }
 const gate = Object.fromEntries(
@@ -176,16 +180,17 @@ const gate = Object.fromEntries(
   }),
 );
 await writeFile(
-  "../bench/results/web_browser_parity.json",
+  `../bench/results/web_browser_parity${browserName === "chromium" ? "" : `_${browserName}`}.json`,
   JSON.stringify(
     {
       generated_at: new Date().toISOString(),
       browser: browser.version(),
+      engine: browserName,
       hardware: output.hardware,
       gate,
       rows,
       scope:
-        "Headless Chromium worker, PNG/WAV encodings of Python reference fixtures. This qualifies only the observed backends; not all devices.",
+        `Headless ${browserName} worker, lossless PNG/WAV encodings of the same synthetic Python reference fixtures. This qualifies only the observed backends; not held-out accuracy or all devices.`,
     },
     null,
     2,

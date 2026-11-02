@@ -9,6 +9,7 @@ export interface CheckResult {
   latency_ms?: number | null;
   mode?: "live" | "replay";
   backend?: string;
+  wasm_threads?: number;
   guidance?: string;
 }
 export interface RGB {

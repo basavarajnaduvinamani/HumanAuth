@@ -15,6 +15,10 @@ export function receipt(results: CheckResult[], models: ModelEntry[]) {
       latency_ms: r.latency_ms ?? null,
       mode: r.mode ?? "live",
       backend: r.backend ?? "unknown",
+      wasm_threads:
+        r.backend === "WASM" && Number.isInteger(r.wasm_threads) &&
+        r.wasm_threads! >= 1 && r.wasm_threads! <= 4
+          ? r.wasm_threads : null,
     })),
     models: models.map((m) => ({
       file: m.file,
