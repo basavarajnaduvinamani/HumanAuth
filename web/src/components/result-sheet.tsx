@@ -1,3 +1,4 @@
+import { Arrow } from "./arrow";
 import Link from "next/link";
 import { CheckResult } from "../lib/types";
 import { fuse } from "../lib/fusion";
@@ -114,7 +115,7 @@ export function ResultSheet({
           {mini ? "BUNDLED SAMPLES" : "NO MEDIA IN RECEIPT"}
         </span>
         <Link href="/evidence">
-          Inspect the evidence <span aria-hidden="true">↗</span>
+          Inspect the evidence <Arrow />
         </Link>
       </div>
     </section>

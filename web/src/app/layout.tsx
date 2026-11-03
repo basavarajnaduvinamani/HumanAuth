@@ -1,3 +1,4 @@
+import { Arrow } from "../components/arrow";
 import type { Metadata } from "next";
 import Link from "next/link";
 import localFont from "next/font/local";
@@ -56,7 +57,7 @@ export default function RootLayout({
             <div className="header-actions">
               <ThemeToggle />
               <Link className="button small" href="/verify">
-                Try HumanAuth <span aria-hidden="true">↗</span>
+                Try HumanAuth <Arrow />
               </Link>
             </div>
           </div>
@@ -77,7 +78,7 @@ export default function RootLayout({
           <div>
             <Link href="/evidence">Evidence & limits</Link>
             <a href="https://github.com/basavarajnaduvinamani/HumanAuth">
-              Source on GitHub ↗
+              Source on GitHub <Arrow direction="external" />
             </a>
             <span>MIT · Upstream model terms apply</span>
           </div>

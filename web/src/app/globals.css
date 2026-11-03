@@ -46,6 +46,17 @@ a {
   color: inherit;
   text-underline-offset: 4px;
 }
+.action-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-inline-start: 0.2em;
+  vertical-align: -0.14em;
+  flex-shrink: 0;
+}
+.button .action-arrow {
+  margin-inline-start: 0;
+}
 button,
 input,
 select {
@@ -434,7 +445,7 @@ nav a:hover {
   color: var(--muted);
   font-size: 14px;
 }
-.pipeline svg {
+.pipeline > svg {
   width: 100%;
   color: var(--muted);
 }
@@ -1097,7 +1108,7 @@ details pre {
   .section-heading h2 {
     margin: 20px 0;
   }
-  .pipeline svg {
+  .pipeline > svg {
     min-width: 510px;
   }
   .pipeline {
