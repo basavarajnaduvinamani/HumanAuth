@@ -8,6 +8,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/use-cases",
     "/about",
   ].map((p) => ({
-    url: `https://humanauth-iota.vercel.app${p}`,
+    url: `https://humanauth-id.vercel.app${p}`,
   }));
 }

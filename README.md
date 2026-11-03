@@ -3,8 +3,8 @@
 Face liveness, a document authenticity signal and enrolled voice matching,
 on your device, with an explained decision.
 
-**Live:** [humanauth-iota.vercel.app](https://humanauth-iota.vercel.app) ·
-[Evidence and limits](https://humanauth-iota.vercel.app/evidence).
+**Live:** [humanauth-iota.vercel.app](https://humanauth-id.vercel.app) ·
+[Evidence and limits](https://humanauth-id.vercel.app/evidence).
 Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
 
 ![Actual browser sample result: document rejection with reasons](web/screenshots/result-rejected-desktop.png)
@@ -118,7 +118,7 @@ locations and source digest are recorded in
 [`bench/results/reported_results_reference.json`](bench/results/reported_results_reference.json).
 
 The original report is discussed separately under “Original 2024 report” on
-[/evidence](https://humanauth-iota.vercel.app/evidence). Its training and
+[/evidence](https://humanauth-id.vercel.app/evidence). Its training and
 scope-unidentified results are not browser-product accuracy measurements.
 
 The upstream face module retains its own results table for attribution; those are

@@ -28,7 +28,9 @@ export default function Home() {
               Use my camera ↗
             </Link>
           </div>
-          <p className="caption">No account. No API key. Samples included.</p>
+          <p className="caption">
+            Demo prototype: runs on bundled sample data in your browser.
+          </p>
         </div>
         <div className="hero-preview">
           <div className="preview-label">
