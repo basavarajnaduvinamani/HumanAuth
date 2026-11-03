@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-11-02T00:02:50.3543825+05:30",
+  "project": "humanauth",
+  "enablePreviewFeedback": false,
+  "enableProductionFeedback": false,
+  "ssoProtection": {
+    "deploymentType": "all_except_custom_domains"
+  },
+  "source": "https://vercel.com/docs/rest-api/projects/update-an-existing-project"
+}

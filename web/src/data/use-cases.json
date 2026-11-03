@@ -1,0 +1,575 @@
+{
+  "checked_on": "2026-11-03",
+  "scope": "Primary-source workflow examples. Modalities describe the cited workflow, not a universal requirement or HumanAuth adoption.",
+  "sources": {
+    "rbi-current": {
+      "title": "RBI commercial-bank KYC directions, paragraphs 26–27",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=13141",
+      "version": "2025 directions; updated October 1, 2026",
+      "kind": "regulator"
+    },
+    "rbi-history": {
+      "title": "RBI KYC Master Direction, 2016 — historical framework",
+      "url": "https://www.rbi.org.in/scripts/BS_ViewMasDirections.aspx?id=11566",
+      "version": "Updated August 14, 2025; commercial-bank framework subsequently replaced",
+      "kind": "regulator"
+    },
+    "bank-repeat": {
+      "title": "HDFC Bank Re-KYC service",
+      "url": "https://www.hdfc.bank.in/savings-account/services/re-kyc",
+      "version": "Live service page",
+      "kind": "provider"
+    },
+    "uidai": {
+      "title": "UIDAI authentication FAQs",
+      "url": "https://uidai.gov.in/hi/authentication",
+      "version": "Live FAQ; consent-based 1:1 face authentication",
+      "kind": "official service"
+    },
+    "pension": {
+      "title": "Jeevan Pramaan face-authentication application requirements",
+      "url": "https://jeevanpramaan.gov.in/v2.0/apppackage/appdownload",
+      "version": "Live Android/iOS application page",
+      "kind": "official service"
+    },
+    "pension-context": {
+      "title": "NIC: Jeevan Pramaan digital life certificates",
+      "url": "https://informatics.nic.in/files/websites/july-2026/jeevan-pramaan.php",
+      "version": "NIC article, July 2026",
+      "kind": "official service"
+    },
+    "digilocker": {
+      "title": "DigiLocker technology and issuer-signature verification",
+      "url": "https://www.digilocker.gov.in/web/technology",
+      "version": "Live technology page",
+      "kind": "official service"
+    },
+    "digilocker-issued": {
+      "title": "DigiLocker: issued and uploaded document distinction",
+      "url": "https://www.digilocker.gov.in/assets/DIGILOCKER%20ASK%20EXPERT.pdf",
+      "version": "Questions 91–94",
+      "kind": "official service"
+    },
+    "sebi": {
+      "title": "SEBI KYC FAQs, questions 26–27",
+      "url": "https://www.sebi.gov.in/sebi_data/faqfiles/may-2024/1715694256793.pdf",
+      "version": "May 2024 FAQ, retrieved on the review date; not an exhaustive legal-update ledger",
+      "kind": "regulator"
+    },
+    "irdai": {
+      "title": "IRDAI AML/CFT guidelines, Annexure II: VBIP",
+      "url": "https://irdai.gov.in/document-detail?documentId=1345417",
+      "version": "2022 guideline text; later amendments must also be checked for real deployment",
+      "kind": "regulator"
+    },
+    "insurance-live": {
+      "title": "HDFC Life Video KYC consent portal",
+      "url": "https://videokyc.hdfclife.com/",
+      "version": "Live provider workflow",
+      "kind": "provider"
+    },
+    "pfrda": {
+      "title": "PFRDA KYC master circular, section 8.2.1.5",
+      "url": "https://pfrda.org.in/documents/33652/147653/Revised%2BMaster%2BCicular%2BKYC%2Bguidelines.pdf",
+      "version": "Updated September 25, 2025; assisted, unassisted and hybrid VCIP",
+      "kind": "regulator"
+    },
+    "dot": {
+      "title": "DoT subscriber-verification instructions: face modality and photo matching",
+      "url": "https://www.dot.gov.in/static/uploads/2026/02/1a22ca62a5bf5c41431e2ae47ebc3928.pdf",
+      "version": "Official instruction document, sections 4–6; retrieved from DoT",
+      "kind": "regulator"
+    },
+    "campus": {
+      "title": "IIT Madras Security Section: identity cards and visitor passes",
+      "url": "https://www.iitm.ac.in/the-institute/administration/security-section",
+      "version": "Live institutional policy",
+      "kind": "institution"
+    },
+    "hostel": {
+      "title": "IIT Delhi hostel rules: visitor registration",
+      "url": "https://home.iitd.ac.in/hostel-rules.php",
+      "version": "Live institutional policy",
+      "kind": "institution"
+    },
+    "exam": {
+      "title": "NTA candidate-verification procurement specification",
+      "url": "https://www.nta.ac.in/Download/Tender/Tender_20260220132306.pdf",
+      "version": "February 2026 tender; a requirement specification, not proof of universal deployment",
+      "kind": "institution"
+    },
+    "gig": {
+      "title": "Uber India: Real-Time ID Check and account access",
+      "url": "https://www.uber.com/in/en/drive/driver-app/deactivation-review/",
+      "version": "Live provider policy",
+      "kind": "provider"
+    },
+    "gig-docs": {
+      "title": "Uber India driver-document requirements",
+      "url": "https://www.uber.com/in/en/drive/requirements/documents/",
+      "version": "Live provider workflow",
+      "kind": "provider"
+    },
+    "telemedicine": {
+      "title": "MoHFW Telemedicine Practice Guidelines, section 3.2",
+      "url": "https://www.mohfw.gov.in/pdf/Telemedicine.pdf",
+      "version": "2020 guidance; identification context, not a biometric mandate",
+      "kind": "official guidance"
+    },
+    "hotel": {
+      "title": "Hotel Taj Resorts: check-in photo-ID policy",
+      "url": "https://www.hoteltajresorts.com/refund-and-cancellation-policy.html",
+      "version": "One hotel's published policy; no industry-wide mandate inferred",
+      "kind": "provider"
+    },
+    "digiyatra": {
+      "title": "Ministry of Civil Aviation: Digi Yatra",
+      "url": "https://www.civilaviation.gov.in/our-digital-initiatives",
+      "version": "Live ministry description; voluntary conventional alternative",
+      "kind": "official service"
+    },
+    "digiyatra-policy": {
+      "title": "Digi Yatra policy: travel credentials and face-token processing",
+      "url": "https://www.civilaviation.gov.in/sites/default/files/2023-07/Digi%20Yatra%20Policy%20%28DIGI%20YATRA%29.pdf",
+      "version": "Published policy; airport data exchange differs from this local demo",
+      "kind": "official guidance"
+    },
+    "eu": {
+      "title": "European Commission: European Digital Identity framework",
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/eudi-regulation",
+      "version": "eIDAS 2.0 framework; not universal wallet deployment",
+      "kind": "regulator"
+    },
+    "eu-disclosure": {
+      "title": "European Commission: wallet selective disclosure",
+      "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/EUDIGITALIDENTITYWALLET/pages/949256476/What%2Bis%2Bselective%2Bdisclosure%2Bof%2Battributes",
+      "version": "Live framework guidance",
+      "kind": "official guidance"
+    },
+    "nist-proof": {
+      "title": "NIST SP 800-63A-4: identity proofing",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63a.html",
+      "version": "Final 2025 publication",
+      "kind": "official guidance"
+    },
+    "nist-auth": {
+      "title": "NIST SP 800-63B-4, section 3.2.3",
+      "url": "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "version": "Final 2025 publication; voice comparison excluded from conformant authentication",
+      "kind": "official guidance"
+    },
+    "global-bank": {
+      "title": "Monzo: identity checks during account opening",
+      "url": "https://monzo.com/help/opening-an-account/how-to-open-a-Monzo-Personal-Account",
+      "version": "Live UK personal-account help",
+      "kind": "provider"
+    },
+    "phone": {
+      "title": "NatWest Premier: Voice ID",
+      "url": "https://www.natwest.com/premier-banking/contact-us.html",
+      "version": "Live telephone-banking service page",
+      "kind": "provider"
+    },
+    "phone-retired": {
+      "title": "HSBC HK: Voice ID withdrawal notice",
+      "url": "https://www.hsbc.com.hk/important-notices/",
+      "version": "Phone Voice ID support ended August 18, 2024; excluded as a current-use example",
+      "kind": "provider"
+    },
+    "kyc-time": {
+      "title": "Standard Chartered India Video KYC FAQ",
+      "url": "https://www.sc.bank.in/video-kyc/",
+      "version": "Provider estimate: about 6 minutes for the process, under 15 including subsequent agent checks",
+      "kind": "provider"
+    },
+    "patient": {
+      "title": "WHO Patient Identification safety solution",
+      "url": "https://cdn.who.int/media/docs/default-source/patient-safety/patient-safety-solutions/ps-solution2-patient-identification.pdf",
+      "version": "May 2007 safety guidance; no claim of current biometric deployment",
+      "kind": "official guidance"
+    },
+    "event": {
+      "title": "Ticketmaster mobile-ticket entry FAQ",
+      "url": "https://www.ticketmaster.com/mobile-tickets",
+      "version": "Live provider FAQ; encrypted tickets are an alternative to biometric entry",
+      "kind": "provider"
+    }
+  },
+  "cases": [
+    {
+      "id": "bank-onboarding",
+      "group": "India — banking and governance",
+      "title": "Bank account opening",
+      "who": "A bank's authorised official verifies an applicant.",
+      "face": "Live + photo match",
+      "voice": "Call audio only",
+      "document": "Official ID + issuer checks",
+      "risk": "Impersonation and mismatched identity evidence are risks addressed by the required checks.",
+      "possibility": "Local capture feedback could surface recapture issues before officer review.",
+      "boundary": "HumanAuth does not perform bank CDD, issuer verification, geolocation or regulated recording.",
+      "sources": [
+        "rbi-current"
+      ]
+    },
+    {
+      "id": "bank-repeat",
+      "group": "India — banking and governance",
+      "title": "Bank re-verification",
+      "who": "A bank verifies an existing customer's updated details.",
+      "face": "Video route",
+      "voice": "Call audio only",
+      "document": "As required by route",
+      "risk": "Customers may need another branch or video interaction when records need updating.",
+      "possibility": "Study a local repeat-match step during a consented branch visit.",
+      "boundary": "A local match cannot replace the bank's official Re-KYC or authorise a payment.",
+      "sources": [
+        "bank-repeat"
+      ]
+    },
+    {
+      "id": "pension",
+      "group": "India — banking and governance",
+      "title": "Pension life certificates",
+      "who": "The pension service authenticates a pensioner for a digital life certificate.",
+      "face": "Face-auth route",
+      "voice": "Not documented",
+      "document": "Registered identity data",
+      "risk": "Physical submission and worn fingerprints can create access barriers.",
+      "possibility": "Study assisted, same-device re-identification at a service desk.",
+      "boundary": "This demo cannot issue a life certificate or decide pension eligibility.",
+      "sources": [
+        "pension",
+        "pension-context",
+        "uidai"
+      ]
+    },
+    {
+      "id": "welfare",
+      "group": "India — banking and governance",
+      "title": "Welfare and ration counters",
+      "who": "An authorised service agency authenticates its beneficiary.",
+      "face": "Additional auth mode",
+      "voice": "Not documented",
+      "document": "Scheme identity records",
+      "risk": "Worn or missing fingerprints need an alternative verification route.",
+      "possibility": "Explore a voluntary local repeat-check with an attendant fallback.",
+      "boundary": "The demo does not connect to Aadhaar or establish entitlement; a research failure must not deny benefits.",
+      "sources": [
+        "uidai"
+      ]
+    },
+    {
+      "id": "documents",
+      "group": "India — banking and governance",
+      "title": "Citizen document checks",
+      "who": "A requester verifies documents supplied by an authorised issuer.",
+      "face": "Not required by source",
+      "voice": "Not documented",
+      "document": "Issuer-signed record",
+      "risk": "An uploaded scan and an issuer-signed document have different provenance.",
+      "possibility": "Show how a visual tampering signal differs from issuer validation.",
+      "boundary": "A classifier score cannot establish an issuer's signature or a document's legal validity.",
+      "sources": [
+        "digilocker",
+        "digilocker-issued"
+      ]
+    },
+    {
+      "id": "investor",
+      "group": "India — banking and governance",
+      "title": "Securities-account KYC",
+      "who": "A registered intermediary verifies an investor.",
+      "face": "Live photo / video IPV",
+      "voice": "No biometric mandate",
+      "document": "OVD / digital evidence",
+      "risk": "Digital onboarding needs evidence and live-presence checks, not just a form.",
+      "possibility": "Study clear recapture and review reasons before submission.",
+      "boundary": "The SEBI FAQ is workflow context; HumanAuth is not an intermediary or KRA integration.",
+      "sources": [
+        "sebi"
+      ]
+    },
+    {
+      "id": "insurance",
+      "group": "India — banking and governance",
+      "title": "Insurance video identification",
+      "who": "An insurer or authorised person verifies a customer or beneficiary.",
+      "face": "Live video + ID match",
+      "voice": "Call audio only",
+      "document": "KYC evidence",
+      "risk": "Recorded or mismatched identity material is a risk the video workflow addresses.",
+      "possibility": "Explore local checks that explain why an image or capture needs review.",
+      "boundary": "The insurer retains responsibility; its VBIP retention and review workflow is not implemented here.",
+      "sources": [
+        "irdai",
+        "insurance-live"
+      ]
+    },
+    {
+      "id": "nps",
+      "group": "India — banking and governance",
+      "title": "NPS subscriber onboarding",
+      "who": "A reporting entity verifies an NPS subscriber.",
+      "face": "Live photo / VCIP",
+      "voice": "No biometric mandate",
+      "document": "OVD / issuer records",
+      "risk": "Expression-based challenges can exclude subscribers with disabilities.",
+      "possibility": "Study assisted review and an explicit alternative path.",
+      "boundary": "PFRDA's modes and records are distinct from this demo; no NPS registration is created.",
+      "sources": [
+        "pfrda"
+      ]
+    },
+    {
+      "id": "sim",
+      "group": "Other Indian settings",
+      "title": "SIM issuance and replacement",
+      "who": "A telecom provider's authorised point of sale verifies a subscriber.",
+      "face": "Live photo + match",
+      "voice": "Not documented",
+      "document": "Identity / address proof",
+      "risk": "Printed photos, mismatched portraits and manual form errors are addressed in DoT instructions.",
+      "possibility": "Study local live-capture prompts before an authorised provider's checks.",
+      "boundary": "This is not a telecom KYC app and cannot activate a connection.",
+      "sources": [
+        "dot"
+      ]
+    },
+    {
+      "id": "campus",
+      "group": "Other Indian settings",
+      "title": "Campus and office-style entry",
+      "who": "Campus security checks a member or visitor; an office is a proposed analogous setting.",
+      "face": "Manual ID comparison",
+      "voice": "Not documented",
+      "document": "Card / visitor pass",
+      "risk": "A photo of an ID on a phone may be presented where a physical card is expected.",
+      "possibility": "Study repeat recognition on an attendant's device after authorised enrollment.",
+      "boundary": "An access badge or visitor pass may be simpler; no institution uses HumanAuth.",
+      "sources": [
+        "campus"
+      ]
+    },
+    {
+      "id": "exam",
+      "group": "Other Indian settings",
+      "title": "Exam-centre candidate verification",
+      "who": "Exam-centre staff verify a registered candidate.",
+      "face": "Specified in tender",
+      "voice": "Not documented",
+      "document": "Candidate / ID record",
+      "risk": "Entry verification must distinguish the candidate from an impersonator.",
+      "possibility": "Study an assisted mismatch explanation and review queue.",
+      "boundary": "The NTA tender is a procurement specification; it is not proof of deployment at every centre or an endorsement.",
+      "sources": [
+        "exam"
+      ]
+    },
+    {
+      "id": "gig",
+      "group": "Other Indian settings",
+      "title": "Driver and delivery onboarding",
+      "who": "A platform checks that its worker matches the screened account.",
+      "face": "Live selfie + match",
+      "voice": "Not documented",
+      "document": "Onboarding documents",
+      "risk": "Account sharing and photographing a photo are explicitly listed failure cases.",
+      "possibility": "Study a repeat local match without repeatedly retaining raw captures.",
+      "boundary": "Background screening and platform account control remain separate; the cited example is Uber's driver policy.",
+      "sources": [
+        "gig",
+        "gig-docs"
+      ]
+    },
+    {
+      "id": "telemedicine",
+      "group": "Other Indian settings",
+      "title": "Telemedicine identification",
+      "who": "A practitioner and patient establish each other's identity.",
+      "face": "Depends on mode",
+      "voice": "Consultation audio",
+      "document": "As appropriate",
+      "risk": "Anonymous or mistaken identity is unsafe; one fixed modality is not prescribed for every consultation.",
+      "possibility": "Study optional pre-consultation repeat matching with staff assistance.",
+      "boundary": "No diagnosis, medical identity or access-to-care decision is made by this demo.",
+      "sources": [
+        "telemedicine"
+      ]
+    },
+    {
+      "id": "hotel",
+      "group": "Other Indian settings",
+      "title": "Hotel check-in",
+      "who": "Hotel staff compare the guest, reservation and photo ID.",
+      "face": "Manual photo check",
+      "voice": "Not documented",
+      "document": "Photo ID + reservation",
+      "risk": "A booking reference alone may not meet a property's check-in identity policy.",
+      "possibility": "Explore a consented same-stay repeat check at an attended desk.",
+      "boundary": "This example is one Indian hotel's policy, not a nationwide biometric requirement.",
+      "sources": [
+        "hotel"
+      ]
+    },
+    {
+      "id": "digiyatra",
+      "group": "Other Indian settings",
+      "title": "Airport journeys",
+      "who": "An authorised travel workflow checks a passenger and journey credentials.",
+      "face": "Voluntary face route",
+      "voice": "Not documented",
+      "document": "ID + travel credentials",
+      "risk": "Repeated passenger and boarding-pass checks add touchpoints during a journey.",
+      "possibility": "Study a simulated attended gate with locally enrolled synthetic participants.",
+      "boundary": "Digi Yatra is a design reference; HumanAuth has no airport integration or boarding authority.",
+      "sources": [
+        "digiyatra",
+        "digiyatra-policy"
+      ]
+    },
+    {
+      "id": "global-bank",
+      "group": "Global examples and standards",
+      "title": "Remote bank onboarding",
+      "who": "A digital bank checks a prospective customer's identity.",
+      "face": "ID + selfie video",
+      "voice": "No matcher evidenced",
+      "document": "Photo ID",
+      "risk": "A branchless bank needs to link the applicant to the submitted ID.",
+      "possibility": "Study local capture quality and face-to-portrait consistency.",
+      "boundary": "Monzo's published workflow is an example; it is not a claim about HumanAuth or every bank.",
+      "sources": [
+        "global-bank"
+      ]
+    },
+    {
+      "id": "phone",
+      "group": "Global examples and standards",
+      "title": "Call-centre voice authentication",
+      "who": "Telephone-banking staff authenticate an enrolled caller.",
+      "face": "Not in this workflow",
+      "voice": "Voice ID",
+      "document": "Not repeated on call",
+      "risk": "Repeated security questions create another verification step.",
+      "possibility": "Use a local speaker-verification study to measure impostor acceptance and rejection.",
+      "boundary": "NatWest's service does not validate this prototype. NIST authentication guidance separately excludes voice comparison.",
+      "sources": [
+        "phone",
+        "nist-auth"
+      ]
+    },
+    {
+      "id": "eu-wallet",
+      "group": "Global examples and standards",
+      "title": "European identity wallets",
+      "who": "An issuer provisions credentials; a relying party checks a presentation.",
+      "face": "Proofing / activation option",
+      "voice": "Not mandated",
+      "document": "Signed credentials",
+      "risk": "Sharing an entire document can reveal more attributes than the transaction needs.",
+      "possibility": "Explore data minimisation without exporting biometric templates.",
+      "boundary": "The EUDI framework is not a claim of universal deployment or wallet interoperability here.",
+      "sources": [
+        "eu",
+        "eu-disclosure"
+      ]
+    },
+    {
+      "id": "nist",
+      "group": "Global examples and standards",
+      "title": "Identity-proofing and authentication guidance",
+      "who": "A credential provider proves identity; a verifier authenticates a subscriber.",
+      "face": "Biometric option + PAD",
+      "voice": "Excluded in 63B-4",
+      "document": "Validated identity evidence",
+      "risk": "A biometric match alone does not bind a person to trusted identity evidence or a physical authenticator.",
+      "possibility": "Make proofing, later local matching and the limits of each explicit.",
+      "boundary": "This prototype implements no NIST assurance level or conformity claim.",
+      "sources": [
+        "nist-proof",
+        "nist-auth"
+      ]
+    }
+  ],
+  "entry_scenarios": [
+    {
+      "id": "service-desk",
+      "title": "Pension or welfare service desk",
+      "registers": "A consenting visitor, assisted by staff, on the desk device after the normal official process.",
+      "verifies": "An attendant re-identifies a locally enrolled visitor during the visit.",
+      "risk": "Access barriers require alternatives to a failed biometric check.",
+      "proposal": "Demonstrate a short local repeat-check, show reasons and allow staff review. Keep eligibility decisions outside the demo.",
+      "sources": [
+        "uidai",
+        "pension"
+      ]
+    },
+    {
+      "id": "campus-gate",
+      "title": "Office or campus gate",
+      "registers": "An authorised staff member enrolls a consenting member on the gate device.",
+      "verifies": "The attendant compares a returning participant with this device's registrations.",
+      "risk": "Institutional ID and visitor-pass checks still need a trusted enrollment process.",
+      "proposal": "Study same-device matching and a badge/manual fallback; no connected door lock.",
+      "sources": [
+        "campus"
+      ]
+    },
+    {
+      "id": "event",
+      "title": "Event entry",
+      "registers": "An organiser enrolls volunteers at an attended registration desk.",
+      "verifies": "An event attendant checks a returning participant.",
+      "risk": "Copied ticket images can fail modern mobile-ticket checks.",
+      "proposal": "Treat this as an optional study; encrypted tickets may solve entry with less biometric data.",
+      "sources": [
+        "event"
+      ]
+    },
+    {
+      "id": "exam-hall",
+      "title": "Exam hall",
+      "registers": "Authorised exam staff would bind a candidate to official records; this demo uses synthetic records only.",
+      "verifies": "An attendant would review a match or exception at the hall.",
+      "risk": "A false rejection can prevent a genuine candidate entering.",
+      "proposal": "Demonstrate exception reasons and review; do not decide exam admission.",
+      "sources": [
+        "exam"
+      ]
+    },
+    {
+      "id": "hostel",
+      "title": "Hostel reception",
+      "registers": "Hostel staff would enroll a consenting resident on reception's device.",
+      "verifies": "The receptionist would check a returning resident or registered visitor.",
+      "risk": "A local face match cannot replace the institution's visitor registration rules.",
+      "proposal": "Explore repeat matching with expiry, per-person deletion and a register/card fallback.",
+      "sources": [
+        "hostel"
+      ]
+    },
+    {
+      "id": "hospital",
+      "title": "Hospital patient re-identification",
+      "registers": "A staff-assisted volunteer enrolls in a separate research session.",
+      "verifies": "An attendant reviews the research match, separately from clinical care.",
+      "risk": "Patient misidentification can cause harm; guidance calls for multiple identifiers and non-verbal alternatives.",
+      "proposal": "Study an additional signal only. Never use the demo to deny treatment or replace clinical identification.",
+      "sources": [
+        "patient"
+      ]
+    },
+    {
+      "id": "boarding",
+      "title": "Airport-style self-boarding",
+      "registers": "An authorised travel process binds a passenger to travel credentials; the demo enrolls synthetic participants.",
+      "verifies": "A simulated gate checks local registrations.",
+      "risk": "Passenger identity and journey eligibility are separate checks.",
+      "proposal": "Use Digi Yatra as a sourced design reference, with no real boarding approval or integration.",
+      "sources": [
+        "digiyatra",
+        "digiyatra-policy"
+      ]
+    }
+  ]
+}

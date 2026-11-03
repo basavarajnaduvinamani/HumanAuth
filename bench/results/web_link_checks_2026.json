@@ -1,0 +1,34 @@
+[
+  {
+    "url": "https://github.com/basavarajnaduvinamani/HumanAuth",
+    "http_status": 200,
+    "total_seconds": 1.273591,
+    "effective_url": "https://github.com/basavarajnaduvinamani/HumanAuth",
+    "curl_exit": 0,
+    "checked_at": "2026-11-01T23:29:17.6035066+05:30"
+  },
+  {
+    "url": "https://github.com/basavarajnaduvinamani/HumanAuth/pull/2",
+    "http_status": 200,
+    "total_seconds": 1.068906,
+    "effective_url": "https://github.com/basavarajnaduvinamani/HumanAuth/pull/2",
+    "curl_exit": 0,
+    "checked_at": "2026-11-01T23:29:18.7236826+05:30"
+  },
+  {
+    "url": "https://humanauth-basavarajnaduvinamani34-1831.vercel.app",
+    "http_status": 404,
+    "total_seconds": 0.399305,
+    "effective_url": "https://humanauth-basavarajnaduvinamani34-1831.vercel.app/",
+    "curl_exit": 0,
+    "checked_at": "2026-11-01T23:29:19.2030684+05:30"
+  },
+  {
+    "url": "https://humanauth-5fk2amjar-basavarajnaduvinamani34-1831.vercel.app",
+    "http_status": 404,
+    "total_seconds": 0.210945,
+    "effective_url": "https://humanauth-5fk2amjar-basavarajnaduvinamani34-1831.vercel.app/",
+    "curl_exit": 0,
+    "checked_at": "2026-11-01T23:29:19.4826006+05:30"
+  }
+]

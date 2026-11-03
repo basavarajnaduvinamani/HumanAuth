@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-11-03T12:10:18.189084+00:00",
+  "scope": "SVG arrow polish only; no model, verification-rule, evidence, typography or layout redesign",
+  "source_commit": "5acc9f312362021280f1291928f3b3a9aec3a5bf",
+  "deployment_id": "dpl_CvbzDfUoz8LWEFeUJUwX8hamrsKD",
+  "staged_url": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+  "public_url": "https://humanauth-id.vercel.app",
+  "public_home_status": 200,
+  "public_about_status": 200,
+  "legacy_redirect_status": 308,
+  "component": "web/src/components/arrow.tsx",
+  "arrow_call_sites": 18,
+  "directions": {
+    "internal": "right",
+    "external": "diagonal",
+    "download": "down"
+  },
+  "visual_checks": [
+    {
+      "route": "/about",
+      "width": 1440,
+      "theme": "light",
+      "icons": 3,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "light",
+      "icons": 9,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/about",
+      "width": 1440,
+      "theme": "dark",
+      "icons": 3,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "theme": "dark",
+      "icons": 9,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "theme": "light",
+      "icons": 3,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "light",
+      "icons": 9,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/about",
+      "width": 390,
+      "theme": "dark",
+      "icons": 3,
+      "inherits_color": true,
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "width": 390,
+      "theme": "dark",
+      "icons": 9,
+      "inherits_color": true,
+      "decorative": true
+    }
+  ],
+  "typecheck_exit": 0,
+  "lint_exit": 0,
+  "build_exit": 0,
+  "browser": {
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "seconds": 124.542436,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ]
+  },
+  "viewer_grant_revoked": true,
+  "credentials_persisted": false,
+  "same_tested_artifact_promoted": true,
+  "models_changed": false,
+  "python_manual_rerun": false,
+  "python_scope": "Prior 76-test result retained; no Python code changed in this UI patch. Automatic final PR CI verified separately.",
+  "review": "Static deterministic SVG; no hooks/state/request changes; aria-hidden and focusable=false; inherited text colour in both themes"
+}

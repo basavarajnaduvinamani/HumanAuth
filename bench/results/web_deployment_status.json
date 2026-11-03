@@ -1,0 +1,18 @@
+{
+  "recorded_at": "2026-11-02T14:03:16.504910+00:00",
+  "status": "production_verified",
+  "plan": "Hobby",
+  "project": "humanauth",
+  "application_commit": "cba75b1d87fbfff74c5bde2d49d7e22ba6e7cd01",
+  "working_preview_url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app",
+  "public_production_url": "https://humanauth-iota.vercel.app",
+  "release_source": "bench/results/web_release_2026.json",
+  "authorization": "Owner explicitly resumed launch beyond cutoff; production only after all hosted browser, integrity and Lighthouse gates pass",
+  "git_integration": "GitHub Login Connection still optional owner setup; CLI deployments work",
+  "notes": [
+    "No merge or ready-for-review action",
+    "No new private biometric capture",
+    "Public sample deliberately returns Not verified for SPECIMEN",
+    "Camera QA uses synthetic test-pattern device, not physical camera"
+  ]
+}

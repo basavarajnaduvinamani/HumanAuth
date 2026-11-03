@@ -1,0 +1,369 @@
+{
+  "face": {
+    "source": "bench/results/face_public_2026.json",
+    "data": {
+      "generated_at": "2026-11-01T13:13:49.687292+00:00",
+      "command": "python scripts/evaluate_public_faces.py",
+      "dataset": {
+        "name": "LCC-FASD fixed balanced evaluation subset",
+        "version": "faber24/lcc-fasd version 1",
+        "official_source": "https://pureportal.spbu.ru/files/51584200/CSIT2019_Grishkin_Timoshenko.pdf",
+        "mirror": "https://www.kaggle.com/datasets/faber24/lcc-fasd",
+        "terms": "Scientific research use described by the original authors; Kaggle mirror licence is Unknown. Evaluation only; images not redistributed."
+      },
+      "protocol": "bench/protocol_2026.md",
+      "seed": 20261101,
+      "sample_count": 200,
+      "class_counts": {
+        "bona_fide": 100,
+        "attack": 100
+      },
+      "sample_ids_sha256": "a472aa057aca8c97b5da0d7e1bcc8fcc681c1f96df719e036311dc6e86d8a675",
+      "sample_content_sha256": "ea4b890f036e2fca29cba3409545241c7887e95f990534e488ae01c911d5c6b3",
+      "threshold": 0.5,
+      "bootstrap": {
+        "replicates": 2000,
+        "unit": "stratified images, identity mapping unavailable in evaluation filenames",
+        "method": "percentile"
+      },
+      "scope": "Cross-domain transfer: upstream shipped model describes CelebA-Spoof training. Fixed balanced subset, not full LCC evaluation. Repeated images/identities can make image bootstrap intervals too narrow; no subject-disjoint or population claim. Detector failures remain rejection.",
+      "outputs": {
+        "shipped": {
+          "metrics": {
+            "APCER": 0.27,
+            "BPCER": 0.21,
+            "ACER": 0.24,
+            "AUC": 0.7922999999999999,
+            "EER": 0.22999999999999998
+          },
+          "ci95": {
+            "APCER": [
+              0.18975000000000003,
+              0.36
+            ],
+            "BPCER": [
+              0.13,
+              0.29
+            ],
+            "ACER": [
+              0.18,
+              0.29500000000000004
+            ],
+            "AUC": [
+              0.7250962500000001,
+              0.8592049999999999
+            ],
+            "EER": [
+              0.17000000000000004,
+              0.29000000000000004
+            ]
+          },
+          "latency_ms": {
+            "p50": 371.8537499953527,
+            "p95": 718.4393900111895
+          }
+        },
+        "modern_comparator": {
+          "metrics": {
+            "APCER": 0.3,
+            "BPCER": 0.19,
+            "ACER": 0.245,
+            "AUC": 0.8362999999999998,
+            "EER": 0.21499999999999997
+          },
+          "ci95": {
+            "APCER": [
+              0.21,
+              0.39
+            ],
+            "BPCER": [
+              0.11,
+              0.27
+            ],
+            "ACER": [
+              0.185,
+              0.305
+            ],
+            "AUC": [
+              0.7739975,
+              0.89340625
+            ],
+            "EER": [
+              0.15000000000000002,
+              0.28
+            ]
+          },
+          "latency_ms": {
+            "p50": 377.1980000019539,
+            "p95": 770.5174449947659
+          }
+        }
+      },
+      "model_hashes": {
+        "detector": "9385161da56e8b2fc38f565235fb8525cea3de8430803ebd7a71ec98740808de",
+        "shipped": "a6c0553fab996a56962baeb0a49013a03c32b866999f6aea76936b6833929bda",
+        "modern_comparator": "af2381b88f38769222ed93379e12444e2a50814575de1c46170de570c55a42b6"
+      },
+      "modern_comparison": {
+        "source": "https://github.com/facenox/face-antispoof-onnx",
+        "checkpoint": "models/best/98.20/best_model.onnx",
+        "licence": "Apache-2.0 upstream",
+        "preprocess": "upstream src/inference/preprocess.py: reflected expansion 1.5, AREA reduction / LANCZOS4 enlargement, reflected letterbox, RGB CHW /255",
+        "detector_control": "same shipped detector and face-count rule for both models",
+        "decision": "Keep shipped model: no replacement without browser parity, irrespective of transfer result.",
+        "preprocess_sha256": "dff0ec9869ba3524986a852017b7a2f6a2cdd08841bf857f8ec9b6a35a1e9eb0",
+        "preprocess_source": "https://raw.githubusercontent.com/facenox/face-antispoof-onnx/main/src/inference/preprocess.py"
+      },
+      "no_face_or_multiple": 9,
+      "hardware": {
+        "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+        "cpu_source": ".finish/hardware.json",
+        "logical_cores": 12,
+        "ram_bytes": 16831889408,
+        "os": "Windows-10-10.0.26300-SP0",
+        "python": "3.11.9",
+        "onnxruntime": "1.31.1"
+      }
+    }
+  },
+  "document": {
+    "source": "bench/results/document_public_2026.json",
+    "data": {
+      "generated_at": "2026-11-01T12:57:20.212403+00:00",
+      "command": "python scripts/evaluate_public_documents.py",
+      "dataset": {
+        "name": "Dataset of fake identity documents for research purposes",
+        "version": "1.0",
+        "doi": "10.5281/zenodo.8213348",
+        "url": "https://zenodo.org/records/8213348",
+        "licence": "CC-BY-4.0",
+        "archive_checksums": {
+          "original.zip": "md5:20793e556d811682468e147a789052f7",
+          "esp_id_edited_120.zip": "md5:6fc200305522ce9ec34bce5da0e37b2c",
+          "esp_id_edited_140.zip": "md5:42caf1fc80774317ef67b53e0caee25a"
+        }
+      },
+      "protocol": "bench/protocol_2026.md",
+      "seed": 20261101,
+      "sample_count": 300,
+      "source_groups": 100,
+      "class_counts": {
+        "genuine": 100,
+        "forged": 200
+      },
+      "sample_ids_sha256": "c2a543c841675f323d423137496e70ea693a0cf178891cdd64257a839e8e277f",
+      "sample_content_sha256": "cfa54a0886c949ef0dbc5c57d4b6df2958686f7da51b712e2a6f87604bc49281",
+      "training_byte_overlaps": 0,
+      "model": "modules/document_forgery_detection/forgery_classifier.pth",
+      "model_sha256": "80f1108a0df16a96dbd2be856a6d5820a5daac2534e856d3304a0814519249c4",
+      "class_order": [
+        "fake",
+        "real"
+      ],
+      "threshold": 0.5,
+      "metrics": {
+        "accuracy": 0.6633333333333333,
+        "forged_precision": 0.6666666666666666,
+        "forged_recall": 0.99,
+        "roc_auc": 0.4861
+      },
+      "ci95": {
+        "accuracy": [
+          0.6566666666666666,
+          0.6666666666666666
+        ],
+        "forged_precision": [
+          0.6666666666666666,
+          0.6666666666666666
+        ],
+        "forged_recall": [
+          0.97,
+          1.0
+        ],
+        "roc_auc": [
+          0.4767,
+          0.48810000000000003
+        ]
+      },
+      "bootstrap": {
+        "replicates": 2000,
+        "unit": "source filename stem, clustering original and both edited versions; filename correspondence assumed from archive naming",
+        "method": "percentile"
+      },
+      "hardware": {
+        "cpu": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel",
+        "logical_cores": 12,
+        "ram_bytes": 16831889408,
+        "ram_source": ".finish/hardware.json",
+        "os": "Windows-10-10.0.26300-SP0",
+        "python": "3.11.9",
+        "torch": "2.15.0+cpu"
+      },
+      "scope": "Whole-image cross-domain transfer to synthetic Spanish IDs, not a population KYC or fraud benchmark. No fitting on this source. Byte disjointness checked; same source filename groups cluster edits. Region-crop evaluation unavailable: archive supplies no validated forgery-region boxes.",
+      "region_crop": {
+        "status": "skipped",
+        "reason": "No validated manipulated-region annotations; inventing boxes would change the protocol."
+      },
+      "rejected_inputs": [],
+      "latency_ms": {
+        "p50": 39.851599984103814,
+        "p95": 95.1282499983791
+      }
+    }
+  },
+  "browser_parity": {
+    "source": "bench/results/web_browser_parity.json",
+    "data": {
+      "generated_at": "2026-11-01T17:24:54.247Z",
+      "browser": "156.0.8078.4",
+      "hardware": {
+        "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+        "logical_cores": 12,
+        "ram_bytes": 16831889408,
+        "os": "Windows_NT 10.0.26300",
+        "browser": "156.0.8078.4"
+      },
+      "gate": {
+        "face": {
+          "mode": "GO",
+          "max_abs_diff": 3.749336821012861e-07,
+          "cases": 11
+        },
+        "document": {
+          "mode": "GO",
+          "max_abs_diff": 0.015919521723441056,
+          "cases": 11
+        },
+        "voice": {
+          "mode": "GO",
+          "max_abs_diff": 0,
+          "cases": 11
+        }
+      },
+      "scope": "Headless Chromium worker, PNG/WAV encodings of Python reference fixtures. This qualifies only the observed backends; not all devices."
+    }
+  },
+  "latency": {
+    "source": "bench/results/web_latency_latest.json",
+    "data": {
+      "source": "bench/results/web_latency_i5_12450h_2026-11-01T17-23-26-941Z.json",
+      "generated_at": "2026-11-01T17:23:26.874Z",
+      "command": "cd web && node bench/browser.mjs",
+      "hardware": {
+        "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+        "logical_cores": 12,
+        "ram_bytes": 16831889408,
+        "os": "Windows_NT 10.0.26300",
+        "browser": "156.0.8078.4"
+      },
+      "boundary": "Worker stage includes decode, preprocessing and inference. Cold includes model fetch/session initialization. Warm retains worker and sessions. Total is sum of stage compute, excluding page render and capture.",
+      "warm_runs": 30,
+      "cold_runs": 3,
+      "stages": {
+        "face": {
+          "p50_ms": 345.7224999964237,
+          "p95_ms": 510.81650000661614,
+          "backend": "WASM"
+        },
+        "document": {
+          "p50_ms": 403.33250001072884,
+          "p95_ms": 470.1952500000596,
+          "backend": "WASM"
+        },
+        "voice": {
+          "p50_ms": 384.43000000715256,
+          "p95_ms": 519.5119999989868,
+          "backend": "JavaScript CPU"
+        },
+        "total": {
+          "p50_ms": 1153.862500011921,
+          "p95_ms": 1460.8790000036358,
+          "backend": "mixed"
+        }
+      }
+    }
+  },
+  "network": {
+    "source": "bench/results/web_network_audit.json",
+    "data": {
+      "generated_at": "2026-11-01T17:15:40.356Z",
+      "browser": "156.0.8078.4",
+      "project": "chromium",
+      "base_url": "http://127.0.0.1:3006",
+      "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
+      "input_upload_bytes": 0,
+      "third_party_requests": 0,
+      "axe_serious_critical": 0,
+      "decision": "reject",
+      "checks": [
+        {
+          "name": "face",
+          "status": "ok",
+          "score": 0.6068159577009101,
+          "passed": true,
+          "threshold": 0.5,
+          "detail": "Live-face probability 0.61.",
+          "latency_ms": 6273.189999997616,
+          "mode": "live",
+          "backend": "WASM"
+        },
+        {
+          "name": "document",
+          "status": "ok",
+          "score": 0.016057271113053197,
+          "passed": false,
+          "threshold": 0.5,
+          "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+          "latency_ms": 2854.8050000071526,
+          "mode": "live",
+          "backend": "WASM"
+        },
+        {
+          "name": "voice",
+          "status": "ok",
+          "score": 0.9999360439396737,
+          "passed": true,
+          "threshold": 0.5,
+          "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
+          "latency_ms": 680.2450000047684,
+          "mode": "live",
+          "backend": "JavaScript CPU"
+        }
+      ]
+    }
+  },
+  "slow_network": {
+    "source": "bench/results/web_slow_network.json",
+    "data": {
+      "generated_at": "2026-11-01T17:03:48.766Z",
+      "browser": "156.0.8078.4",
+      "profile": {
+        "name": "Fast 3G (explicit CDP profile)",
+        "latency_ms": 150,
+        "download_bytes_per_second": 204800,
+        "upload_bytes_per_second": 96000
+      },
+      "boundary": "Navigation to complete sample result; first and second visits in the same browser context. Second visit retains model Cache Storage.",
+      "results": [
+        {
+          "visit": "first",
+          "elapsed_ms": 261784.5651,
+          "model_network_requests": 4,
+          "model_files": [
+            "http://127.0.0.1:3005/models/yolov5s-face.onnx",
+            "http://127.0.0.1:3005/models/AntiSpoofing_bin_1.5_128.onnx",
+            "http://127.0.0.1:3005/models/document-int8.onnx",
+            "http://127.0.0.1:3005/models/voice-gmm.json"
+          ]
+        },
+        {
+          "visit": "second",
+          "elapsed_ms": 49077.10979999998,
+          "model_network_requests": 0,
+          "model_files": []
+        }
+      ]
+    }
+  },
+  "historical_fixture_notice": "Aggregate results from retired personal fixtures. Labels anonymized; all measured numeric observations unchanged. Do not interpret these as synthetic-v2 runs."
+}

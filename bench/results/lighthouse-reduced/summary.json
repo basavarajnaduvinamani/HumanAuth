@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-11-03T11:08:06.459Z",
+  "base_url": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app/",
+  "scope": "Reduced recruiter-demo final staged candidate; root page only, mobile and desktop",
+  "results": [
+    {
+      "page": "/",
+      "form_factor": "mobile",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "fetch_time": "2026-11-03T11:07:46.008Z",
+      "source": "bench/results/lighthouse-reduced/landing-mobile.json"
+    },
+    {
+      "page": "/",
+      "form_factor": "desktop",
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 63
+      },
+      "fetch_time": "2026-11-03T11:07:54.101Z",
+      "source": "bench/results/lighthouse-reduced/landing-desktop.json"
+    }
+  ]
+}

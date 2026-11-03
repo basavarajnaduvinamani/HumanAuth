@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-11-03T12:03:19.361Z",
+  "deployment_id": "dpl_CvbzDfUoz8LWEFeUJUwX8hamrsKD",
+  "base_url": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app/",
+  "label_present": true,
+  "owner_credit_present": true,
+  "removed_paths": [
+    {
+      "path": "/models/voice-gmm.json",
+      "status": 404
+    },
+    {
+      "path": "/samples/voice.wav",
+      "status": 404
+    },
+    {
+      "path": "/samples/face.png",
+      "status": 404
+    },
+    {
+      "path": "/models/model.h5",
+      "status": 404
+    },
+    {
+      "path": "/face_database/embeddings.pickle",
+      "status": 404
+    },
+    {
+      "path": "/modules/voice_authentication/test.wav",
+      "status": 404
+    }
+  ]
+}

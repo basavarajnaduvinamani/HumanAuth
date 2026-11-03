@@ -1,0 +1,258 @@
+{
+  "generated_at": "2026-11-03T11:20:21.895994+00:00",
+  "current_deployment_id": "dpl_3yWTamEVoT4dZG8CYAiKW5Js51tN",
+  "current_public_url": "https://humanauth-id.vercel.app",
+  "legacy_url": "https://humanauth-iota.vercel.app",
+  "clean_build_cache_used": false,
+  "clean_build_command": "vercel deploy --prod --skip-domain --force --yes",
+  "production_release": "vercel promote the same staged deployment; no rebuild",
+  "removed_deployments": [
+    {
+      "deployment_id": "dpl_7pdoX4fK1fknaRjtqTCDD1pjsc94",
+      "url": "https://humanauth-87dd07efw-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_4UgNZD19S78pk98xGz6Y2FnSLoR5",
+      "url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_6W6XmQc6XUURZFsWbrzshDbRJT1g",
+      "url": "https://humanauth-6wap133ao-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_3MDKxhikfYouERX5W73NgZr59C3n",
+      "url": "https://humanauth-5ows3n0zt-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_HkouUC3oyDV4iL8eGwnR4hsBKKaK",
+      "url": "https://humanauth-ckt5f77q5-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_F7iYGbgqDjninXDFKcQrDdeuFEaH",
+      "url": "https://humanauth-q3290tjyr-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_31BXDce1d5zUXqehwBkULshxhZ2H",
+      "url": "https://humanauth-3is4zg3mr-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    },
+    {
+      "deployment_id": "dpl_FbTNszNidU8nQQM1fA94NDURCPPY",
+      "url": "https://humanauth-k4zzfh73l-basavarajnaduvinamani34-1831.vercel.app",
+      "removed": true,
+      "statuses": {
+        "/": {
+          "final_status": 404,
+          "observed_statuses": [
+            302,
+            404
+          ]
+        },
+        "/models/voice-gmm.json": {
+          "final_status": 404,
+          "observed_statuses": [
+            404
+          ]
+        }
+      }
+    }
+  ],
+  "public_private_path_checks": [
+    {
+      "url": "https://humanauth-id.vercel.app/models/voice-gmm.json",
+      "status": 404,
+      "seconds": 0.109671,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/samples/voice.wav",
+      "status": 404,
+      "seconds": 0.116354,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/samples/face.png",
+      "status": 404,
+      "seconds": 0.109219,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/models/model.h5",
+      "status": 404,
+      "seconds": 0.164854,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/face_database/embeddings.pickle",
+      "status": 404,
+      "seconds": 0.156841,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/modules/voice_authentication/test.wav",
+      "status": 404,
+      "seconds": 0.134964,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/models/voice-gmm.json",
+      "status": 404,
+      "seconds": 0.220583,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/samples/voice.wav",
+      "status": 404,
+      "seconds": 0.235336,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/samples/face.png",
+      "status": 404,
+      "seconds": 0.220486,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/models/model.h5",
+      "status": 404,
+      "seconds": 0.243239,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/face_database/embeddings.pickle",
+      "status": 404,
+      "seconds": 0.235714,
+      "redirect": "",
+      "followed_redirects": true
+    },
+    {
+      "url": "https://humanauth-iota.vercel.app/modules/voice_authentication/test.wav",
+      "status": 404,
+      "seconds": 0.203212,
+      "redirect": "",
+      "followed_redirects": true
+    }
+  ],
+  "scope": "Previously inventoried old private deployments removed after the gated clean release. Iota redirects to the new public domain; private-path results are final HTTP status after following that redirect. GitHub cached/read-only PR cleanup remains an owner Support action."
+}

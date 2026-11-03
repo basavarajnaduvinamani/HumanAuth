@@ -1,0 +1,1780 @@
+{
+  "version": 1,
+  "private_sha256": [
+    "0eb53e7974ebd136e27b16e25229ea68290418aa76a9ecc43b32729e3bba0714",
+    "841825dd803bac5db5e32a8b6ecc66ba6ef37ccc7adc5e3917f70c9ee74988ac",
+    "b069074d4cbc64db3bf09742472713bbfdb1ee4ae97f312090652cb183cdc9d8",
+    "b187f5a68896f76d9c14f2eadafeecb855db1fe8ae3e264236f6819fb936a2ca",
+    "c9d9340132887185caa55b604bf07d1cd8dc1c6c8a0df2af423dbdebb6bbf085",
+    "f28f1d4fd5be496dab885d4246def8285adda3d38a265cd69527f9073db34817"
+  ],
+  "images": [
+    {
+      "path": "docs/img/verify_mobile_empty.png",
+      "sha256": "2f43e8e0df3d8fa96bec750af9f970c503629c192b5046dc1415b7ed65acfbbd",
+      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
+      "source": "HumanAuth application render"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/Upto-4th-Sem-Markscard_page-0004_jpg.rf.eeecd781cfc1f3f99838c06bdeb18218.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/f2_png.rf.0d3227aadf72ecadd8a3e773a96f5015.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.21d731585a496c387ab1af211f6dce61.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.3629297669b914c5914607309d50d2a2.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.67bbb17264bfb12640e7874929600ea7.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.8683bd9b5db9b70f7b13eafdc0f8972c.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.8777eae35fbe04bb0e47668577e7e78e.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.8a4f28d243c840868167e35f3069d195.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.9ecf31220866c5f73624f74e50c178e1.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.c9a3ed6c703624a0060888aab682e9a0.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.d52febb41ad6e1fe20e46d758aef4c58.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.f0976529ef92d7be580e2fc420a97fa3.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.46b012d58f6bcd036a7b06e80dff2331.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.4eae45731e29452109b14bcbf4f6298d.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.86e0b2281d27e3d1665e7577ebb81696.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.ae5c29dec4a50a7ed541da26f3abf730.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.d83f7d224ad5e1a633be048b058c2c9f.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.eeec0e52bf96cf1d2bfb5d7b2a5c465b.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.17b5d988c5d9a1da4a9d073d24475f3e.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.bbdb694c5d37e2c1158819e73a967c75.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.c81b5914c59f954a8fc7addbf2abb1a3.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.e4925b27df2c8786a71a2e3c05d00469.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.eeecd781cfc1f3f99838c06bdeb18218.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f2_png.rf.0d3227aadf72ecadd8a3e773a96f5015.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f2_png.rf.3062df769512c99a34ea4019307c5646.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f2_png.rf.aeaf283a70f39acfea1bdd96e9e34d1b.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f3_jpg.rf.1ad6a62e894d5fea818b76d8f8a58618.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f4_png.rf.167bf517e1cfd2b9f0d07f836f8f3090.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f4_png.rf.5e47c5fd58aac4209dc7586c50af04d9.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f4_png.rf.83af655c4721072cda4d4c02798c0f9a.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f4_png.rf.f1e86e8239a1c917038caee4e2d85f21.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f5_jpg.rf.61deedbc33455340876f451f5ce2c32a.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f5_jpg.rf.9ed60b3b539657a4dea9153cf0147fda.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f6_jpg.rf.b0d776c22b761efb5940f0ea0ac3bfe8.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f8_jpg.rf.951974a35b1687e241b4ff301e62ee80.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f9_jpg.rf.c621d9778c51b6927adb89188f0674f9.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/f9_jpg.rf.e76298c335a8de2b2c2e878a7a395393.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/fnew1_png.rf.6fc64a9364b96d8612dee5fcb1edbe83.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/fnew2_png.rf.5cabad9cacef23e6bad33c06b84d32a1.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/fnew2_png.rf.aa4007ef40ef41e7ffb8e6b96da6635c.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/fnew2_png.rf.cf127af83e53e26cf19f1772c3cab741.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/test/images/fnew2_png.rf.fb526728f6e294a32b396fc33ea52734.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002-Copy-2-_jpg.rf.2e1e63d1b985e32e0e76a8f8fe38afea.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.0d819041ec1c1b69dc109cd0ade8efdb.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.11b1a6149e06ea9ca99887030432789e.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.284f94029e289743b74719c8c06900ff.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.45f4fe79072c6dddfee65b226c03f066.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.4b09e033dda01caf9171b0f46e59f0f9.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.4efe607fdb3e7b635b3c079c3e4bcaec.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.50e77b0427ef0ab9722cd588d501531c.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.6d89b03caf353c9df373a11cde121ce9.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.70829b59cdd9de1cfa4f1d097e093f22.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.713b7554f2f17a60a00d708c70a5c4e6.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.824b91bae45d5dd6b8c5e04833cef828.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.8ef6748058b7b7c68fb6a8544b7c4e0d.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.a407156d320fca604b6ada8b48c7f099.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.ac0fa5c5ce3b052ffe719d957d740230.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.ba694fe86c8a796dca433f020e5f4cc4.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.c01aa60ecd95a2a810ec6b73e1497120.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.cc0f1335124ee229860bfeb49b029f37.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.cdb38aac3e88e3b3e6fc485c753176a9.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.cf88e331ca7f10104d25a45e95177a5a.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.e29907d695324a71af6ca1718cf478ae.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.e4dbac961f63fedc6e56e4e7ff065276.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.f1f589c114a03f990aa5afc727fda301.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.f44234f11be830482ca4586f7bf049da.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.f6b7569c287945cfe6e31b10a188b7b7.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.f8f2b685972ea72e8b54efbd31d2ebef.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.ff8f7ba8f9c702288fb52222820a7458.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.06e4c3e1274e67a5193dbc1fbaacd31e.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.0f4d6a03ceaac55ccc8f5aaf0aa45019.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.1a55df68e6841a2eb869972c3c709f7c.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.1d31d127ac0bbde8b49dc32735a3b43a.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.212ad46a166018f0fec5829fb81071ed.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.29a70c9bd3b3c89b24cc9e08218c4682.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.44a95680c1e1c5f2e050e14ecd038394.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.4fd58c602571bbf4c820955bc2395e5f.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.6004ad2e5943bffd96375766c9cb0912.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.69ae9b5639d8950d48ac1a112f909bc7.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.71d121d4761eae7cbe17b399bd244c6e.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.751d8584d298fe203c52c1c1702141e5.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.8e3ec4bddbe3be8501aeaf69f4602e24.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.944577258337a7770ddeae8dcc30de1f.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.98e86bf57ca2d4d00dcad1d00d884967.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.9ce61b558d6a73a1358d93a5f6c4709e.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.a24b02a8cc238c2839f540e3bed88bf6.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.a9628023e21225b53cbadec49fb71de1.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.b85dba2e2178d1eae7fbb20c0b45454e.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.be2f41e7a30415c97fa21c188ce69b92.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.bf2d5e824e95c7c877a6fb5aed9dd396.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.c5632ecc1de320ee235351fe4d6b7367.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.d549750106b3de9f12ced9b128037871.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.d57dbf421ccb9f441b3d3415f58bbec0.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.e0597d0a6e41b45614429eb2c08607dd.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.ea11b5a105c1e43ed2807c85d8f36d74.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.ec37f07a126a8764f00d243c1701972f.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.f211c5d9a7041bb89a3be756823dc546.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.f4159a761cdb35c9d34248cb76b35e66.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.fa40b4c1057f1d793ed5c11b6377248c.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.171cbedf56414b8660926ebb6129deba.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.183ce2fb8e35894eb9d898d8e2e0c8e0.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.1b1a20242f61f2dee6223fe2538ce5ac.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.2388d2109e88c5141e0b03e51c25c27b.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.2db1c26c9f1183c5300cdf802b74fa8a.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.402efa2b1ccd87ea0d8623dccd8bc144.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.40bb79731c8ec448775003d52d1df14b.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.41d14a0821b231977a0fc9c456cc1437.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.44d7eeed1448abefb07110a45b508e20.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.4f12b4bc0588b6f3ab081dcdce05a740.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.580569549a60a54c523b72d744e0efeb.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.64b1a5147bbf7eefabb1b4d6dd7d0e55.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.6b5f751d30d8857c2e39d09b4ff5ae4b.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.75dc1fcaf5a25556d09bf905533d3b7b.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.7727e670e171c5cb3e5ba3a58c8c5233.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.7bcd67deeb48e7e28dee8e6742a412a8.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.7ed69f93ad2a565f2ced82d96aa3137c.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.9282123b472dc0475630ac8e339270a4.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.980c39d06982b94cfb7d9376e2ae54eb.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.998638955b52107367fb3a74f44b1ed8.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.9ceaeb5dea63396892900a8a339e72e8.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.a1f45bf61ca10241a9ff620c8ef96670.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.a95b6f6dd087e5baf61b7b1858a76a42.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.aed42a0ca621c7cd9d411499e27e5dee.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.b5fdb39da3859cdd0c9a23dab2814fb0.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.b65f3d3d71770b56b9072423071f5c26.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.d2f1ab4b933208f15b73b0b36d970679.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.e8dd47f95d1436796aa900ae8fe3abab.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.f352a050f8c9ad2dc2ca16e99de53175.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.02bffa7978b72775847d160cfab4146c.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.287ad979a6e4a111578022b429fb30c0.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.33184ff498a71f652a196785aa2a754a.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.37ce54ffc6a455ef4978e31b33f41809.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.3d43e30c92518f3d1fa398834ecca638.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.3ecd9ae64e0e3960ee0247d47dd5cd36.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.552c4aeab2428db8ce5b3588cd1d09e2.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.770dcc550eebaef2e5c687cef862f89c.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.b566ac71c9e281adc51cec329ad218d4.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.d43ad063fd34b22c616150bbfe44c636.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.dae366b8be71e2fcb62cfb26b825b2fc.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f10_jpg.rf.f4afd8cf92ec1f9f942076807356c9e1.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.115bd8d906ec7322f3b5a4ef23c1bdd2.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.2435e2d88d94338b86cf386562ae6537.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.2679b85f2ffe3f0f1506126d4f8a0fba.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.319b2ad1a5d36c090a40557ff56d86e0.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.5137091a1ac71dce68ff668a5515c8c3.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.5ac173f1817102496a97aa471bd09c61.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.68888f81db6f705688782c8e94829b5f.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.7468292d66750bb9f74da1a94f713a14.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.9ef7af3492816d332c5b3c7fcbb20349.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f1_png.rf.fdf63bc513120dad4272f667f95e4b69.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.08f7bee24f435fe4cd56075ce10ad84b.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.0cbaef3b714432097343d52e4dd0b4e8.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.5a1c371019d46ec8bbf94f895667840e.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.5d39b698c13da5240ef0e2654cbc664a.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.892f0d4b8b02dbaa99fcbb2b35c47454.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.9abcdcaeb54df88b7118d4a894c4c102.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.9ee4a6ba7831a5e7a2f9b360234aa637.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f2_png.rf.a15a2f02dbb79522b20b2c840448a6ab.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.05f23af40bdf68966a3f5d525da9b073.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.3c8ee05f7a82fbb07d5106aa7ac400cf.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.466b38bac900511cb228fd805aa1dbe3.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.570fd3a8aeb0d150f26d259928262587.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.7e864d28e7aa1c180e42740fe41f8314.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.9be543f877976f45eb20381911138eac.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.abd6f8be0fe1abeb2b445813b2e598ca.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.abf1874d03a9509a22d50008efa903bc.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.f12abf06c64996e285dc03a4955a863c.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f3_jpg.rf.ff4406c8ac1ed6981e1062fffa790763.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.0c2d48ce6354d2cbc4964ecd03630802.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.15e08d3fe64aac59824a689c09516611.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.2d9180ee7c70f1bd227a5c632b34701f.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.2eb8a925b43c24546808fa6cd933fe3b.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.370627082817f9d621f4c8807824bd41.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.4de4c54d9a9c946811c861bb6e3dbc6b.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.a38e1a9d18916712ed3b6fd5c7458b02.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f4_png.rf.d4aa9b496525ace679ef34458703e956.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.38f1066ec278b20175efc38ed1e7bf28.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.4a5c05ff8f6e61eee26f655af8eb1d4c.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.62caeae256b03c9c53a6e2e57135d287.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.717bd78650c31420ecffb00cfbdfd043.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.71b8c3a08e62426a6da9d0b1b891cc2a.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.779bd24e373a8666438e33335d766940.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.81dbb9508be9f23234aa9f0d4a4dfdc4.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f5_jpg.rf.bb27906cdb1bfc0f6fafbccb0b621af1.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.48648083ea5879b2774df2f7700aa524.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.572422bea0308f75b94b8571b019e434.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.57d0a6b8dc13d3ed0e43c82be9cf4f0b.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.71e80fcefb13f8811dbfcf2456b51188.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.87b669fda5536ba8efc365266d388c2b.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f6_jpg.rf.ab2bcba8fb7f6051677f732d22e56184.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.0a6379f1c44b1d3f88a4473aba56487b.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.31877366e5d38b21c9743a9de66da136.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.4e5e45bc4d973b36400d9e83a0207bfb.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.70cd19b60e3d117ab704746f9453172b.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.7431c08a535f580692a5f22176e4c9d9.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.7ea040011fd23af4c3db14649e04163f.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.8382d186c88e32b6481c1ab80d4ec8bf.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.98c3ece47b4d3efe1cd790a233392d60.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.a9ddbcdfbdbcf12efca5c8936c27fa8e.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f7_jpg.rf.eee4f3760adcd91a51cca1b416493b8f.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.1029495fb8a4c139a85ff3f9847924c8.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.17ecea965a859a45b54b3f752cc22d89.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.1914f672035ba86a4d8e9b0b7f1f365b.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.3476bd800f72d0473863e0a4da594847.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.3f67b56774170b578f7bd9d997516951.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.6beb840eefed94b543c9f4e01d6cd74d.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.b64e3252d4670382454c940ea6e2c870.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.c23536e01c0fa2c828e2098420f4225c.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.eaa764732470006ae8a9c5c2e813ab21.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.fd0ae542cba82ce5317890e527887eaf.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f8_jpg.rf.fe06498a20b5cfa7ba1025dba8aaa985.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.682d0a0095272b4852bddd6d98922efb.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.82b812e722e66d7cfa394b36a2e66e20.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.91d841628af628edd57f247edfa99d4c.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.cef7458f54a6e87e2b244020151f908c.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.d6960de0125c8531a44cc993b156d5ec.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.d8c4df3853f9fa7d4de04761e198eb9e.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.f16c832a7fbd20f953b9b592dab3ee18.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/f9_jpg.rf.fa3b48926a9c56bc4522a884c48a3ede.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew1_png.rf.1802fcc9426e3911a248796fad4834d3.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew1_png.rf.2de1af63ffa16085b6d71ac6e17d37d6.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew1_png.rf.725adfa31d89dfe5a640bdb6788a48e3.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew1_png.rf.737e7946dfc05e9bce04fdfffa548df9.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew2_png.rf.5de31e4e4df32960671ae266dbf7705a.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/train/images/fnew2_png.rf.d5298d4446343cca7a06e499ef1b2813.jpg",
+      "sha256": "09e23598008e1a99b5cb19ec8d6513015f89a3379c7e003426fc8138c432834b",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/Upto-4th-Sem-Markscard_page-0002_jpg.rf.785bcc426aef679954ced38a1d742607.jpg",
+      "sha256": "9539ca21f37c449b7d8c1b3c8e40e385fb189ed48ecc4c09cd95da90872a90ea",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/Upto-4th-Sem-Markscard_page-0003_jpg.rf.01523de7c6a1ae15e5932f46c2d34be3.jpg",
+      "sha256": "c6dc1dd6639a410c1f9e3dd6a4d25457c1fb2f42487eb1442955ee79bbd4fd42",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.31c544d70dc91a650899295635d3ccbb.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.5cbb72d8c246b55680c482d314b1edb6.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/Upto-4th-Sem-Markscard_page-0004_jpg.rf.dc6a746baf2c9c0da957d820922f8856.jpg",
+      "sha256": "aa82d4a1e98c372b552bcc370420f5dbcda7ae1a8c74cfa97cfb0860eddd0273",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f10_jpg.rf.ae5cc8e0b9df7294d47e80eeaa2779c6.jpg",
+      "sha256": "c9e57b90b9f0572e58bbd0c05435cd9a9c4938657ff8da00293fb523ef2c66f0",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f1_png.rf.029996f845fcea2f1e17351ad88ed765.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f1_png.rf.79bea9b4359e9549974fd08d3c379b0e.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f1_png.rf.ca96792bab082e93407eae0287178a72.jpg",
+      "sha256": "86b6c1fec9f8dbfa7c984aa9d8e99fb670800b756fb31ce6abce77462fd99238",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f2_png.rf.1f9f28e7af7f15f9682a7b9c31d0077b.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f2_png.rf.b20f9bbc3506fa7e939cbf0ba65a25c2.jpg",
+      "sha256": "be1c1e1cb170cc580f8492e99d5a5c5495d6f8bf4ecaffafff92bd1589fad95f",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f3_jpg.rf.33e342d07aae6c774a6fe86a752dc7ac.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f3_jpg.rf.bb5ca5460ba1b691e78af4d478958538.jpg",
+      "sha256": "54070412a73229c9b4f84c57d75bef76d0eae26fa9be5953a6177f8f664f7952",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f4_png.rf.da6789800b05d2c52780ed97c7de24f1.jpg",
+      "sha256": "0fe07071332e420da2c39fdb3b2d99007efc572c79811e681e9f9821d556d815",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f5_jpg.rf.1fcc6102ccf016c5ab87babae7615c0d.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f5_jpg.rf.2dccb57df36ba2b196387a4d2134482f.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f5_jpg.rf.d708af10a8eb336c0660216ee03b4c9b.jpg",
+      "sha256": "26b7e7d43a0d8edf4aabe006d490a71828f87919489e69df1b823d7ed5c2c2ef",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.185d8a1fe50b7030e840781b7a2292e0.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.5c1ca126b32ecc3671c35a9b825c8107.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.6ddeae72b8e8d78f55a6c24495f465cf.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.7cddcbb4fad439106e1727b15ab49674.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.bb136f0283656c8a2e73384e8ecc9436.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f6_jpg.rf.c1366bff199ec0a24766e0e7ef257f29.jpg",
+      "sha256": "e4c5874a53175e9048f724388aade37aff4f9ec719cfd0448db1d411277d156d",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f7_jpg.rf.2002234163e1573d234b12074fbdef5b.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f7_jpg.rf.7fcbd7adb6547c2afdcb7c69c07a1396.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f7_jpg.rf.940c5bb7e1d0077a5a1be9eff2379fae.jpg",
+      "sha256": "85bb3ca854b048d971024b801dca837d688799ed898d5faecfc50bfa9414adb7",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f8_jpg.rf.f07042d625a2b9f63c84aaef3b6aa934.jpg",
+      "sha256": "ad7ce27b91d81d6c7468cc25436b7851a56e6ebda3e95fd63f507e30b4b71a94",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f9_jpg.rf.160b63821ec3fdd3961b71d8ccff1e66.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f9_jpg.rf.933d06ec0b16b87e2c42e648e9c6b221.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/f9_jpg.rf.fb5e8840e5f952b5f1215aff49ae90cc.jpg",
+      "sha256": "fdfdfbd27ba3847cf7e27347c2b5cdb952d78d3770862924ef57f300d26f5899",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "modules/document_forgery_detection/src/data/id_dataset/valid/images/fnew1_png.rf.4b038dddd3b77c1b234ef59fff129b7d.jpg",
+      "sha256": "8e792a3266623e560cea3aa66c18d8270f79cd507e134989fdfbc70d40166dbc",
+      "provenance": "public academic-record dataset; owner confirmed usable 2026-11-02; source export declares CC BY 4.0",
+      "source": "https://universe.roboflow.com/object-detection/certificate-forgery-detection-avxar"
+    },
+    {
+      "path": "web/public/og.png",
+      "sha256": "9d5b172e708536491e8fef0e6ec050f9791ba5665da833b4a0b8f1f191b03277",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/public/samples/document.png",
+      "sha256": "1fc93344d39e8ad7d4f875b02bf0ed8a9a6baaf1a83a9d616c6941099b29749b",
+      "provenance": "programmatically generated SPECIMEN card, no real document",
+      "source": "scripts/parity/prepare.py"
+    },
+    {
+      "path": "web/public/samples/synthetic-face-a.png",
+      "sha256": "d0b9006aa310593270daa9a5bdbdf29cf0a8a6852e48c7d63375527bf2ee1c5d",
+      "provenance": "fictional AI-generated face, no reference image; fixture only, not accuracy evidence",
+      "source": "built-in image_gen; see synthetic-fixture-provenance.json"
+    },
+    {
+      "path": "web/public/samples/synthetic-face-b.png",
+      "sha256": "d2ee3c9e53ce982cad842b32be6fb9ec1ffbd3cde1786fcc9720a418d462fb00",
+      "provenance": "fictional AI-generated face, no reference image; fixture only, not accuracy evidence",
+      "source": "built-in image_gen; see synthetic-fixture-provenance.json"
+    },
+    {
+      "path": "web/screenshots/404-1440-dark.png",
+      "sha256": "e19dd0bf00b96b47bb15e1b78deecaf74cf6b7bff32b725ecfb29245e5c01e8c",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/404-1440-light.png",
+      "sha256": "19313841196ef79ac88d531a77b936e4a3ecf7cb4b3be8613341aaa7a248bfce",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/404-390-dark.png",
+      "sha256": "65af018e327647cffff43748ad46fad4f2ff16c0a259e36e1ff11df43396edfd",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/404-390-light.png",
+      "sha256": "384ce2fa8ced30a8c0b2739970352b44958538c300cd6806ea897b87c3dd57b1",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/about-1440-dark.png",
+      "sha256": "95b24e0d5c48778a7fb2c0106fc08fe99649346e14f3e6dd2065f410933b3949",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/about-1440-light.png",
+      "sha256": "c1f657533be69ca70e21cc597f7a2bd0d14888b62f910a10c50abb026c3a6a4f",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/about-390-dark.png",
+      "sha256": "e68628572f66bdc0a4cc347f18af1605284d38685fa76840637489da759ba713",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/about-390-light.png",
+      "sha256": "f23aeb5306eb0926353686c01ed8ee544f302d09dbda49399c5363bbbbf183e0",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/evidence-1440-dark.png",
+      "sha256": "ac392c81e0778d1e9af2845d584c4b3c3b98e97566818ea3aa476885211ec488",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/evidence-1440-light.png",
+      "sha256": "8a86cbb480bab2127c6d1b18a6642cbdf714325b3471bca8624d58a7ef9bafaa",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/evidence-390-dark.png",
+      "sha256": "4fb4aa9652f31889b1b442f093e88c8e438d14844dba2796918182a8ac5896c5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/evidence-390-light.png",
+      "sha256": "43823588a76c4d13fdb7ea9f18c4ecee9258811ef81be6702823cbe70175d6a5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/how-it-works-1440-dark.png",
+      "sha256": "095a0bff0b69688e693ecfc5e7260b5d3288c1b8c740e256413a8edbc4470532",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/how-it-works-1440-light.png",
+      "sha256": "4c40f6198927c522e2b2f54567834f3f858f20c0a5ffb085ac0b5336de88adcf",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/how-it-works-390-dark.png",
+      "sha256": "6e1154973d14d5e69d3c31932a19a33f3f90f060c13327f02c89c985ac4a532d",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/how-it-works-390-light.png",
+      "sha256": "bfa00299cdd50568feaf3a786193908ca2358651d3f02e1405fdf97f22d4e2d4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/landing-1440-dark.png",
+      "sha256": "4a0047c37222a9601c3b01f427e90d652c6b4bf9f5a1817692c36099b2df7dd5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/landing-1440-light.png",
+      "sha256": "73deababe615cc1e9711040b78a46c5b928b0378c7ef7c9a64241065e1c4927e",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/landing-390-dark.png",
+      "sha256": "6311580d378204c1b16b988b907cb59fa6489e2e77290f34cd9da4ec7fae2f62",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/landing-390-light.png",
+      "sha256": "d1a5624b8cc419fe9754ae7bee8ce55b2a0cdeba30052c694c04ae3408cef09a",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/result-rejected-desktop.png",
+      "sha256": "3d2fb369eeeda2a8fae0b27b2d229b25ebf995429eee52c87ee3c37ffc14cfd4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/result-verified-fusion-illustration.png",
+      "sha256": "f7eb1e6571a03c07d349f90478f3583b0db2252d2e1584aa6dba433df6d3ff50",
+      "provenance": "UI-only render; historical images visually reviewed; rebuild when product copy changes",
+      "source": "HumanAuth application render"
+    },
+    {
+      "path": "web/screenshots/verify-1440-dark.png",
+      "sha256": "d6ae0be92a12e899ee58096399a943285219abeeff82c64f089522f9a2409f98",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/verify-1440-light.png",
+      "sha256": "f48cc83761a08310c0aafc01b671851fae727e63dd01b54c4332c0d84d527c8d",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/verify-390-dark.png",
+      "sha256": "7b5e2be862f7d5fd8ca866b57197fd0678e812c6bc24ae7ee480cfadc0006ff4",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/verify-390-light.png",
+      "sha256": "60fd74a4ed57e429338782368a7e80671a42d5ee1d31a0eae97d5ed70f0b0aa2",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/verify-face-phone.png",
+      "sha256": "81552880e3eb561dcfdd0b81b2914f438b12f7b399a29f63278b3cdb9d75f1e5",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "docs/img/synthetic-web-desktop.png",
+      "sha256": "bc8d04dc65f33749ba0719f1efd7fe3c4d2a2a6f99d6246e89e0fd5968b18313",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": ".overnight/capture-synthetic.mjs; synthetic result only, 1280/390 px; reviewed 2026-11-03"
+    },
+    {
+      "path": "docs/img/synthetic-web-mobile.png",
+      "sha256": "4a75bfd2fc4340e0471ccb2ffe7fca074f6724d6d86807da46d017bab4964306",
+      "provenance": "UI-only render with synthetic inputs; author-only copy; no captured person; visually reviewed 2026-11-03",
+      "source": ".overnight/capture-synthetic.mjs; synthetic result only, 1280/390 px; reviewed 2026-11-03"
+    },
+    {
+      "path": "web/screenshots/use-cases-1440-dark.png",
+      "sha256": "9631b2ed409625ed76052b00b30db02fd4a0a1aa88b07322935ed6da73a8ee1c",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-1440-light.png",
+      "sha256": "dd53a2db07194a5ea0ca7380e7176ce0d57821b1b55e59eb97303ab09be9ff25",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-390-dark.png",
+      "sha256": "41362539ad42dbb58764a048f90e40cf6d391444628fc036c72e6e040223dc41",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    },
+    {
+      "path": "web/screenshots/use-cases-390-light.png",
+      "sha256": "e124afc46652614266f899131cc3a601a9183d531355185b4c2070b5616efd9b",
+      "provenance": "Generated UI screenshot, reviewed 2026-11-03: interface and synthetic fixtures only; no real capture",
+      "source": "web/bench/screenshots.mjs"
+    }
+  ],
+  "synthetic_template_sha256": [
+    "333264acf0b42f2ac9d5c5ee5b71d77de620dfddd4cc4b96f10a35caa20f7c5d"
+  ]
+}

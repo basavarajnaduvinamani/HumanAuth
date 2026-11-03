@@ -1,0 +1,4 @@
+# Model manifests describe byte-exact assets. Never rewrite release bytes on
+# checkout; generated JSON is emitted as canonical UTF-8/LF.
+web/public/models/** -text
+bench/fixtures/synthetic_voice/reference.json -text

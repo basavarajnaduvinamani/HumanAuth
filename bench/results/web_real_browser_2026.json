@@ -1,0 +1,21 @@
+{
+  "observed_at": "2026-11-02T13:59:49.996947+00:00",
+  "browser": "User Google Chrome, extension-controlled real tab",
+  "version": "Not recorded for native browser; Playwright versions are separately recorded",
+  "url": "https://humanauth-iota.vercel.app/verify?sample=1",
+  "sample_result": "Not verified",
+  "reason": "Document check failed: Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+  "displayed_scores": {
+    "face": "0.6068",
+    "document": "0.0161",
+    "voice": "0.9999"
+  },
+  "displayed_backends": {
+    "face": "WebGPU",
+    "document": "WebGPU",
+    "voice": "JavaScript CPU"
+  },
+  "scope": "Visible sample-flow result in native Chrome; not a WebGPU parity study or controlled latency benchmark",
+  "proof": "CUA accessibility state and screenshot shown in chat; tab marked deliverable",
+  "personal_capture_used": false
+}

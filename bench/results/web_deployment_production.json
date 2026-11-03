@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-11-02T13:58:01.223Z",
+  "label": "production",
+  "base_url": "https://humanauth-iota.vercel.app/",
+  "boundary": "Served manifest/model hashes and headers, isolated browser context and synthetic camera lifecycle. Does not replace the full sample-flow e2e suite.",
+  "isolation": {
+    "coop": "same-origin",
+    "coep": "require-corp",
+    "permissions": "camera=(self), microphone=(self)"
+  },
+  "metadata": {
+    "public_origin": "https://humanauth-iota.vercel.app",
+    "og_image_matches": true,
+    "robots_sitemap_matches": true,
+    "sitemap_pages_match": true
+  },
+  "models": [
+    {
+      "file": "yolov5s-face.onnx",
+      "bytes": 28360137,
+      "sha256": "9385161da56e8b2fc38f565235fb8525cea3de8430803ebd7a71ec98740808de",
+      "cache_control": "public, max-age=31536000, immutable",
+      "matches_manifest": true
+    },
+    {
+      "file": "AntiSpoofing_bin_1.5_128.onnx",
+      "bytes": 1896015,
+      "sha256": "a6c0553fab996a56962baeb0a49013a03c32b866999f6aea76936b6833929bda",
+      "cache_control": "public, max-age=31536000, immutable",
+      "matches_manifest": true
+    },
+    {
+      "file": "document-int8.onnx",
+      "bytes": 11229727,
+      "sha256": "a19bd39ba78327a1d7841ea3a9c846a69a529940704c18b0d0e18c643e054e0a",
+      "cache_control": "public, max-age=31536000, immutable",
+      "matches_manifest": true
+    },
+    {
+      "file": "voice-gmm.json",
+      "bytes": 85491,
+      "sha256": "89c13ad9cec0f2dc9b301e6825d8ff862115d4a42dc3f657a479befe612d5c72",
+      "cache_control": "public, max-age=31536000, immutable",
+      "matches_manifest": true
+    }
+  ],
+  "camera": {
+    "secure_context": true,
+    "cross_origin_isolated": true,
+    "get_user_media": true,
+    "synthetic_stream_started": true,
+    "tracks_stopped_on_navigation": true,
+    "scope": "Native Chromium getUserMedia with a synthetic test-pattern device and granted permission. No physical camera, personal image or human permission-prompt interaction."
+  }
+}

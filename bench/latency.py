@@ -12,7 +12,7 @@ Timing boundary: from bytes already in server memory to the JSON response. It
 does NOT include camera / microphone capture, network upload or browser rendering.
 
     python bench/latency.py                          # bundled sample inputs
-    python bench/latency.py --selfie me.jpg --document id.jpg --voice me.wav --claimed Raj
+    python bench/latency.py --selfie local.jpg --document specimen.jpg --voice local.wav --claimed "Sample speaker A"
 Writes separately named CPU hardware/run JSON and Markdown results in bench/results/.
 """
 import argparse
@@ -30,23 +30,17 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
-SAMPLE_SELFIE = REPO / "modules/document_forgery_detection/yolov5/data/images/zidane.jpg"
-SAMPLE_VOICE = REPO / "modules/voice_authentication/test.wav"
+SAMPLE_SELFIE = REPO / "web/public/samples/synthetic-face-a.png"
 
 
 def sample_inputs():
-    """Selfie: one face cropped from the bundled YOLOv5 sample; document: synthetic card; voice: test.wav."""
-    from PIL import Image, ImageDraw
-    buf = io.BytesIO()
-    Image.open(SAMPLE_SELFIE).convert("RGB").crop((640, 0, 1080, 420)).save(buf, "JPEG", quality=92)
-    selfie = buf.getvalue()
-    d = Image.new("RGB", (860, 540), (236, 240, 246))
-    g = ImageDraw.Draw(d)
-    g.rectangle((0, 0, 860, 90), fill=(39, 83, 214))
-    g.text((30, 30), "SPECIMEN - SYNTHETIC TEST DOCUMENT", fill="white")
-    buf = io.BytesIO()
-    d.save(buf, "PNG")
-    return selfie, buf.getvalue(), SAMPLE_VOICE.read_bytes()
+    """Fictional generated face, synthetic card, and locally synthesized speech."""
+    from scripts.synthetic.prepare import synthetic_wav
+    selfie = SAMPLE_SELFIE.read_bytes()
+    # Freeze the reviewed code-generated card bytes. Pillow's default font and
+    # encoder differ across versions/platforms; parity must not rewrite releases.
+    document = (REPO / "web/public/samples/document.png").read_bytes()
+    return selfie, document, synthetic_wav()
 
 
 def load_inputs(args):
@@ -230,7 +224,7 @@ def main():
     p.add_argument("--selfie")
     p.add_argument("--document")
     p.add_argument("--voice")
-    p.add_argument("--claimed", default="Raj", help="enrolled identity to claim for the voice check")
+    p.add_argument("--claimed", default="Sample speaker A", help="enrolled identity to claim for the voice check")
     p.add_argument("--warm-runs", type=int, default=50)
     p.add_argument("--cold-runs", type=int, default=3)
     p.add_argument("--out", help="explicit output prefix; default keeps separate hardware/run rows")
@@ -271,8 +265,8 @@ def main():
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "hardware": hardware(),
         "inputs": "custom files" if (args.selfie or args.document or args.voice) else
-                  "bundled samples (selfie crop of yolov5 zidane.jpg, synthetic 860x540 document, "
-                  "voice_authentication/test.wav)",
+                  "synthetic fixtures (AI-generated fictional face, 860x540 SPECIMEN card, "
+                  "locally generated Flite speech; no personal recording)",
         "boundary": ("stages: bytes in server memory -> stage output; end_to_end_request: Flask test client POST, "
                      "so it also includes in-process multipart encoding/parsing. "
                      "Excludes camera/mic capture, network upload and browser rendering."),

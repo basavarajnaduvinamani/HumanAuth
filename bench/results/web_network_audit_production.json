@@ -1,0 +1,361 @@
+{
+  "generated_at": "2026-11-02T13:58:15.901Z",
+  "browser": "156.0.8078.4",
+  "project": "chromium",
+  "base_url": "https://humanauth-iota.vercel.app",
+  "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
+  "input_upload_bytes": 0,
+  "third_party_requests": 0,
+  "requests": [
+    {
+      "path": "/",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/css/c6e340579fdc034d.css",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/webpack-5c37f213e2010317.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-cd566323a07c169f.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/794-342d1110ac8a18e2.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/main-app-4d2b9f560fded4f1.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/500-863cc2266cad9a2f.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/page-eb0ef238ec44c886.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-98d92c6b571cbc92.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/how-it-works",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/how-it-works",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/verify/page-dd18dac6ecb30f51.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/face.png",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/884.95b1b55787cc835e.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/122.1a51c44bcd16429c.js",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/yolov5s-face.onnx",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/document.png",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/document-int8.onnx",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/samples/voice.wav",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/models/voice-gmm.json",
+      "origin": "https://humanauth-iota.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    }
+  ],
+  "axe_serious_critical": 0,
+  "decision": "reject",
+  "checks": [
+    {
+      "name": "face",
+      "status": "ok",
+      "score": 0.6068159577009101,
+      "passed": true,
+      "threshold": 0.5,
+      "detail": "Live-face probability 0.61.",
+      "latency_ms": 7674.379999999888,
+      "mode": "live",
+      "backend": "WASM"
+    },
+    {
+      "name": "document",
+      "status": "ok",
+      "score": 0.016057271113053197,
+      "passed": false,
+      "threshold": 0.5,
+      "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+      "latency_ms": 1347.285000000149,
+      "mode": "live",
+      "backend": "WASM"
+    },
+    {
+      "name": "voice",
+      "status": "ok",
+      "score": 0.9999360439396737,
+      "passed": true,
+      "threshold": 0.5,
+      "detail": "Closest enrolled speaker 'retired personal speaker 1'; claimed 'retired personal speaker 1'. Closed-set speaker match, not synthetic-speech detection.",
+      "latency_ms": 302.42500000074506,
+      "mode": "live",
+      "backend": "JavaScript CPU"
+    }
+  ],
+  "historical_fixture_notice": "Aggregate results from retired personal fixtures. Labels anonymized; all measured numeric observations unchanged. Do not interpret these as synthetic-v2 runs."
+}
