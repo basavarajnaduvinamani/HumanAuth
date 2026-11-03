@@ -1,87 +1,15 @@
 {
-  "generated_at": "2026-11-02T19:46:13.779Z",
+  "generated_at": "2026-11-03T11:05:47.296Z",
   "browser": "157.0",
   "project": "firefox",
-  "base_url": "http://127.0.0.1:3013",
+  "base_url": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
   "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
   "input_upload_bytes": 0,
   "third_party_requests": 0,
   "requests": [
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/css/00bf4177cbf0861f.css",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/webpack-319f7fcfc5bd1790.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/4bd1b696-c7408084347438ae.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/794-216401842b802bd7.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/main-app-a557510671886640.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/500-fc3b64d9ff4a32a7.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/page-3978b602e365c9a7.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/app/layout-8d18d14a9c735e34.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -89,7 +17,79 @@
     },
     {
       "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/css/c6e340579fdc034d.css",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/webpack-190fe5ec11ffe5da.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/4bd1b696-cd566323a07c169f.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/794-342d1110ac8a18e2.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/main-app-4d2b9f560fded4f1.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/500-863cc2266cad9a2f.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/page-eb0ef238ec44c886.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/layout-98d92c6b571cbc92.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -97,7 +97,7 @@
     },
     {
       "path": "/icon.svg",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -105,7 +105,7 @@
     },
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -113,7 +113,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -121,7 +121,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -129,7 +129,7 @@
     },
     {
       "path": "/use-cases",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -137,7 +137,7 @@
     },
     {
       "path": "/about",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -145,7 +145,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -153,7 +153,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -161,7 +161,7 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -169,7 +169,7 @@
     },
     {
       "path": "/",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -177,31 +177,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/evidence",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/use-cases",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/about",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -209,15 +185,47 @@
     },
     {
       "path": "/verify",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/chunks/app/verify/page-ac04f5c8576c4805.js",
-      "origin": "http://127.0.0.1:3013",
+      "path": "/evidence",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/use-cases",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/about",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/app/verify/page-1775cc2eba1967bc.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -225,23 +233,7 @@
     },
     {
       "path": "/samples/synthetic-face-a.png",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/832.8fba68b18cf9aec7.js",
-      "origin": "http://127.0.0.1:3013",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/_next/static/chunks/525.239599df3cbcbf9e.js",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -249,7 +241,23 @@
     },
     {
       "path": "/icon.svg",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/832.a3dd52689d938afc.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/_next/static/chunks/525.d059f9f5ad8b49a8.js",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -257,7 +265,7 @@
     },
     {
       "path": "/models/yolov5s-face.onnx",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -265,7 +273,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -273,7 +281,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -281,7 +289,7 @@
     },
     {
       "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -289,7 +297,7 @@
     },
     {
       "path": "/samples/document.png",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -297,7 +305,7 @@
     },
     {
       "path": "/models/document-int8.onnx",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -305,7 +313,7 @@
     },
     {
       "path": "/models/flite-synthesis.wasm.gz",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -313,7 +321,7 @@
     },
     {
       "path": "/models/synthetic-voice-reference.json",
-      "origin": "http://127.0.0.1:3013",
+      "origin": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -330,7 +338,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 1917.5,
+      "latency_ms": 4735.82,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -342,7 +350,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 555.06,
+      "latency_ms": 1823.8200000000006,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -354,7 +362,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 541.56,
+      "latency_ms": 2509.8600000000006,
       "mode": "live",
       "backend": "JavaScript CPU",
       "wasm_threads": null
