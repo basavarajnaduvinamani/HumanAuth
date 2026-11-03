@@ -34,11 +34,14 @@ export default function About() {
           <p>
             Project reference: <span className="mono">48S_BE_5942</span>.
           </p>
-          <blockquote className="note">
+          <blockquote className="funding-note funding-copy">
             “Please note that this project has received funding from AI &
             Robotics Technology Park (ARTPark), IISc and technical support from
-            KSCST.”
+            KSCST<sup>*</sup>.”
           </blockquote>
+          <p className="funding-footnote">
+            * KSCST: Karnataka State Council for Science and Technology.
+          </p>
           <p>
             The sanction letter approves the proposal under “Student Project
             Programme - 48th Series”.
