@@ -1,4 +1,5 @@
 "use client";
+import { Arrow } from "./arrow";
 import { useEffect, useEffectEvent, useRef, useState } from "react";
 import Link from "next/link";
 import manifest from "../../public/models/manifest.json";
@@ -82,16 +83,25 @@ export function VerificationFlow() {
     name: Modality,
     bytes: ArrayBuffer,
     advance = true,
-    synthetic?: { speaker: "Sample speaker A" | "Sample speaker B"; phrase: number },
+    synthetic?: {
+      speaker: "Sample speaker A" | "Sample speaker B";
+      phrase: number;
+    },
   ) => {
     setError("");
     setBusy(true);
     setProgress(null);
     const gen = generation.current;
     try {
-      const output = await infer(name, bytes, speaker, (p) => {
-        if (gen === generation.current) setProgress(p);
-      }, synthetic);
+      const output = await infer(
+        name,
+        bytes,
+        speaker,
+        (p) => {
+          if (gen === generation.current) setProgress(p);
+        },
+        synthetic,
+      );
       if (gen !== generation.current) return;
       setResults((prev) => [...prev.filter((r) => r.name !== name), output]);
       if (advance) setStep({ face: 2, document: 3, voice: 4 }[name]);
@@ -112,9 +122,14 @@ export function VerificationFlow() {
     try {
       if (name === "voice")
         return processInput(name, new ArrayBuffer(0), advance, {
-          speaker: speaker === "Sample speaker B" ? "Sample speaker B" : "Sample speaker A", phrase: 0,
+          speaker:
+            speaker === "Sample speaker B"
+              ? "Sample speaker B"
+              : "Sample speaker A",
+          phrase: 0,
         });
-      const filename = name === "face" ? "synthetic-face-a.png" : "document.png";
+      const filename =
+        name === "face" ? "synthetic-face-a.png" : "document.png";
       const r = await fetch("/samples/" + filename);
       if (!r.ok) throw Error("Sample download failed. Please retry.");
       return processInput(name, await r.arrayBuffer(), advance);
@@ -433,7 +448,7 @@ export function VerificationFlow() {
               timings. No images or audio are included.
             </p>
             <button className="button" onClick={download}>
-              Download receipt (JSON) ↓
+              Download receipt (JSON) <Arrow direction="down" />
             </button>
             <button className="button secondary" onClick={reset}>
               Start over
@@ -458,7 +473,7 @@ export function VerificationFlow() {
               timings reuse sessions.
             </p>
             <Link className="text-button" href="/evidence">
-              Read the evidence ↗
+              Read the evidence <Arrow />
             </Link>
           </aside>
         </div>
@@ -523,7 +538,7 @@ export function VerificationFlow() {
                         void startCamera();
                     }}
                   >
-                    Continue →
+                    Continue <Arrow />
                   </button>
                   <button
                     className="text-button"
@@ -532,7 +547,7 @@ export function VerificationFlow() {
                       void runSamples();
                     }}
                   >
-                    Use sample data →
+                    Use sample data <Arrow />
                   </button>
                 </div>
               </>
@@ -593,7 +608,7 @@ export function VerificationFlow() {
                           className="text-button"
                           onClick={() => setStep(2)}
                         >
-                          Continue with this result →
+                          Continue with this result <Arrow />
                         </button>
                       )}
                     </div>
@@ -617,9 +632,10 @@ export function VerificationFlow() {
                 {step === 3 && (
                   <>
                     <p>
-                      This matches only Sample speaker A and Sample speaker B, the enrolled speakers.
-                      For visitors, the bundled Sample speaker A sample is the realistic
-                      path. It does not detect synthetic speech.
+                      This matches only Sample speaker A and Sample speaker B,
+                      the enrolled speakers. For visitors, the bundled Sample
+                      speaker A sample is the realistic path. It does not detect
+                      synthetic speech.
                     </p>
                     <label className="field-label" htmlFor="speaker">
                       Claimed enrolled speaker
@@ -696,7 +712,8 @@ export function VerificationFlow() {
                   >
                     {busy
                       ? "Processing…"
-                      : `Use ${step === 1 ? "face" : step === 2 ? "SPECIMEN" : "Sample speaker A voice"} sample →`}
+                      : `Use ${step === 1 ? "face" : step === 2 ? "SPECIMEN" : "Sample speaker A voice"} sample`}
+                    {!busy && <Arrow />}
                   </button>
                   <button className="text-button" onClick={reset}>
                     Start over
@@ -758,7 +775,7 @@ export function VerificationFlow() {
               No account, remote inference server or API key.
             </p>
             <Link href="/evidence" className="text-button">
-              Inspect measurements ↗
+              Inspect measurements <Arrow />
             </Link>
           </aside>
         </div>

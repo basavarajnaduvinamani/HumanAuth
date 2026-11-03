@@ -1,3 +1,4 @@
+import { Arrow } from "../components/arrow";
 import Link from "next/link";
 export default function NotFound() {
   return (
@@ -9,7 +10,7 @@ export default function NotFound() {
       </p>
       <div className="actions">
         <Link className="button" href="/">
-          Back to HumanAuth →
+          Back to HumanAuth <Arrow />
         </Link>
         <Link href="/verify">Open verification</Link>
       </div>

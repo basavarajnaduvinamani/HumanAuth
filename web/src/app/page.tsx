@@ -1,3 +1,4 @@
+import { Arrow } from "../components/arrow";
 import Link from "next/link";
 import { PipelineMobile } from "../components/pipeline-mobile";
 import { ResultSheet } from "../components/result-sheet";
@@ -22,10 +23,10 @@ export default function Home() {
           </p>
           <div className="actions">
             <Link className="button" href="/verify?sample=1">
-              Try it with sample data <span aria-hidden="true">→</span>
+              Try it with sample data <Arrow />
             </Link>
             <Link className="text-button" href="/verify?camera=1">
-              Use my camera ↗
+              Use my camera <Arrow />
             </Link>
           </div>
           <p className="caption">
@@ -102,7 +103,9 @@ export default function Home() {
               </text>
             </g>
           </svg>
-          <Link href="/how-it-works">Read the architecture and rules ↗</Link>
+          <Link href="/how-it-works">
+            Read the architecture and rules <Arrow />
+          </Link>
         </div>
       </section>
       <section className="privacy-band">
@@ -137,7 +140,7 @@ export default function Home() {
               bench/results/web_ci_2026.json
             </p>
             <Link href="/how-it-works#privacy">
-              Inspect the privacy design ↗
+              Inspect the privacy design <Arrow />
             </Link>
           </div>
         </div>
@@ -158,7 +161,7 @@ export default function Home() {
             measurements from the original report.
           </p>
           <Link className="button secondary" href="/evidence">
-            Read the evidence <span aria-hidden="true">→</span>
+            Read the evidence <Arrow />
           </Link>
         </div>
       </section>
@@ -225,7 +228,7 @@ export default function Home() {
           </table>
         </div>
         <Link href="/use-cases">
-          Read the sources and research boundaries ↗
+          Read the sources and research boundaries <Arrow />
         </Link>
       </section>
     </>

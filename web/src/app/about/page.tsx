@@ -1,3 +1,4 @@
+import { Arrow } from "../../components/arrow";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About the author",
@@ -12,8 +13,9 @@ export default function About() {
         <h1>Basavaraj A Naduvinamani</h1>
         <p className="lead">
           Data Science & AI master’s student. HumanAuth began as a B.Tech CSE
-          major project at Dayananda Sagar University during 2024–25. This browser
-          edition makes its checks and decisions accessible on your device.
+          major project at Dayananda Sagar University during 2024–25. This
+          browser edition makes its checks and decisions accessible on your
+          device.
         </p>
       </header>
       <article className="prose wrap">
@@ -23,7 +25,8 @@ export default function About() {
             Built by{" "}
             <a href="https://github.com/basavarajnaduvinamani">
               Basavaraj A Naduvinamani
-            </a>.
+            </a>
+            .
           </p>
         </section>
         <section>
@@ -50,7 +53,7 @@ export default function About() {
           <h2>Source & licence</h2>
           <p>
             <a href="https://github.com/basavarajnaduvinamani/HumanAuth">
-              Explore the public repository ↗
+              Explore the public repository <Arrow direction="external" />
             </a>
           </p>
           <p>
