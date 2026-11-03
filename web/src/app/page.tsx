@@ -32,6 +32,16 @@ export default function Home() {
           <p className="caption">
             Demo prototype: runs on bundled sample data in your browser.
           </p>
+          <aside className="funding-note" aria-label="Project funding and support">
+            <p className="eyebrow">FUNDED & SUPPORTED</p>
+            <p className="funding-copy">
+              Funded by <strong>AI & Robotics Technology Park (ARTPark), IISc</strong>.
+              {" "}Technical support from <strong>KSCST<sup>*</sup></strong>.
+            </p>
+            <p className="funding-footnote">
+              * KSCST: Karnataka State Council for Science and Technology.
+            </p>
+          </aside>
         </div>
         <div className="hero-preview">
           <div className="preview-label">

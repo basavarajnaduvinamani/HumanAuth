@@ -617,6 +617,30 @@ pre {
   border-radius: 6px;
   color: var(--ink);
 }
+.funding-note {
+  margin: 24px 0 0;
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--soft);
+}
+.funding-note .funding-copy,
+.funding-copy {
+  margin-top: 10px;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.funding-copy strong {
+  font-weight: 550;
+}
+.funding-footnote,
+.prose .funding-footnote {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
 .note {
   border-left: 2px solid var(--accent);
   padding: 8px 0 8px 20px;
