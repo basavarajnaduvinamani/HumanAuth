@@ -1,0 +1,1230 @@
+{
+  "source": "bench/results/web_latency_i5_12450h_2026-11-02T16-15-38-677Z.json",
+  "generated_at": "2026-11-02T16:15:38.676Z",
+  "command": "cd web && node bench/browser.mjs",
+  "hardware": {
+    "cpu": "12th Gen Intel(R) Core(TM) i5-12450H",
+    "logical_cores": 12,
+    "ram_bytes": 16831889408,
+    "os": "Windows_NT 10.0.26300",
+    "browser": "156.0.8078.4"
+  },
+  "boundary": "Worker stage includes decode, preprocessing and inference. Cold includes model fetch/session initialization. Warm retains worker and sessions. Total is sum of stage compute, excluding page render and capture.",
+  "warm_runs": 30,
+  "cold_runs": 3,
+  "stages": {
+    "face": {
+      "p50_ms": 405.12999999988824,
+      "p95_ms": 523.5889999998734,
+      "backend": "WASM"
+    },
+    "document": {
+      "p50_ms": 354.4850000003353,
+      "p95_ms": 400.4710000002757,
+      "backend": "WASM"
+    },
+    "voice": {
+      "p50_ms": 188.26499999966472,
+      "p95_ms": 237.54475000072273,
+      "backend": "JavaScript CPU"
+    },
+    "total": {
+      "p50_ms": 956.4050000011921,
+      "p95_ms": 1135.6695000004954,
+      "backend": "mixed"
+    }
+  },
+  "cold": [
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 2926.6699999999255,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 569.0649999994785,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 485.3849999997765,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 2012.304999999702,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 563.0600000005215,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 476.7050000000745,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 1970.300000000745,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 563.8000000007451,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 475.84000000171363,
+        "backend": "JavaScript CPU"
+      }
+    ]
+  ],
+  "warm": [
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 365.320000000298,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 349.035000000149,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 189.90000000037253,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 454.52999999932945,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 299.785000000149,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 189.10999999940395,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 306.02500000037253,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 318.679999999702,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 180.78999999910593,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 435.589999999851,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 378.30000000074506,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 214.75,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 376.65000000037253,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 358.13000000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 184.75999999977648,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 479.35500000044703,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 395.179999999702,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 223.12999999895692,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 331.1650000009686,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 346.23499999940395,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 182.84999999962747,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 559.1750000007451,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 393.38000000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 200.92999999970198,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 321.35999999940395,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 287.61999999918044,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 177.11500000022352,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 411.035000000149,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 329.60999999940395,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 223.16500000096858,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 324.09999999962747,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 338.0499999988824,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 181.58500000089407,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 406.695000000298,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 288.2949999999255,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 189.75,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 311.2700000014156,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 309.30000000074506,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 180.85999999940395,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 577.4949999991804,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 445.26999999955297,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 249.31000000052154,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 327.0049999989569,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 353.7050000000745,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 170.39499999955297,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 475.6849999986589,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 342.52500000037253,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 220.125,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 360.4900000002235,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 318.125,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 176.38499999977648,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 480.0949999988079,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 352.00500000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 190.4050000011921,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 428.47499999962747,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 404.80000000074506,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 280.61999999918044,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 429.64000000059605,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 359.93500000052154,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 183.94500000029802,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 352.9750000014901,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 379.84000000171363,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 191.80000000074506,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 473.820000000298,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 340.9900000002235,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 195.04000000096858,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 359.339999999851,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 334.98000000044703,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 178.410000000149,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 456.25500000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 382.054999999702,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 192.72000000067055,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 356.5,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 357.13000000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 178.52500000037253,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 433.6100000012666,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 357.070000000298,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 182.1399999987334,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 402.98000000044703,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 395.160000000149,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 187.4199999999255,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 457.2400000002235,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 373.82499999925494,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 183.13499999977648,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 394.88000000081956,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 355.26500000059605,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 198.85500000044703,
+        "backend": "JavaScript CPU"
+      }
+    ],
+    [
+      {
+        "name": "face",
+        "status": "ok",
+        "score": 0.9999999480695392,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Live-face probability 1.00.",
+        "mode": "live",
+        "guidance": "One face found. Hold still and capture when ready.",
+        "latency_ms": 403.56499999947846,
+        "backend": "WASM"
+      },
+      {
+        "name": "document",
+        "status": "ok",
+        "score": 0.016057271113053197,
+        "passed": false,
+        "threshold": 0.5,
+        "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
+        "mode": "live",
+        "latency_ms": 382.05000000074506,
+        "backend": "WASM"
+      },
+      {
+        "name": "voice",
+        "status": "ok",
+        "score": 0.9999999992763322,
+        "passed": true,
+        "threshold": 0.5,
+        "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
+        "mode": "live",
+        "latency_ms": 182.2700000014156,
+        "backend": "JavaScript CPU"
+      }
+    ]
+  ],
+  "inputs": "AI-generated fictional face A, code-generated SPECIMEN card, locally generated Flite speech. Synthetic fixture timing, not visitor accuracy or physical-camera latency."
+}

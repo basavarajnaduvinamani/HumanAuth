@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-11-03T11:20:21.916666+00:00",
+  "scope": "Reduced recruiter demo; no registration, quick verify, physical-device study, new models or new experiments",
+  "source_commit": "63c354211d0b7d24b72c8d49291a1fd08aee0d04",
+  "deployment_id": "dpl_3yWTamEVoT4dZG8CYAiKW5Js51tN",
+  "tested_staged_url": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app",
+  "public": {
+    "url": "https://humanauth-id.vercel.app/",
+    "status": 200,
+    "seconds": 0.163093,
+    "redirect": "",
+    "followed_redirects": false
+  },
+  "legacy_redirect": {
+    "url": "https://humanauth-iota.vercel.app/",
+    "status": 308,
+    "seconds": 0.149916,
+    "redirect": "https://humanauth-id.vercel.app/",
+    "followed_redirects": false
+  },
+  "legacy_path_query_redirect": {
+    "url": "https://humanauth-iota.vercel.app/evidence?from=legacy",
+    "status": 308,
+    "seconds": 0.12189,
+    "redirect": "https://humanauth-id.vercel.app/evidence?from=legacy",
+    "followed_redirects": false
+  },
+  "public_routes": [
+    {
+      "url": "https://humanauth-id.vercel.app/evidence",
+      "status": 200,
+      "seconds": 0.318998,
+      "redirect": "",
+      "followed_redirects": false
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/use-cases",
+      "status": 200,
+      "seconds": 0.349756,
+      "redirect": "",
+      "followed_redirects": false
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/about",
+      "status": 200,
+      "seconds": 0.332606,
+      "redirect": "",
+      "followed_redirects": false
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/robots.txt",
+      "status": 200,
+      "seconds": 0.110317,
+      "redirect": "",
+      "followed_redirects": false
+    },
+    {
+      "url": "https://humanauth-id.vercel.app/sitemap.xml",
+      "status": 200,
+      "seconds": 0.384422,
+      "redirect": "",
+      "followed_redirects": false
+    }
+  ],
+  "same_tested_artifact_promoted": true,
+  "promotion_command": "vercel promote https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app --yes",
+  "build": {
+    "exit_code": 0,
+    "cache_restored": false,
+    "source": ".overnight/reduced-build-gate.log",
+    "public_name_guard_files": 139
+  },
+  "typecheck": {
+    "exit_code": 0,
+    "source": ".overnight/reduced-typecheck.log"
+  },
+  "lint": {
+    "exit_code": 0,
+    "source": ".overnight/reduced-lint-gate.log"
+  },
+  "python": {
+    "passed": 76,
+    "failed": 0,
+    "seconds": 23.32,
+    "source": ".overnight/reduced-python-gate.log"
+  },
+  "browser": {
+    "passed": 21,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "seconds": 101.985718,
+    "engines": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "source": ".overnight/reduced-browser-gate-preflight-diagnostic.log"
+  },
+  "lighthouse": {
+    "generated_at": "2026-11-03T11:08:06.459Z",
+    "base_url": "https://humanauth-kxf15j5za-basavarajnaduvinamani34-1831.vercel.app/",
+    "scope": "Reduced recruiter-demo final staged candidate; root page only, mobile and desktop",
+    "results": [
+      {
+        "page": "/",
+        "form_factor": "mobile",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 63
+        },
+        "fetch_time": "2026-11-03T11:07:46.008Z",
+        "source": "bench/results/lighthouse-reduced/landing-mobile.json"
+      },
+      {
+        "page": "/",
+        "form_factor": "desktop",
+        "scores": {
+          "performance": 100,
+          "accessibility": 100,
+          "best-practices": 100,
+          "seo": 63
+        },
+        "fetch_time": "2026-11-03T11:07:54.101Z",
+        "source": "bench/results/lighthouse-reduced/landing-desktop.json"
+      }
+    ]
+  },
+  "model_assets": {
+    "total_bytes": 56083046,
+    "count": 5,
+    "changed": false
+  },
+  "network": {
+    "chromium": {
+      "input_upload_bytes": 0,
+      "third_party_requests": 0
+    },
+    "firefox": {
+      "input_upload_bytes": 0,
+      "third_party_requests": 0
+    },
+    "webkit": {
+      "input_upload_bytes": 0,
+      "third_party_requests": 0
+    }
+  },
+  "demo_label_present": true,
+  "owner_credit_present": true,
+  "original_signed_and_factual_provenance_files_changed": false,
+  "old_private_deployments_removed": 8,
+  "gitHub_support_cleanup": "owner submission pending",
+  "ci_verification": "Final draft-PR checks recorded separately after the release-evidence commit"
+}

@@ -1,0 +1,25 @@
+{
+  "measured_at": "2026-11-02T13:01:31.607531+00:00",
+  "command": "curl.exe -s -o NUL -w \"%{http_code} %{time_total}\" --max-time 30 URL",
+  "follow_redirects": false,
+  "results": [
+    {
+      "exit": 0,
+      "url": "https://humanauth-basavarajnaduvinamani34-1831.vercel.app",
+      "at": "2026-11-02T18:26:55.1878292+05:30",
+      "measurement": "404 0.148659"
+    },
+    {
+      "exit": 0,
+      "url": "https://humanauth-q3290tjyr-basavarajnaduvinamani34-1831.vercel.app",
+      "at": "2026-11-02T18:26:55.6572706+05:30",
+      "measurement": "302 0.428898"
+    },
+    {
+      "exit": 0,
+      "url": "https://github.com/basavarajnaduvinamani/HumanAuth/pull/2",
+      "at": "2026-11-02T18:26:57.1935264+05:30",
+      "measurement": "200 1.493117"
+    }
+  ]
+}

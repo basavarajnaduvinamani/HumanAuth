@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-01T18:11:16.148113+00:00",
+  "base_commit": "a151b32a4d18a0811dba91d1dcc33a8c8fecaac6",
+  "command": "git show HEAD:README.md, followed by literal table-block preservation check before Task 4 commit",
+  "tables": [
+    {
+      "header": "| Check / dataset | Metric | Observed | Bootstrap 95% CI | Source |",
+      "preserved": true
+    },
+    {
+      "header": "| Task | Reported value | Scope |",
+      "preserved": true
+    },
+    {
+      "header": "| Hardware | Warm requests | p50 ms | p95 ms | Source |",
+      "preserved": true
+    },
+    {
+      "header": "| Module | What runs in the gateway | Known limits |",
+      "preserved": true
+    }
+  ],
+  "all_preserved": true
+}

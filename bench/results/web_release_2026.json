@@ -1,0 +1,93 @@
+{
+  "recorded_at": "2026-11-02T14:03:16.504910+00:00",
+  "status": "production_verified",
+  "application_commit": "cba75b1d87fbfff74c5bde2d49d7e22ba6e7cd01",
+  "preview_url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app",
+  "preview_id": "dpl_4UgNZD19S78pk98xGz6Y2FnSLoR5",
+  "production_url": "https://humanauth-iota.vercel.app",
+  "python_passed": 55,
+  "unit_passed": 20,
+  "unit_files": 6,
+  "browser_stats": {
+    "local": {
+      "startTime": "2026-11-02T13:29:16.252Z",
+      "duration": 52032.798,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "preview": {
+      "startTime": "2026-11-02T13:50:52.002Z",
+      "duration": 69203.556,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "production": {
+      "startTime": "2026-11-02T13:58:01.656Z",
+      "duration": 70618.22200000001,
+      "expected": 18,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "source_checks": {
+    "lint": 0,
+    "typecheck": 0,
+    "build": 0,
+    "unit": 0,
+    "at": "2026-11-02T19:16:58.7004128+05:30"
+  },
+  "lighthouse_source": "bench/results/lighthouse/summary.json",
+  "production_lighthouse_source": "bench/results/lighthouse-production/summary.json",
+  "integrity_sources": [
+    "bench/results/web_deployment_preview.json",
+    "bench/results/web_deployment_production.json"
+  ],
+  "temporary_access_sources": [
+    "bench/results/web_preview_access_audit.json",
+    "bench/results/web_preview_lighthouse_access_audit.json"
+  ],
+  "link_checks": [
+    {
+      "seconds": "0.129076",
+      "at": "2026-11-02T19:30:21.2407433+05:30",
+      "mode": "public production",
+      "status": "200",
+      "url": "https://humanauth-iota.vercel.app"
+    },
+    {
+      "seconds": "0.104346",
+      "at": "2026-11-02T19:30:21.3680613+05:30",
+      "mode": "public production evidence",
+      "status": "200",
+      "url": "https://humanauth-iota.vercel.app/evidence"
+    },
+    {
+      "seconds": "0.122903",
+      "at": "2026-11-02T19:30:21.5111489+05:30",
+      "mode": "protected preview",
+      "status": "302",
+      "url": "https://humanauth-oy63irhzv-basavarajnaduvinamani34-1831.vercel.app"
+    },
+    {
+      "seconds": "1.521871",
+      "at": "2026-11-02T19:30:23.0607325+05:30",
+      "mode": "draft PR",
+      "status": "200",
+      "url": "https://github.com/basavarajnaduvinamani/HumanAuth/pull/2"
+    }
+  ],
+  "real_browser_source": "bench/results/web_real_browser_2026.json",
+  "prior_failure": "First launch preview 17/18: Firefox input-stream error; isolated repeat succeeded. Added bounded transfer retry; redeployed and reran all gates.",
+  "scientific_claims": "Model files, thresholds, parity, accuracy and latency claims unchanged; fresh launch/QA measurements only",
+  "scientific_sources_sha256": {
+    "bench/results/face_public_2026.json": "36a72b8c3db60af8ec7ae64ede8d3ea71a9637b2f81e61e7fce5ef7b2d5adb20",
+    "bench/results/document_public_2026.json": "033feb3325926d829a60c56a0e6fc542d430697d6e8258c5a2836970e894566f",
+    "bench/results/web_browser_parity.json": "d8684aa08eecc96b7213422bce0e34c8194f3a1b59adddd2c81be03ca3c432e7",
+    "bench/results/web_latency_latest.json": "57636847b41a872cac3931fdb03f815831a4fadeb4ddbdfd88957a162d2ad280"
+  }
+}

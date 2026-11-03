@@ -1,26 +1,66 @@
-# HumanAuth: Multi-Factor AI Identity Verification
+# HumanAuth
+
+Face liveness, a document authenticity signal and enrolled voice matching,
+on your device, with an explained decision.
+
+**Live:** [humanauth-id.vercel.app](https://humanauth-id.vercel.app) ·
+[Evidence and limits](https://humanauth-id.vercel.app/evidence).
+Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
+
+![Actual browser sample result: document rejection with reasons](web/screenshots/result-rejected-desktop.png)
+
+## Runs on your device
+
+The Next.js app downloads models, then runs all three checks in a browser worker.
+Inputs stay in session memory. Model Cache Storage avoids repeat model downloads;
+receipts contain decisions, scores, timings and model hashes, without media.
+The automated sample-flow audit observed **0 input-upload bytes and 0 third-party
+requests** ([request evidence](bench/results/web_network_audit.json)); the same
+assertions passed in [CI](bench/results/web_ci_2026.json). Ordinary page/model
+requests still reach the host. This is a tested application flow, not a claim
+about every browser extension or device.
+
+The model and synthesis artifacts total **56,083,046 bytes**, excluding the ONNX runtime
+([manifest](web/public/models/manifest.json)). All **33 browser fixture decisions**
+matched Python, with maximum score differences ≤0.02
+([browser qualification](bench/results/web_browser_parity.json)). Fixture parity
+does not measure fraud-detection accuracy. Browser worker timing, held-out
+transfer diagnostics and limitations are shown on the app's `/evidence` page;
+their [source ledger](bench/results/web_copy_sources.md) links each claim.
+
+The fixed SPECIMEN is rejected. The temporary voice fixture compares two locally
+synthesized speakers; it does not reliably reject unknown speakers or test voice
+spoofing. Face liveness does not compare a face to the photograph on an ID.
+Cold use can take minutes on a slow connection; cached models still need runtime
+and session initialization. This is a research prototype, not a certified
+identity service, and the fusion threshold is not calibrated on held-out data.
+
+See [browser development](web/README.md), [architecture and every benchmark](docs/web.md),
+and [the model/provenance decisions](docs/adr/).
 
 [![CI](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml/badge.svg)](https://github.com/basavarajnaduvinamani/HumanAuth/actions/workflows/ci.yml)
-[![Grant Funding](https://img.shields.io/badge/Grant%20Funding-ART--Park%2C%20IISc%20%26%20KSCST-gold.svg)](https://artpark.in/)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![ONNX](https://img.shields.io/badge/Inference-ONNX%20Runtime-005CED.svg)](https://onnxruntime.ai/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**What it is:** an onboarding-style identity check that scores a live selfie, an ID document photo and a short voice sample with three separate models, then fuses them into one decision with a liveness veto and plain-language reasons.
-
 **Who it is for:** teams prototyping e-KYC or account-recovery flows (banking, government services) who want to see how multi-factor biometric checks behave together, and reviewers who want to inspect a student research prototype end to end.
 
-**Status:** research prototype. It is a 4-person B.Tech major project at Dayananda Sagar University (2024-25), funded by a KSCST / IISc ART-Park student grant. It is not a certified identity service, and the thresholds are not calibrated on a held-out set.
+**Project provenance:** a 4-person B.Tech major project at Dayananda Sagar
+University (2024–25), reference 48S_BE_5942. The source wording is:
+“Please note that this project has received funding from AI & Robotics Technology
+Park (ARTPark), IISc and technical support from KSCST.” The sanction letter,
+signed-report digests and funding transcription are recorded in
+[project provenance](docs/project_provenance.json). [ARTPark source site](https://artpark.in/).
 
-## Demo
+## Synthetic browser demo
 
-![Verification result, desktop](docs/img/verify_desktop.png)
+![Synthetic browser sample result, desktop](docs/img/synthetic-web-desktop.png)
 
-<p align="center"><img src="docs/img/verify_mobile.png" alt="Verification result on a 390 px phone screen" width="260"></p>
+<p align="center"><img src="docs/img/synthetic-web-mobile.png" alt="Synthetic browser sample result on a 390 px screen" width="260"></p>
 
-These are real gateway outputs from the bundled weights, captured with Playwright at 1280 px and 390 px. The selfie is a face cropped from the YOLOv5 sample image bundled in this repo, blurred in the screenshot. The document is a synthetic "SPECIMEN" card, which the classifier rejects. The voice clip is the bundled `modules/voice_authentication/test.wav`.
+These are browser inference outputs captured with Playwright at 1280 px and 390 px using a fictional AI-generated portrait, a code-generated SPECIMEN card and locally synthesized Flite speech. No personal recording or enrollment is bundled. The sample is rejected because the document check fails. This demonstrates the pipeline, not identity accuracy or photo-attack resistance. Synthetic fixture provenance is in [bench/fixtures](bench/fixtures/synthetic-fixture-provenance.json).
 
-## Run it
+## Local API mode (Flask gateway)
 
 ```bash
 pip install -r requirements.txt          # CPU is fine; no GPU needed
@@ -30,7 +70,7 @@ python -m gateway --port 5000            # open http://localhost:5000
 Or use the API directly:
 
 ```bash
-curl -F selfie=@me.jpg -F document=@id.jpg -F voice=@me.wav -F claimed_identity=Raj \
+curl -F selfie=@local.jpg -F document=@specimen.png -F voice=@local.wav -F 'claimed_identity=Sample speaker A' \
      http://localhost:5000/api/verify
 curl http://localhost:5000/api/health    # which modules are loaded, and why not
 ```
@@ -43,17 +83,43 @@ pip install -r requirements-dev.txt && python -m pytest -q
 
 ## Results
 
+### Measured in 2026: public transfer diagnostics
+
+These fixed-threshold evaluations were locally predeclared in
+[`bench/protocol_2026.md`](bench/protocol_2026.md), then committed after scoring;
+they were not publicly preregistered. They are transfer diagnostics,
+not deployment certification or population-level e-KYC accuracy.
+
+| Check / dataset | Metric | Observed | Bootstrap 95% CI | Source |
+| --- | --- | ---: | --- | --- |
+| Shipped liveness / balanced LCC subset | ACER | 0.240 | 0.180–0.295 | `bench/results/face_public_2026.json` |
+| Newer MiniFAS comparator / same subset | ACER | 0.245 | 0.185–0.305 | `bench/results/face_public_2026.json` |
+| Shipped liveness / same subset | AUC | 0.7923 | 0.72509625–0.859205 | `bench/results/face_public_2026.json` |
+| Shipped liveness / same subset | EER | 0.230 | 0.170–0.290 | `bench/results/face_public_2026.json` |
+| Document / CACTUS synthetic Spanish IDs | Accuracy | 0.6633333333 | 0.6566666667–0.6666666667 | `bench/results/document_public_2026.json` |
+| Document / same source | Forged precision | 0.6666666667 | 0.6666666667–0.6666666667 | `bench/results/document_public_2026.json` |
+| Document / same source | Forged recall | 0.990 | 0.970–1.000 | `bench/results/document_public_2026.json` |
+| Document / same source | ROC AUC | 0.4861 | 0.4767–0.4881 | `bench/results/document_public_2026.json` |
+
+The newer liveness checkpoint did not improve ACER, so the shipped model remains.
+The face run uses 200 balanced evaluation images and image bootstrap intervals;
+identity mapping is absent, so dependence may make intervals too narrow. The
+document run uses 300 images in 100 source-filename groups with clustered intervals.
+Its near-chance AUC is a negative result: high recall largely reflects rejection,
+not reliable genuine/forged separation. No validated edit-region boxes were
+available for region-crop evaluation. Dataset terms, fixed seeds, archive/model
+digests, sample-ID hashes and hardware are in the result files. No evaluation
+media or new enrollment models are committed.
+
 ### Reported in the signed project report
 
 These are reported figures, not rerun or held-out benchmarks. Their signed-report
 locations and source digest are recorded in
 [`bench/results/reported_results_reference.json`](bench/results/reported_results_reference.json).
 
-| Task | Reported value | Scope |
-| --- | ---: | --- |
-| Integrated authentication | 96.5% | not identified |
-| Facial anti-spoofing | 96.0% | not identified |
-| Document classifier | 98.5% | training |
+The original report is discussed separately under “Original 2024 report” on
+[/evidence](https://humanauth-id.vercel.app/evidence). Its training and
+scope-unidentified results are not browser-product accuracy measurements.
 
 The upstream face module retains its own results table for attribution; those are
 not the team's runs. Earlier unsupported overall-fraud, latency and acceptance-rate
@@ -142,9 +208,9 @@ docs/img/           screenshots
 * Inspect the local hardware row and recovery evidence above before choosing resume claims.
 * A held-out, source-disjoint evaluation of each module and of the fusion rule (attack acceptance and genuine rejection rates), before any accuracy is quoted beyond the reported figures above.
 
-## Team and credit
+## Author and project origin
 
-HumanAuth was built as a B.Tech CSE major project (Phase II, 2024-25) at the School of Engineering, Dayananda Sagar University, by **Basavaraj A Naduvinamani** (lead engineer), **Pushpa Priya N**, **S Thriveni** and **Sahana N**, guided by Prof. Navya Damodar.
+Built by [Basavaraj A Naduvinamani](https://github.com/basavarajnaduvinamani). HumanAuth began as a B.Tech CSE major project (Phase II, 2024–25) at Dayananda Sagar University.
 
 ## Funding
 

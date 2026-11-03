@@ -9,6 +9,7 @@ voice is still assigned to its nearest enrolled speaker, and this is speaker
 matching, not synthetic-speech (deepfake) detection.
 """
 import pickle
+import json
 
 import numpy as np
 
@@ -52,6 +53,25 @@ def load_gmm(path):
         raise ValueError(f"{path.name}: only diagonal-covariance GMMs are supported")
     return {"weights": np.asarray(g.weights_), "means": np.asarray(g.means_),
             "prec_chol": np.asarray(g.precisions_cholesky_)}
+
+
+def load_synthetic_reference(path):
+    """Load explicitly synthetic migration fixtures, not personal enrollments."""
+    data = json.loads(path.read_text())
+    if data.get('synthetic_only') is not True:
+        raise ValueError('Reference is not declared synthetic')
+    result = {}
+    for name, g in data['speakers'].items():
+        weights, means, cov = (np.asarray(g[k], dtype=np.float64)
+                               for k in ('weights', 'means', 'covariances'))
+        if g.get('covariance_type') != 'diag' or means.ndim != 2 or means.shape[1] != 40:
+            raise ValueError('Unsupported synthetic reference shape')
+        if cov.shape != means.shape or weights.shape != (means.shape[0],):
+            raise ValueError('Inconsistent synthetic reference dimensions')
+        if not all(np.isfinite(x).all() for x in (weights, means, cov)) or (cov <= 0).any() or (weights <= 0).any():
+            raise ValueError('Invalid synthetic reference parameters')
+        result[name] = {'weights': weights, 'means': means, 'prec_chol': 1 / np.sqrt(cov)}
+    return result
 
 
 def gmm_mean_loglik(gmm, X):
@@ -118,6 +138,10 @@ class VoiceCheck(Check):
     def _load(self):
         self.mfcc = require_package("python_speech_features")
         d = self.cfg.voice_models_dir
+        reference = d / 'reference.json'
+        if reference.exists():
+            self.speakers = load_synthetic_reference(reference)
+            return
         files = sorted(d.glob("*.gmm")) if d.is_dir() else []
         if not files:
             raise ModuleUnavailable(f"No enrolled speaker models (*.gmm) found in {d}. "
