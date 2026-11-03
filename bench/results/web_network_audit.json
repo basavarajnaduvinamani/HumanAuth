@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-11-03T12:03:58.052Z",
+  "generated_at": "2026-11-03T15:11:15.693Z",
   "browser": "156.0.8078.4",
   "project": "chromium",
-  "base_url": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+  "base_url": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
   "scope": "From landing navigation through full sample verification and receipt. Static same-origin GET requests only.",
   "input_upload_bytes": 0,
   "third_party_requests": 0,
   "requests": [
     {
       "path": "/",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -17,7 +17,7 @@
     },
     {
       "path": "/_next/static/media/d4363d9dcee4ed76-s.p.woff2",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -25,15 +25,15 @@
     },
     {
       "path": "/_next/static/media/de26b60124bf9146-s.p.woff2",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
       "media_content_type": false
     },
     {
-      "path": "/_next/static/css/dd1f226d7981e5d5.css",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "path": "/_next/static/css/e14cb5e436e34eea.css",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -41,7 +41,7 @@
     },
     {
       "path": "/_next/static/chunks/webpack-190fe5ec11ffe5da.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -49,7 +49,7 @@
     },
     {
       "path": "/_next/static/chunks/4bd1b696-cd566323a07c169f.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -57,7 +57,7 @@
     },
     {
       "path": "/_next/static/chunks/794-342d1110ac8a18e2.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -65,7 +65,7 @@
     },
     {
       "path": "/_next/static/chunks/main-app-4d2b9f560fded4f1.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -73,7 +73,7 @@
     },
     {
       "path": "/_next/static/chunks/500-863cc2266cad9a2f.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -81,7 +81,7 @@
     },
     {
       "path": "/_next/static/chunks/app/page-eb0ef238ec44c886.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -89,7 +89,7 @@
     },
     {
       "path": "/_next/static/chunks/app/layout-98d92c6b571cbc92.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -97,7 +97,7 @@
     },
     {
       "path": "/",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -105,7 +105,7 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -113,7 +113,7 @@
     },
     {
       "path": "/evidence",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -121,7 +121,23 @@
     },
     {
       "path": "/use-cases",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/verify",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -129,7 +145,7 @@
     },
     {
       "path": "/about",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -137,7 +153,7 @@
     },
     {
       "path": "/verify",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -145,31 +161,7 @@
     },
     {
       "path": "/verify",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/verify",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -177,15 +169,7 @@
     },
     {
       "path": "/",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
-      "method": "GET",
-      "request_body_bytes": 0,
-      "static_query": true,
-      "media_content_type": false
-    },
-    {
-      "path": "/evidence",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -193,7 +177,15 @@
     },
     {
       "path": "/how-it-works",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
+      "method": "GET",
+      "request_body_bytes": 0,
+      "static_query": true,
+      "media_content_type": false
+    },
+    {
+      "path": "/evidence",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -201,7 +193,7 @@
     },
     {
       "path": "/use-cases",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -209,7 +201,7 @@
     },
     {
       "path": "/about",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -217,7 +209,7 @@
     },
     {
       "path": "/_next/static/chunks/app/verify/page-39014066daea6435.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -225,7 +217,7 @@
     },
     {
       "path": "/samples/synthetic-face-a.png",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -233,7 +225,7 @@
     },
     {
       "path": "/_next/static/chunks/832.a3dd52689d938afc.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -241,7 +233,7 @@
     },
     {
       "path": "/_next/static/chunks/525.d059f9f5ad8b49a8.js",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -249,7 +241,7 @@
     },
     {
       "path": "/models/yolov5s-face.onnx",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -257,7 +249,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.mjs",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -265,7 +257,7 @@
     },
     {
       "path": "/runtime/ort-wasm-simd-threaded.asyncify.wasm",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -273,7 +265,7 @@
     },
     {
       "path": "/models/AntiSpoofing_bin_1.5_128.onnx",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -281,7 +273,7 @@
     },
     {
       "path": "/samples/document.png",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -289,7 +281,7 @@
     },
     {
       "path": "/models/document-int8.onnx",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -297,7 +289,7 @@
     },
     {
       "path": "/models/flite-synthesis.wasm.gz",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -305,7 +297,7 @@
     },
     {
       "path": "/models/synthetic-voice-reference.json",
-      "origin": "https://humanauth-qgsr0f534-basavarajnaduvinamani34-1831.vercel.app",
+      "origin": "https://humanauth-78j5ywl2t-basavarajnaduvinamani34-1831.vercel.app",
       "method": "GET",
       "request_body_bytes": 0,
       "static_query": true,
@@ -322,7 +314,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Live-face probability 1.00.",
-      "latency_ms": 20225.72999998927,
+      "latency_ms": 12985.90000000596,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -334,7 +326,7 @@
       "passed": false,
       "threshold": 0.5,
       "detail": "Genuine-document probability 0.02. Whole-image score; model was trained on region crops.",
-      "latency_ms": 4462.920000001788,
+      "latency_ms": 4006.8349999934435,
       "mode": "live",
       "backend": "WASM",
       "wasm_threads": 1
@@ -346,7 +338,7 @@
       "passed": true,
       "threshold": 0.5,
       "detail": "Closest enrolled speaker 'Sample speaker A'; claimed 'Sample speaker A'. Closed-set speaker match, not synthetic-speech detection.",
-      "latency_ms": 7228.609999999404,
+      "latency_ms": 3799.9449999928474,
       "mode": "live",
       "backend": "JavaScript CPU",
       "wasm_threads": null
