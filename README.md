@@ -3,7 +3,7 @@
 Face liveness, a document authenticity signal and enrolled voice matching,
 on your device, with an explained decision.
 
-**Live:** [humanauth-iota.vercel.app](https://humanauth-id.vercel.app) ·
+**Live:** [humanauth-id.vercel.app](https://humanauth-id.vercel.app) ·
 [Evidence and limits](https://humanauth-id.vercel.app/evidence).
 Development and release work is in [draft PR #2](https://github.com/basavarajnaduvinamani/HumanAuth/pull/2).
 
