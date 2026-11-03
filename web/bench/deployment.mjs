@@ -29,7 +29,7 @@ assert.equal(isolation.coop, "same-origin");
 assert.equal(isolation.coep, "require-corp");
 assert.match(isolation.permissions || "", /camera=\(self\)/);
 const publicOrigin = new URL(
-  process.env.PUBLIC_SITE_URL || "https://humanauth-iota.vercel.app",
+  process.env.PUBLIC_SITE_URL || "https://humanauth-id.vercel.app",
 ).origin;
 const html = await root.text();
 assert.ok(

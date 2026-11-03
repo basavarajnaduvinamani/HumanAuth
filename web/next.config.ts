@@ -1,6 +1,16 @@
 import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "humanauth-iota.vercel.app" }],
+        destination: "https://humanauth-id.vercel.app/:path*",
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {
