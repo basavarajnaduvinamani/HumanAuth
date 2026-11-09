@@ -1,4 +1,3 @@
-import { Arrow } from "../components/arrow";
 import Link from "next/link";
 import { PipelineMobile } from "../components/pipeline-mobile";
 import { ResultSheet } from "../components/result-sheet";
@@ -10,7 +9,7 @@ export default function Home() {
       <section className="hero wrap">
         <div className="hero-copy">
           <p className="eyebrow">
-            <span className="tiny-square" /> IDENTITY, WITH THE WORK SHOWN
+            <span className="tiny-square" /> Identity, with the work shown
           </p>
           <h1>
             Your identity checks.
@@ -18,22 +17,22 @@ export default function Home() {
             <span>Your device.</span>
           </h1>
           <p className="lead">
-            Face liveness, document authenticity and a voice match. A decision
-            you can inspect, without uploading your inputs.
+            Built to verify real people in banking, government services and other
+            onboarding: face, voice and document checks that run on the device.
           </p>
           <div className="actions">
             <Link className="button" href="/verify?sample=1">
-              Try it with sample data <Arrow />
+              Try it with sample data
             </Link>
             <Link className="text-button" href="/verify?camera=1">
-              Use my camera <Arrow />
+              Use my camera
             </Link>
           </div>
           <p className="caption">
             Demo prototype: runs on bundled sample data in your browser.
           </p>
           <aside className="funding-note" aria-label="Project funding and support">
-            <p className="eyebrow">FUNDED & SUPPORTED</p>
+            <p className="eyebrow">Funded and supported</p>
             <p className="funding-copy">
               Funded by <strong>AI & Robotics Technology Park (ARTPark), IISc</strong>.
               {" "}Technical support from <strong>KSCST<sup>*</sup></strong>.
@@ -45,7 +44,7 @@ export default function Home() {
         </div>
         <div className="hero-preview">
           <div className="preview-label">
-            <span className="mono">PRODUCT / RESULT</span>
+            <span>Result</span>
             <span>Bundled samples</span>
           </div>
           <ResultSheet
@@ -61,7 +60,7 @@ export default function Home() {
       </section>
       <section className="section wrap pipeline-section">
         <div className="section-heading">
-          <p className="eyebrow">01 / THE DECISION PATH</p>
+          <p className="eyebrow">The decision path</p>
           <h2>
             Three signals.
             <br />
@@ -114,14 +113,14 @@ export default function Home() {
             </g>
           </svg>
           <Link href="/how-it-works">
-            Read the architecture and rules <Arrow />
+            Read the architecture and rules
           </Link>
         </div>
       </section>
       <section className="privacy-band">
         <div className="wrap privacy-grid">
           <div>
-            <p className="eyebrow">02 / THE PRIVACY CHOICE</p>
+            <p className="eyebrow">The privacy choice</p>
             <h2>
               The models travel.
               <br />
@@ -150,14 +149,14 @@ export default function Home() {
               bench/results/web_ci_2026.json
             </p>
             <Link href="/how-it-works#privacy">
-              Inspect the privacy design <Arrow />
+              Inspect the privacy design
             </Link>
           </div>
         </div>
       </section>
       <section className="section wrap closing">
         <div>
-          <p className="eyebrow">03 / EVIDENCE BEFORE CLAIMS</p>
+          <p className="eyebrow">Evidence before claims</p>
           <h2>
             A result is only as useful
             <br />
@@ -171,13 +170,13 @@ export default function Home() {
             measurements from the original report.
           </p>
           <Link className="button secondary" href="/evidence">
-            Read the evidence <Arrow />
+            Read the evidence
           </Link>
         </div>
       </section>
       <section className="section wrap">
         <div className="section-heading">
-          <p className="eyebrow">04 / REAL-WORLD CONTEXT</p>
+          <p className="eyebrow">Real-world context</p>
           <h2>Where checks like these are used</h2>
           <p>
             Banking and governance come first. These are sourced workflows and
@@ -238,7 +237,7 @@ export default function Home() {
           </table>
         </div>
         <Link href="/use-cases">
-          Read the sources and research boundaries <Arrow />
+          Read the sources and research boundaries
         </Link>
       </section>
     </>
