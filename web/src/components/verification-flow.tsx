@@ -1,5 +1,4 @@
 "use client";
-import { Arrow } from "./arrow";
 import { useEffect, useEffectEvent, useRef, useState } from "react";
 import Link from "next/link";
 import manifest from "../../public/models/manifest.json";
@@ -408,7 +407,7 @@ export function VerificationFlow() {
       <div className="verify-top">
         <h1>Verify with HumanAuth</h1>
         <span className="session-label mono">
-          {sampleSession ? "SAMPLE SESSION" : "ON YOUR DEVICE"}
+          {sampleSession ? "Sample session" : "On your device"}
         </span>
       </div>
       <ol className="stepper" aria-label="Verification steps">
@@ -439,7 +438,7 @@ export function VerificationFlow() {
       {step === 4 ? (
         <div className="results-layout">
           <div aria-live="polite">
-            <ResultSheet results={results} />
+            <ResultSheet results={results} sample={sampleSession} />
           </div>
           <aside className="results-aside">
             <h2>Keep the reasoning.</h2>
@@ -448,7 +447,7 @@ export function VerificationFlow() {
               timings. No images or audio are included.
             </p>
             <button className="button" onClick={download}>
-              Download receipt (JSON) <Arrow direction="down" />
+              Download receipt (JSON)
             </button>
             <button className="button secondary" onClick={reset}>
               Start over
@@ -473,7 +472,7 @@ export function VerificationFlow() {
               timings reuse sessions.
             </p>
             <Link className="text-button" href="/evidence">
-              Read the evidence <Arrow />
+              Read the evidence
             </Link>
           </aside>
         </div>
@@ -481,7 +480,7 @@ export function VerificationFlow() {
         <div className="flow-panel">
           <section className="flow-main">
             <p className="eyebrow">
-              {step === 0 ? "BEFORE WE BEGIN" : `CHECK / ${name.toUpperCase()}`}
+              {step === 0 ? "Before we begin" : `Check: ${name}`}
             </p>
             <h2>
               {
@@ -538,7 +537,7 @@ export function VerificationFlow() {
                         void startCamera();
                     }}
                   >
-                    Continue <Arrow />
+                    Continue
                   </button>
                   <button
                     className="text-button"
@@ -547,7 +546,7 @@ export function VerificationFlow() {
                       void runSamples();
                     }}
                   >
-                    Use sample data <Arrow />
+                    Use sample data
                   </button>
                 </div>
               </>
@@ -608,7 +607,7 @@ export function VerificationFlow() {
                           className="text-button"
                           onClick={() => setStep(2)}
                         >
-                          Continue with this result <Arrow />
+                          Continue with this result
                         </button>
                       )}
                     </div>
@@ -713,7 +712,6 @@ export function VerificationFlow() {
                     {busy
                       ? "Processing…"
                       : `Use ${step === 1 ? "face" : step === 2 ? "SPECIMEN" : "Sample speaker A voice"} sample`}
-                    {!busy && <Arrow />}
                   </button>
                   <button className="text-button" onClick={reset}>
                     Start over
@@ -775,7 +773,7 @@ export function VerificationFlow() {
               No account, remote inference server or API key.
             </p>
             <Link href="/evidence" className="text-button">
-              Inspect measurements <Arrow />
+              Inspect measurements
             </Link>
           </aside>
         </div>

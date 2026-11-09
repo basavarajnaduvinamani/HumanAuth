@@ -13,7 +13,7 @@ export default function Evidence() {
   return (
     <>
       <header className="page-heading wrap">
-        <p className="eyebrow">EVIDENCE / MEASUREMENTS & LIMITS</p>
+        <p className="eyebrow">Evidence: measurements and limits</p>
         <h1>Claims with a source.</h1>
         <p className="lead">
           Measurements, reported results and open questions belong in separate
@@ -22,6 +22,21 @@ export default function Evidence() {
         </p>
       </header>
       <article className="prose wrap">
+        <section>
+          <h2>In plain terms</h2>
+          <p>
+            HumanAuth runs face, document and voice checks in your browser, and
+            this page shows what we measured, what the original report claimed
+            and where the checks fall short.
+          </p>
+          <p>
+            The document check is close to chance, voice matching is closed-set
+            and no threshold is calibrated, so read the scores as a demo signal.
+          </p>
+          <p>
+            The repository has 76 Python tests and 21 browser tests.
+          </p>
+        </section>
         <section>
           <h2>Measured in 2026</h2>
           <TransferMeasurements />
@@ -118,15 +133,11 @@ export default function Evidence() {
         </section>
         <BrowserMeasurements />
         <section>
-          <h2>Original 2024 report</h2>
+          <h2>Signed project report</h2>
           <p>
-            The report states 96.5% integrated authentication and 96.0% face
-            anti-spoofing, with scope not identified. Its document figure is a
-            training result, not held-out accuracy.
-          </p>
-          <p>
-            These are signed-report figures, not measurements from this browser
-            product.
+            96.5% integrated authentication, from the signed 2025 project
+            report. The scope is not identified, and it is not a measurement
+            from this browser product.
           </p>
           <p className="source">
             Source: bench/results/reported_results_reference.json. Signed report

@@ -1,4 +1,3 @@
-import { Arrow } from "../../components/arrow";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About the author",
@@ -9,7 +8,7 @@ export default function About() {
   return (
     <>
       <header className="page-heading wrap">
-        <p className="eyebrow">PROJECT / AUTHOR & PROVENANCE</p>
+        <p className="eyebrow">Project: author and provenance</p>
         <h1>Basavaraj A Naduvinamani</h1>
         <p className="lead">
           Data Science & AI master’s student. HumanAuth began as a B.Tech CSE
@@ -56,7 +55,7 @@ export default function About() {
           <h2>Source & licence</h2>
           <p>
             <a href="https://github.com/basavarajnaduvinamani/HumanAuth">
-              Explore the public repository <Arrow direction="external" />
+              Explore the public repository
             </a>
           </p>
           <p>
