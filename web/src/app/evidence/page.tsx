@@ -135,9 +135,9 @@ export default function Evidence() {
         <section>
           <h2>Signed project report</h2>
           <p>
-            96.5% integrated authentication, from the signed 2025 project
-            report. The scope is not identified, and it is not a measurement
-            from this browser product.
+            96.5% integrated authentication, from the signed project report.
+            The report does not say what it was measured on, and it is not a
+            measurement of this browser product.
           </p>
           <p className="source">
             Source: bench/results/reported_results_reference.json. Signed report

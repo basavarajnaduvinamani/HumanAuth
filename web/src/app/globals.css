@@ -1318,3 +1318,7 @@ details pre {
   border-top: 1px solid var(--line);
 }
 .sheet-bottom .mono { font-family: inherit; }
+
+.section .table-scroll {
+  margin: 24px 0 16px;
+}

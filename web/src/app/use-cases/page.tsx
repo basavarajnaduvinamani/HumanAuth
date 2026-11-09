@@ -46,7 +46,7 @@ export default function UseCases() {
           </p>
           <ul>
             <li>
-              <a href="#bank-onboarding">Bank and fintech e-KYC</a>
+              <a href="#bank-onboarding">Bank e-KYC</a>
             </li>
             <li>
               <a href="#insurance">Video KYC</a> (live video identification

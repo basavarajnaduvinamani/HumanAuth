@@ -17,8 +17,8 @@ export default function Home() {
             <span>Your device.</span>
           </h1>
           <p className="lead">
-            Built to verify real people in banking, government services and other
-            onboarding: face, voice and document checks that run on the device.
+            Built for identity verification in banking and government services:
+            face, voice and document checks that run on the device.
           </p>
           <div className="actions">
             <Link className="button" href="/verify?sample=1">
@@ -32,7 +32,7 @@ export default function Home() {
             Demo prototype: runs on bundled sample data in your browser.
           </p>
           <aside className="funding-note" aria-label="Project funding and support">
-            <p className="eyebrow">Funded and supported</p>
+            <p className="eyebrow">Funding</p>
             <p className="funding-copy">
               Funded by <strong>AI & Robotics Technology Park (ARTPark), IISc</strong>.
               {" "}Technical support from <strong>KSCST<sup>*</sup></strong>.
@@ -54,7 +54,7 @@ export default function Home() {
             mini
           />
           <p className="preview-note">
-            The SPECIMEN is rejected. The sample flow shows why.
+            The sample is rejected because its document check fails.
           </p>
         </div>
       </section>
@@ -165,9 +165,10 @@ export default function Home() {
         </div>
         <div>
           <p>
-            The document model was trained on region crops. Voice matching is
-            closed-set. Thresholds are uncalibrated. The evidence page separates
-            measurements from the original report.
+            The document model was trained on cropped regions. The voice check
+            only compares enrolled speakers. Thresholds are not yet calibrated.
+            The evidence page keeps new measurements apart from the original
+            report.
           </p>
           <Link className="button secondary" href="/evidence">
             Read the evidence
@@ -179,8 +180,8 @@ export default function Home() {
           <p className="eyebrow">Real-world context</p>
           <h2>Where checks like these are used</h2>
           <p>
-            Banking and governance come first. These are sourced workflows and
-            research possibilities; HumanAuth does not provide these services.
+            Banking and government services come first. Each workflow comes from
+            an official source. HumanAuth does not provide these services.
           </p>
         </div>
         <div
@@ -237,7 +238,7 @@ export default function Home() {
           </table>
         </div>
         <Link href="/use-cases">
-          Read the sources and research boundaries
+          Read the sources and limits for each setting
         </Link>
       </section>
     </>
