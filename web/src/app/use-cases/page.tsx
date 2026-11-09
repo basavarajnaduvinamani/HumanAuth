@@ -29,7 +29,7 @@ export default function UseCases() {
   return (
     <>
       <header className="page-heading wrap">
-        <p className="eyebrow">CONTEXT / BANKING & GOVERNANCE FIRST</p>
+        <p className="eyebrow">Context: banking and governance first</p>
         <h1>Where identity checks are used</h1>
         <p className="lead">
           HumanAuth is a research demo; these are settings where face, voice and
@@ -37,6 +37,39 @@ export default function UseCases() {
         </p>
       </header>
       <article className="prose wrap">
+        <section>
+          <h2>Settings this could help with</h2>
+          <p>
+            Identity checks come up in the settings below. They are listed as
+            places to study; HumanAuth is not used in, approved for or
+            compliant with any of them.
+          </p>
+          <ul>
+            <li>
+              <a href="#bank-onboarding">Bank e-KYC</a>
+            </li>
+            <li>
+              <a href="#insurance">Video KYC</a> (live video identification
+              with an official; see also{" "}
+              <a href="#bank-onboarding">bank account opening</a>)
+            </li>
+            <li>
+              <a href="#sim">Telecom SIM onboarding</a>
+            </li>
+            <li>
+              <a href="#pension">Pensioner life certificates</a>
+            </li>
+            <li>
+              <a href="#welfare">Government service access</a>
+            </li>
+            <li>
+              <a href="#exam">Exam candidate verification</a>
+            </li>
+            <li>
+              <a href="#gig">Gig-worker onboarding</a>
+            </li>
+          </ul>
+        </section>
         <section>
           <h2>Different workflows, different evidence</h2>
           <p>

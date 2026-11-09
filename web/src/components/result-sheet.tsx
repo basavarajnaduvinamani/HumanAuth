@@ -1,4 +1,3 @@
-import { Arrow } from "./arrow";
 import Link from "next/link";
 import { CheckResult } from "../lib/types";
 import { fuse } from "../lib/fusion";
@@ -15,9 +14,11 @@ const models = {
 export function ResultSheet({
   results,
   mini = false,
+  sample = false,
 }: {
   results: CheckResult[];
   mini?: boolean;
+  sample?: boolean;
 }) {
   const output = fuse(results),
     title = {
@@ -31,8 +32,8 @@ export function ResultSheet({
       aria-label="Verification result"
     >
       <div className="sheet-top">
-        <span className="eyebrow">VERIFICATION RECEIPT</span>
-        <span className="mono">LOCAL SESSION</span>
+        <span className="eyebrow">Verification receipt</span>
+        <span className="mono">Local session</span>
       </div>
       <div className={`decision ${output.decision}`}>
         <span className="status-symbol" aria-hidden="true">
@@ -100,6 +101,9 @@ export function ResultSheet({
           </div>
         ))}
       </div>
+      {(mini || sample || results.some((r) => r.mode === "replay")) && (
+        <p className="score-note">Score on the bundled sample, not accuracy.</p>
+      )}
       {!mini && (
         <div className="reason-list">
           <h3>Why this decision</h3>
@@ -112,10 +116,10 @@ export function ResultSheet({
       )}
       <div className="sheet-bottom">
         <span className="mono">
-          {mini ? "BUNDLED SAMPLES" : "NO MEDIA IN RECEIPT"}
+          {mini ? "Bundled samples" : "No media in receipt"}
         </span>
         <Link href="/evidence">
-          Inspect the evidence <Arrow />
+          Inspect the evidence
         </Link>
       </div>
     </section>
